@@ -1,21 +1,22 @@
 {
-  "name": "bontec",
+  "name": "contrate-artistas",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "",
+  "main": "gulpfile.js",
   "scripts": {
     "gulp": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/huanchicayd/bontec.git"
+    "url": "git+https://github.com/huanchicayd/contrate-artistas.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/huanchicayd/bontec/issues"
+    "url": "https://github.com/huanchicayd/contrate-artistas/issues"
   },
-  "homepage": "https://github.com/huanchicayd/bontec#readme",
+  "homepage": "https://github.com/huanchicayd/contrate-artistas#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "browser-sync": "^2.18.13",
@@ -28,6 +29,5 @@
     "gulp-kraken": "^0.2.0",
     "gulp-uglify": "^3.0.0",
     "imagemin-jpeg-recompress": "^5.1.0"
-  },
-  "description": ""
+  }
 }
