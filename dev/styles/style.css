@@ -1861,7 +1861,8 @@ html {
   box-sizing: border-box;
   font-weight: inherit;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  list-style: none; }
 
 html {
   font-family: "HurmeGeometricSans1-Regular", sans-serif; }
@@ -1869,7 +1870,7 @@ html {
 .header {
   height: 121px;
   color: #fff;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 5px 3px black;
   position: absolute;
   width: 100%;
   top: 0;
@@ -2055,23 +2056,51 @@ html {
   margin-top: 50px;
   background: #000;
   color: #fff; }
-  .footer-newsletter {
+  .footer-news {
     border-bottom: 5px solid #ffcc00;
     height: 310px; }
+    .footer-news__cadastro p {
+      font-size: 24px;
+      font-size: strip-unit(1.5px)rem; }
+    .footer-news__cadastro > h4 {
+      color: #ffcc00;
+      font-family: "HurmeGeometricSans1-Bold", sans-serif;
+      font-size: 30px;
+      font-size: strip-unit(1.875px)rem; }
+    .footer-news__form {
+      font-size: inherit; }
+    .footer-news__form-email {
+      width: 540px;
+      height: 50px;
+      font-family: "HurmeGeometricSans1-Regular", sans-serif;
+      font-size: 20px;
+      font-size: strip-unit(1.25px)rem; }
+    .footer-news__form-btn {
+      height: 50px;
+      padding: 10px;
+      background: #ffcc00;
+      border: 0;
+      font-family: "HurmeGeometricSans1-Bold", sans-serif;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-size: strip-unit(1.25px)rem; }
   .footer-brand-wrap {
     margin-bottom: 50px; }
   .footer-brand img {
     width: 548px; }
   .footer-about p {
     margin-bottom: 25px; }
-  .footer-resume-links {
-    text-transform: uppercase; }
-    .footer-resume-links ul {
+  .footer-resume {
+    text-transform: uppercase;
+    margin-bottom: 50px; }
+    .footer-resume ul {
       list-style: none; }
-    .footer-resume-links a {
+    .footer-resume a {
       color: #fff;
       text-decoration: none;
       font-family: "HurmeGeometricSans1-Bold", sans-serif; }
+    .footer-resume__atracao-columns {
+      display: flex; }
   .footer-copyright {
     background: #fff;
     color: #000; }

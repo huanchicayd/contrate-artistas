@@ -3,9 +3,42 @@
   background: #000;
   color: #fff;
 
-  &-newsletter {
+  &-news {
     border-bottom: 5px solid $color-one;
     height: 310px;
+
+    &__cadastro {
+      p {
+        @include font-size(24px);
+      }
+
+      > h4 {
+        color: $color-one;
+        font-family: $text-bold;
+        @include font-size(30px);
+      }
+    }
+
+    &__form {
+      font-size: inherit;
+    }
+
+    &__form-email {
+      width: 540px;
+      height: 50px;
+      font-family: $text-regular;
+      @include font-size(20px);
+    }
+
+    &__form-btn {
+      height: 50px;
+      padding: 10px;
+      background: $color-one;
+      border: 0;
+      font-family: $text-bold;
+      text-transform: uppercase;
+      @include font-size(20px);
+    }
   }
 
   &-brand-wrap {
@@ -24,8 +57,9 @@
     }
   }
 
-  &-resume-links {
+  &-resume {
     text-transform: uppercase;
+    margin-bottom: 50px;
 
     ul {
       list-style: none;
@@ -35,6 +69,10 @@
       color: #fff;
       text-decoration: none;
       font-family: $text-bold;
+    }
+
+    &__atracao-columns{
+      display: flex;
     }
   }
 
