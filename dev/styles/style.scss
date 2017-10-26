@@ -1,3 +1,12 @@
-@include 'base/_normalize.scss';
-@include 'base/_grid.scss';
-@include 'base/_base.scss';
+@import 'helpers/_variables.scss';
+@import 'helpers/_functions.scss';
+@import 'helpers/_mixins.scss';
+
+@import 'typography/_typography.scss';
+
+@import 'base/_normalize.scss';
+@import 'base/_grid.scss';
+@import 'base/_base.scss';
+
+@import 'components/_header.scss';
+@import 'components/_header-banner.scss';
