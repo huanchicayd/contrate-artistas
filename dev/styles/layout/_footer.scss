@@ -1,0 +1,45 @@
+.footer {
+  margin-top: 50px;
+  background: #000;
+  color: #fff;
+
+  &-newsletter {
+    border-bottom: 5px solid $color-one;
+    height: 310px;
+  }
+
+  &-brand-wrap {
+    margin-bottom: 50px;
+  }
+
+  &-brand {
+    img {
+      width: 548px;
+    }
+  }
+
+  &-about {
+    p {
+      margin-bottom: 25px;
+    }
+  }
+
+  &-resume-links {
+    text-transform: uppercase;
+
+    ul {
+      list-style: none;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-family: $text-bold;
+    }
+  }
+
+  &-copyright {
+    background: #fff;
+    color: #000;
+  }
+}
