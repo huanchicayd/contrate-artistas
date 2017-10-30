@@ -2,11 +2,11 @@
 
 <div class="header-banner">
   <div class="container">
-    <h1 class="header-banner__chamada">Atendimento personalizado, agilidade, segurança e mais de<br> <strong class="header-banner__highlight-text">1.000 artistas disponíveis</strong> para o seu evento ser um sucesso!</h1>
+    <h1 class="header-banner__chamada">Mais de <strong class="header-banner__highlight-text">1.000 artistas disponíveis</strong> para o seu evento ser um sucesso!<br> Mais de para o seu evento ser um sucesso!</h1>
 
     <form class="header-banner__search-field">
-      <input type="search" name="" value="" placeholder="Pesquise atrações artísticas" class="header-banner__search-input">
-      <button type="button" name="button" class="header-banner__search-btn"></button>
+      <input type="search" name="" value="" placeholder="Qual atração artística está buscando?" class="header-banner__search-input">
+      <button type="button" name="button" class="header-banner__search-btn">Pesquisar</button>
     </form>
 
     <div class="header-banner__filtros">
@@ -32,7 +32,7 @@
       </a>
       <a href="#" class="header_banner__filtros-option">
         <img src="images/filtro-vertodos-icon.svg" alt="">
-        Ver todos
+        Todas
       </a>
     </div>
   </div>

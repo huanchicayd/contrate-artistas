@@ -5,61 +5,105 @@
 
   &-news {
     border-bottom: 5px solid $color-one;
-    height: 310px;
+    height: 185px;
 
     &__cadastro {
+      margin-top: 45px;
+
       p {
-        @include font-size(24px);
+        @include font-size(14px);
       }
 
       > h4 {
         color: $color-one;
         font-family: $text-bold;
-        @include font-size(30px);
+        @include font-size(18px);
       }
     }
 
     &__form {
       font-size: inherit;
+
     }
 
     &__form-email {
       width: 540px;
-      height: 50px;
+      height: 30px;
       font-family: $text-regular;
       @include font-size(20px);
+      @include placeholder {
+        @include font-size(14px);
+      }
     }
 
     &__form-btn {
-      height: 50px;
+      height: 30px;
       padding: 10px;
       background: $color-one;
       border: 0;
       font-family: $text-bold;
       text-transform: uppercase;
-      @include font-size(20px);
+      @include font-size(12px);
     }
   }
 
+  &-info {
+    //border: 1px solid red;
+    //position: relative;
+    overflow: hidden;
+
+    >.container {
+      position: relative;
+
+      &:before {
+        content: '';
+        display: block;
+        width: 600px;
+        height: 600px;
+        position: absolute;
+        bottom: -350px;
+        left: -150px;
+        background: rgba(50,50,50,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(50,50,50,1) 0%, rgba(0,0,0,0.85) 75%, rgba(0,0,0,0.8) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(50,50,50,1)), color-stop(75%, rgba(0,0,0,0.85)), color-stop(100%, rgba(0,0,0,0.8)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(50,50,50,1) 0%, rgba(0,0,0,0.85) 75%, rgba(0,0,0,0.8) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(50,50,50,1) 0%, rgba(0,0,0,0.85) 75%, rgba(0,0,0,0.8) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(50,50,50,1) 0%, rgba(0,0,0,0.85) 75%, rgba(0,0,0,0.8) 100%);
+background: radial-gradient(ellipse at center, rgba(50,50,50,1) 0%, rgba(0,0,0,0.85) 75%, rgba(0,0,0,0.8) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#323232', endColorstr='#000000', GradientType=1 );
+      }
+    }
+
+
+  }
+
   &-brand-wrap {
+    margin-top: 35px;
     margin-bottom: 50px;
+
   }
 
   &-brand {
     img {
-      width: 548px;
+      width: 327px;
     }
   }
 
   &-about {
     p {
+      @include font-size(14px);
       margin-bottom: 25px;
+
+      strong {
+        font-family: $text-bold;
+      }
     }
   }
 
   &-resume {
     text-transform: uppercase;
     margin-bottom: 50px;
+    @include font-size(12px);
 
     ul {
       list-style: none;
@@ -69,15 +113,47 @@
       color: #fff;
       text-decoration: none;
       font-family: $text-bold;
+      line-height: 20px;
+      transition: color 0.25s;
+
+      &:hover {
+        color: $color-one;
+      }
     }
 
     &__atracao-columns{
       display: flex;
+
+      ul {
+        width: 50%;
+      }
+    }
+
+    &__teste {
+      display: flex;
+    }
+
+    &__insti-servicos {
+      width: 50%;
+
+      &__col-1 {
+        margin-bottom: 50px;
+      }
+    }
+
+    &__eventos-fale {
+      width: 50%;
+
+      &__col-1 {
+        margin-bottom: 50px;
+      }
     }
   }
 
   &-copyright {
     background: #fff;
     color: #000;
+    padding: 15px 0;
+    @include font-size(11px);
   }
 }
