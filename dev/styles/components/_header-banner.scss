@@ -2,7 +2,6 @@
   width: 100%;
   height: 380px;
   color: #fff;
-  border-bottom: 4px solid $color-one;
   background: url('../images/header_banner.jpg') no-repeat center center;
   background-size: cover;
 
@@ -13,17 +12,19 @@
 
   &__chamada {
     @include font-size(18px);
-    transform: translatey(100px);
+    transform: translatey(120px);
     font-family: $text-regular;
     text-align: center;
+    line-height: 28px;
   }
 
   &__highlight-text {
     color: $color-one;
+    font-family: $text-bold;
   }
 
   &__search-field {
-    margin: 150px auto 0 auto;
+    margin: 140px auto 0 auto;
     position: relative;
     width: 630px;
   }
@@ -56,7 +57,7 @@
     z-index: 1;
     padding: 0 20px;
     height: 50px;
-    background: $color-one;
+    @include background-button;
     border: 0;
     font-family: $text-bold;
     @include font-size(16px);
@@ -72,26 +73,25 @@
       z-index: 1;
       width: 100%;
       height: 50%;
-      background: rgba(255, 255, 255, 0.3);
+      background: rgba(255, 255, 255, 0.25);
     }
   }
 
   &__filtros {
     position: absolute;
+    left: 50%;
     bottom: 0;
-    width: 100%;
-    //height: 150px;
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
     margin-left: -15px;
     margin-right: -15px;
     justify-content: space-between;
-
+    transform: translatex(-50%);
 
     a {
       display: block;
       width: 16.6%;
-      //background: #000;
       text-align: center;
       text-transform: uppercase;
       font-family: $text-bold;

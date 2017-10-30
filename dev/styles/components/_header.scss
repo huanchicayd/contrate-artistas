@@ -80,3 +80,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#141414', end
     }
   }
 }
+
+.header-fixed {
+  position: fixed;
+  z-index: 100;
+}

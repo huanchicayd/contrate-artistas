@@ -1,1 +1,1 @@
-!function(){"use strict"}();
+!function(){"use strict";var e=document.querySelector('[data-js="navbar"]');window.addEventListener("scroll",function(){var a=this.pageYOffset;a>=380?e.classList.add("header-fixed"):a<=380&&e.classList.remove("header-fixed")}),console.log("Carregou")}();

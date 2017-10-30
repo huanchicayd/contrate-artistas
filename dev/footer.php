@@ -2,10 +2,12 @@
   <div class="footer-news">
     <div class="container">
       <div class="row">
-        <div class="col-lg-3">
-          <img src="" alt="">
+        <div class="col-lg-2">
+          <div class="footer-news__microfone">
+
+          </div>
         </div>
-        <div class="col-lg-9 footer-news__cadastro">
+        <div class="col-lg-10 footer-news__cadastro">
           <p>Receba periodicamente as melhores dicas para eventos de alto impacto!</p>
           <h4>Assine abaixo a nossa newsletter!</p>
           <form class="footer-news__form" action="index.html" method="post">
@@ -103,7 +105,7 @@
   </div>
 </footer>
 
-<script></script>
+<script src="scripts/init.js"></script>
 
 </body>
 </html>

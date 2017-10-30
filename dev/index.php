@@ -37,9 +37,99 @@
     </div>
   </div>
 </div>
+<div class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar">
+          <div class="sidebar-stats">
+            302821 atrações artísticas
+          </div>
+          <div class="sidebar-search">
+            <h3>Palavra-chave</h3>
+            <form class="" action="index.html" method="post">
+              <input type="search" name="" value="" placeholder="Campanha, Presença VIP....">
+            </form>
+          </div>
+          <div class="sidebar-categorias">
+            <h3>Todas as categorias</h3>
+            <form class="" action="index.html" method="post">
+              <input type="checkbox" name="" value="false">
+              <label for="">Apresentador</label>
+              <input type="checkbox" name="" value="false">
+              <label for="">Apresentadora</label>
+              <input type="checkbox" name="" value="false">
+              <label for="">Apresentadora</label>
+              <input type="checkbox" name="" value="false">
+              Apresentadora
+              <input type="checkbox" name="" value="false">
+              Apresentadora
+              <input type="checkbox" name="" value="false">
+              Apresentadora
+              <input type="checkbox" name="" value="false">
+              Apresentadora
+              <input type="checkbox" name="" value="false">
+              Apresentadora
+              <input type="checkbox" name="" value="false">
+              Apresentadora
+              <input type="checkbox" name="" value="false">
+              Apresentadora
+              <input type="checkbox" name="" value="false">
+              Apresentadora
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="home-content">
+          <div class="home-content__status">
 
-<div class="">
+          </div>
+          <div class="home-content__artista-wrap">
+            <div class="artista-box">
+              <div class="artista-box__profile">
+                <img src="images/artista-img.jpg" alt="Nome do artista">
+                <div class="artista-box__profile-info">
+                  <h2 class="artista-box__profile-title">George Henrique e Rodrigo</h2>
+                  <div class="artista-box__profile-tag">
+                    <span>Show</span>
+                  </div>
+                </div>
+              </div>
+              <div class="artista-box__social-media">
+                <a href="#">
+                  <div class="">
 
+                  </div>
+                  5.5kk
+                </a>
+                <a href="#">
+                  <div class="">
+
+                  </div>
+                  5.5kk
+                </a>
+                <a href="#">
+                  <div class="">
+
+                  </div>
+                  5.5kk
+                </a>
+                <a href="#">
+                  <div class="">
+
+                  </div>
+                  5.5kk
+                </a>
+              </div>
+              <button type="button" name="button" class="artista-box__button">Orçamento</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
 
 <?php include('footer.php') ?>

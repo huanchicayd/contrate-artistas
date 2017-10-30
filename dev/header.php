@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header" data-js="navbar">
       <div class="container">
         <div class="row">
           <div class="col-lg-1">
