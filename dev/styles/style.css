@@ -2544,9 +2544,12 @@ input:-ms-input-placeholder {
 }
 
 .artista-box__profile span {
+  display: inline-block;
   background: #ffcc00;
-  padding: 3px;
+  padding: 4px 8px;
   margin-left: 10px;
+  height: 22px;
+  position: relative;
   font-size: 12px;
   font-size: strip-unit(0.75px)rem;
 }
@@ -2555,11 +2558,26 @@ input:-ms-input-placeholder {
   content: '';
   display: block;
   position: absolute;
+  top: 0;
+  left: -11px;
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 10px 10px 10px 0;
+  border-width: 11px 11px 11px 0;
   border-color: transparent #ffcc00 transparent transparent;
+}
+
+.artista-box__profile span:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: -5px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #fff;
+  transform: translatey(-50%);
 }
 
 .artista-box__social-media {
