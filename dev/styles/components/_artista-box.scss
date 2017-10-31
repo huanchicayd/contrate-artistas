@@ -2,12 +2,12 @@
   border: 1px solid $color-one;
   height: 100px;
   display: flex;
+  margin-bottom: 30px;
 
   &__profile{
     display: flex;
     width: 40%;
     margin-right: 50px;
-    //border: 1px solid red;
 
     img {
       margin-right: 20px;
@@ -41,18 +41,30 @@
   }
 
   &__social-media {
-    width: 25%;
+    width: 30%;
     display: flex;
     flex-wrap: wrap;
     margin-right: 25px;
 
-    >a {
-      display: block;
+    &__icon-wrap {
+      width: 30px;
+      height: 30px;
+      background: #000;
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+
+    > a {
+      display: flex;
       width: 50%;
       height: 50%;
-      //border: 1px solid red;
+      @include font-size(12px);
+      text-decoration: none;
+      color: #000;
+      align-items: center
     }
-    >span {
+
+    > span {
 
     }
   }

@@ -1,6 +1,48 @@
-.sidebar-categorias {
-  label {
-    display: block;
-    width: 100%;
+.sidebar {
+
+  &-stats {
+    margin-bottom: 25px;
+
+    &__number {
+      font-family: $text-bold;
+    }
+  }
+
+  &-search {
+    margin-bottom: 25px;
+
+    &__input {
+      border: 1px solid #acacac;
+      width: 185px;
+      height: 30px;
+      padding: 0 10px;
+      background: url('../images/search-icon.svg') no-repeat 95% center;
+      background-size: 14px;
+      @include font-size(12px);
+      @include placeholder {
+        font-family: $text-regular;
+      }
+    }
+  }
+
+  &-categorias {
+    &__checkbox {
+      display: flex;
+      margin-bottom: 10px;
+    }
+
+    input[type="checkbox"] {
+      width: 15px;
+      height: 15px;
+      background: transparent;
+      margin-right: 5px;
+    }
+
+    label {
+      width: 100%;
+      @include font-size(12px);
+    }
   }
 }
+
+

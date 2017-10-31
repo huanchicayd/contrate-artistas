@@ -1,5 +1,5 @@
 .footer {
-  margin-top: 1250px;
+  margin-top: 50px;
   background: #000;
   color: #fff;
 
@@ -169,7 +169,7 @@
     background: #fff;
     color: #000;
     padding: 15px 0;
-    @include font-size(11px);
+    @include font-size(14px);
 
     strong {
       font-family: $text-bold;

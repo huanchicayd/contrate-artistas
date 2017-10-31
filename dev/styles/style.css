@@ -2037,6 +2037,13 @@ html {
   font-family: "HurmeGeometricSans1-Regular", sans-serif;
 }
 
+h3 {
+  font-size: 16px;
+  font-size: strip-unit(1px)rem;
+  font-family: "HurmeGeometricSans1-Bold", sans-serif;
+  margin-bottom: 20px;
+}
+
 strong {
   font-weight: inherit;
 }
@@ -2451,15 +2458,70 @@ input:-ms-input-placeholder {
   height: 50px;
 }
 
+.sidebar-stats {
+  margin-bottom: 25px;
+}
+
+.sidebar-stats__number {
+  font-family: "HurmeGeometricSans1-Bold", sans-serif;
+}
+
+.sidebar-search {
+  margin-bottom: 25px;
+}
+
+.sidebar-search__input {
+  border: 1px solid #acacac;
+  width: 185px;
+  height: 30px;
+  padding: 0 10px;
+  background: url("../images/search-icon.svg") no-repeat 95% center;
+  background-size: 14px;
+  font-size: 12px;
+  font-size: strip-unit(0.75px)rem;
+}
+
+.sidebar-search__input::-webkit-input-placeholder {
+  font-family: "HurmeGeometricSans1-Regular", sans-serif;
+}
+
+.sidebar-search__input:-moz-placeholder {
+  /* Firefox 18- */
+  font-family: "HurmeGeometricSans1-Regular", sans-serif;
+}
+
+.sidebar-search__input::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: "HurmeGeometricSans1-Regular", sans-serif;
+}
+
+.sidebar-search__input:-ms-input-placeholder {
+  font-family: "HurmeGeometricSans1-Regular", sans-serif;
+}
+
+.sidebar-categorias__checkbox {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.sidebar-categorias input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  background: transparent;
+  margin-right: 5px;
+}
+
 .sidebar-categorias label {
-  display: block;
   width: 100%;
+  font-size: 12px;
+  font-size: strip-unit(0.75px)rem;
 }
 
 .artista-box {
   border: 1px solid #ffcc00;
   height: 100px;
   display: flex;
+  margin-bottom: 30px;
 }
 
 .artista-box__profile {
@@ -2501,16 +2563,29 @@ input:-ms-input-placeholder {
 }
 
 .artista-box__social-media {
-  width: 25%;
+  width: 30%;
   display: flex;
   flex-wrap: wrap;
   margin-right: 25px;
 }
 
+.artista-box__social-media__icon-wrap {
+  width: 30px;
+  height: 30px;
+  background: #000;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
 .artista-box__social-media > a {
-  display: block;
+  display: flex;
   width: 50%;
   height: 50%;
+  font-size: 12px;
+  font-size: strip-unit(0.75px)rem;
+  text-decoration: none;
+  color: #000;
+  align-items: center;
 }
 
 .artista-box__button {
@@ -2546,7 +2621,7 @@ input:-ms-input-placeholder {
 }
 
 .footer {
-  margin-top: 1250px;
+  margin-top: 50px;
   background: #000;
   color: #fff;
 }
@@ -2758,8 +2833,8 @@ input:-ms-input-placeholder {
   background: #fff;
   color: #000;
   padding: 15px 0;
-  font-size: 11px;
-  font-size: strip-unit(0.6875px)rem;
+  font-size: 14px;
+  font-size: strip-unit(0.875px)rem;
 }
 
 .footer-copyright strong {

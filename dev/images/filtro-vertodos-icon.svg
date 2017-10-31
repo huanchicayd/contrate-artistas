@@ -8,27 +8,21 @@
 	.st2{fill:#FFFFFF;}
 </style>
 <g>
-	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="13.6835" y1="30.7781" x2="47.2149" y2="30.7781">
-		<stop  offset="0" style="stop-color:#EDBC46"/>
-		<stop  offset="0.1204" style="stop-color:#F8DA76"/>
-		<stop  offset="0.2097" style="stop-color:#FFED95"/>
-		<stop  offset="0.4462" style="stop-color:#FFCC07"/>
-		<stop  offset="0.7312" style="stop-color:#F6BA21"/>
-		<stop  offset="1" style="stop-color:#EDBC46"/>
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="7.234130e-07" y1="23.5356" x2="46.1655" y2="23.5356">
+		<stop  offset="0" style="stop-color:#FDC805"/>
+		<stop  offset="0.7054" style="stop-color:#EFAE03"/>
+		<stop  offset="0.9135" style="stop-color:#E29301"/>
 	</linearGradient>
-	<rect x="13.7" y="14" class="st0" width="33.5" height="33.5"/>
-	<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="52.7851" y1="69.1716" x2="86.3165" y2="69.1716">
-		<stop  offset="0" style="stop-color:#EDBC46"/>
-		<stop  offset="0.1204" style="stop-color:#F8DA76"/>
-		<stop  offset="0.2097" style="stop-color:#FFED95"/>
-		<stop  offset="0.4462" style="stop-color:#FFCC07"/>
-		<stop  offset="0.7312" style="stop-color:#F6BA21"/>
-		<stop  offset="1" style="stop-color:#EDBC46"/>
+	<rect x="0" y="0.5" class="st0" width="46.2" height="46.2"/>
+	<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="53.8345" y1="76.3951" x2="100" y2="76.3951">
+		<stop  offset="0" style="stop-color:#FDC805"/>
+		<stop  offset="0.7054" style="stop-color:#EFAE03"/>
+		<stop  offset="0.9135" style="stop-color:#E29301"/>
 	</linearGradient>
-	<rect x="52.8" y="52.4" class="st1" width="33.5" height="33.5"/>
+	<rect x="53.8" y="53.3" class="st1" width="46.2" height="46.2"/>
 	
-		<rect x="52.1" y="14" transform="matrix(4.491678e-11 1 -1 4.491678e-11 99.6208 -38.0645)" class="st2" width="33.5" height="33.5"/>
+		<rect x="52.9" y="0.5" transform="matrix(4.491766e-11 1 -1 4.491766e-11 99.4779 -52.4066)" class="st2" width="46.2" height="46.2"/>
 	
-		<rect x="13.7" y="52.5" transform="matrix(4.486260e-11 1 -1 4.486260e-11 99.6711 38.7727)" class="st2" width="33.5" height="33.5"/>
+		<rect x="0" y="53.4" transform="matrix(4.485816e-11 1 -1 4.485816e-11 99.5471 53.3816)" class="st2" width="46.2" height="46.2"/>
 </g>
 </svg>
