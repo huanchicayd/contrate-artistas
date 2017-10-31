@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-lg-2">
           <div class="footer-news__microfone">
-
+            <div class="footer-news__microfone-bg"></div>
           </div>
         </div>
         <div class="col-lg-10 footer-news__cadastro">

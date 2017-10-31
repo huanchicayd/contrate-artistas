@@ -6,6 +6,7 @@
   &-news {
     border-bottom: 3px solid $color-one;
     height: 185px;
+    
 
     &__cadastro {
       margin-top: 45px;
@@ -42,26 +43,72 @@
         @include font-size(14px);
         opacity: 1;
         color: #000;
+        font-family: $text-regular;
       }
     }
 
     &__form-btn {
       height: 30px;
       padding: 0 10px;
+      position: relative;
       @include background-button;
       border: 0;
       font-family: $text-bold;
       text-transform: uppercase;
       @include font-size(12px);
       cursor: pointer;
+
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background: rgba(255, 255, 255, 0.30);
+      }
     }
 
     &__microfone {
+      position: relative;
       width: 123px;
       height: 175px;
-      background: url('../images/microfone.png') no-repeat;
-      background-size: 100%;
       transform: translatey(7px);
+
+      &-bg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        z-index: -2;
+        @include footer-news-gradient-bg;
+      }
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -20px;
+        left: -220px;
+        width: 265px;
+        height: 170px;
+        background: url('../images/footer-onda.svg') no-repeat;
+        background-size: 265px;
+        z-index: -1;
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 123px;
+        height: 175px;
+        background: url('../images/microfone.png') no-repeat;
+        background-size: 100%;
+      }
     }
   }
 

@@ -2672,6 +2672,7 @@ input:-ms-input-placeholder {
   font-size: strip-unit(0.875px)rem;
   opacity: 1;
   color: #000;
+  font-family: "HurmeGeometricSans1-Regular", sans-serif;
 }
 
 .footer-news__form-email:-moz-placeholder {
@@ -2680,6 +2681,7 @@ input:-ms-input-placeholder {
   font-size: strip-unit(0.875px)rem;
   opacity: 1;
   color: #000;
+  font-family: "HurmeGeometricSans1-Regular", sans-serif;
 }
 
 .footer-news__form-email::-moz-placeholder {
@@ -2688,6 +2690,7 @@ input:-ms-input-placeholder {
   font-size: strip-unit(0.875px)rem;
   opacity: 1;
   color: #000;
+  font-family: "HurmeGeometricSans1-Regular", sans-serif;
 }
 
 .footer-news__form-email:-ms-input-placeholder {
@@ -2695,11 +2698,13 @@ input:-ms-input-placeholder {
   font-size: strip-unit(0.875px)rem;
   opacity: 1;
   color: #000;
+  font-family: "HurmeGeometricSans1-Regular", sans-serif;
 }
 
 .footer-news__form-btn {
   height: 30px;
   padding: 0 10px;
+  position: relative;
   background: #ffcc00;
   background: -moz-linear-gradient(top, #ffcc00 0%, #e79c00 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, #ffcc00), color-stop(100%, #e79c00));
@@ -2716,12 +2721,63 @@ input:-ms-input-placeholder {
   cursor: pointer;
 }
 
+.footer-news__form-btn:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(255, 255, 255, 0.3);
+}
+
 .footer-news__microfone {
+  position: relative;
+  width: 123px;
+  height: 175px;
+  transform: translatey(7px);
+}
+
+.footer-news__microfone-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  z-index: -2;
+  background: rgba(50, 50, 50, 0.6);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(50, 50, 50, 0.6) 0%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.6) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(50, 50, 50, 0.6)), color-stop(70%, rgba(0, 0, 0, 0.6)), color-stop(100%, rgba(0, 0, 0, 0.6)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(50, 50, 50, 0.6) 0%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.6) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(50, 50, 50, 0.6) 0%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.6) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(50, 50, 50, 0.6) 0%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.6) 100%);
+  background: radial-gradient(ellipse at center, rgba(50, 50, 50, 0.6) 0%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.6) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#323232', endColorstr='#000000', GradientType=1 );
+}
+
+.footer-news__microfone:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: -220px;
+  width: 265px;
+  height: 170px;
+  background: url("../images/footer-onda.svg") no-repeat;
+  background-size: 265px;
+  z-index: -1;
+}
+
+.footer-news__microfone:after {
+  content: '';
+  display: block;
+  position: absolute;
   width: 123px;
   height: 175px;
   background: url("../images/microfone.png") no-repeat;
   background-size: 100%;
-  transform: translatey(7px);
 }
 
 .footer-info {
