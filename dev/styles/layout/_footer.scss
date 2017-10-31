@@ -112,6 +112,8 @@
     }
   }
 
+  /*End of footer-news*/
+
   &-info {
     overflow: hidden;
 
@@ -139,6 +141,25 @@
   &-brand {
     img {
       width: 327px;
+    }
+  }
+
+  &-social-media {
+    text-align: right;
+
+    > a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      color: #fff;
+      text-decoration: none;
+      @include font-size(25px);
+      transition: .25s;
+
+      &:hover {
+        color: $color-one;
+      }
     }
   }
 

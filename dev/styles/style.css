@@ -19,6 +19,56 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'contrate';
+  src: url("../fonts/contrate/contrate.eot?g3sqim");
+  src: url("../fonts/contrate/contrate.eot?g3sqim#iefix") format("embedded-opentype"), url("../fonts/contrate/contrate.ttf?g3sqim") format("truetype"), url("../fonts/contrate/contrate.woff?g3sqim") format("woff"), url("../fonts/contrate/contrate.svg?g3sqim#contrate") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'contrate' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\e900";
+}
+
+.icon-instagram:before {
+  content: "\e901";
+}
+
+.icon-linkedin:before {
+  content: "\e902";
+}
+
+.icon-twitter:before {
+  content: "\e903";
+}
+
+.icon-view-grid:before {
+  content: "\e904";
+}
+
+.icon-view-list:before {
+  content: "\e905";
+}
+
+.icon-youtube-play:before {
+  content: "\e906";
+}
+
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -2593,6 +2643,7 @@ input:-ms-input-placeholder {
   background: #000;
   border-radius: 50%;
   margin-right: 5px;
+  text-align: center;
 }
 
 .artista-box__social-media > a {
@@ -2604,6 +2655,13 @@ input:-ms-input-placeholder {
   text-decoration: none;
   color: #000;
   align-items: center;
+}
+
+.artista-box__social-media i {
+  color: #fff;
+  line-height: 30px;
+  font-size: 20px;
+  font-size: strip-unit(1.25px)rem;
 }
 
 .artista-box__button {
@@ -2638,10 +2696,37 @@ input:-ms-input-placeholder {
   background: rgba(255, 255, 255, 0.2);
 }
 
+.home-clientes {
+  margin-top: 50px;
+}
+
+.home-clientes > h2 {
+  color: #fff;
+  font-size: 14px;
+  font-size: strip-unit(0.875px)rem;
+  text-transform: uppercase;
+  background: #000;
+  padding: 6px;
+  text-align: center;
+  font-family: "HurmeGeometricSans1-Bold", sans-serif;
+}
+
+.home-content__filtros {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+.home-content__filtros button {
+  width: 40px;
+  height: 40px;
+}
+
 .footer {
   margin-top: 50px;
   background: #000;
   color: #fff;
+  /*End of footer-news*/
 }
 
 .footer-news {
@@ -2833,6 +2918,26 @@ input:-ms-input-placeholder {
   width: 327px;
 }
 
+.footer-social-media {
+  text-align: right;
+}
+
+.footer-social-media > a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  font-size: strip-unit(1.5625px)rem;
+  transition: .25s;
+}
+
+.footer-social-media > a:hover {
+  color: #ffcc00;
+}
+
 .footer-about p {
   font-size: 14px;
   font-size: strip-unit(0.875px)rem;
@@ -2915,8 +3020,12 @@ input:-ms-input-placeholder {
   font-family: "HurmeGeometricSans1-Bold", sans-serif;
 }
 
-.content {
+.home-content {
   margin-top: 20px;
+}
+
+.home-ver-mais {
+  text-align: center;
 }
  
 

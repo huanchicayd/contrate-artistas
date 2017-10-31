@@ -37,7 +37,7 @@
     </div>
   </div>
 </div>
-<div class="content">
+<div class="home-content">
   <div class="container">
     <div class="row">
       <div class="col-lg-3">
@@ -115,9 +115,14 @@
         </div>
       </div>
       <div class="col-lg-9">
-        <div class="home-content">
-          <div class="home-content__status">
-            Filtro01 | Filtro02
+        <div>
+          <div class="home-content__filtros">
+            <button>
+              <i class="icon-view-grid"></i>
+            </button>
+            <button>
+              <i class="icon-view-list"></i>
+            </button>
           </div>
           <div class="home-content__artista-wrap">
             <div class="artista-box">
@@ -133,25 +138,25 @@
               <div class="artista-box__social-media">
                 <a href="#">
                   <div class="artista-box__social-media__icon-wrap">
-
+                    <i class="icon-facebook"></i>
                   </div>
                   5.5kk
                 </a>
                 <a href="#">
                   <div class="artista-box__social-media__icon-wrap">
-
+                    <i class="icon-twitter"></i>
                   </div>
                   5.5kk
                 </a>
                 <a href="#">
                   <div class="artista-box__social-media__icon-wrap">
-
+                    <i class="icon-instagram"></i>
                   </div>
                   5.5kk
                 </a>
                 <a href="#">
                   <div class="artista-box__social-media__icon-wrap">
-
+                    <i class="icon-youtube-play"></i>
                   </div>
                   5.5kk
                 </a>
@@ -160,6 +165,14 @@
             </div>
           </div>
         </div>
+        <div class="home-ver-mais">
+          [+] Ver mais
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 home-clientes">
+        <h2>Nossos clientes</h2>
       </div>
     </div>
   </div>

@@ -26,8 +26,19 @@
             <img src="images/logo.svg" alt="">
           </a>
         </div>
-        <div class="col-lg-6">
-
+        <div class="col-lg-6 footer-social-media">
+          <a href="#" title="Visite nosso facebook!">
+            <i class="icon-facebook"></i>
+          </a>
+          <a href="#" title="Siga nosso instagram!">
+            <i class="icon-instagram"></i>  
+          </a>
+          <a href="#" title="Visite nosso canal no youtube!">
+            <i class="icon-youtube-play"></i>
+          </a>
+          <a href="#" title="Visite nosso linkedin!">
+            <i class="icon-linkedin"></i>
+          </a>
         </div>
       </div>
       <div class="row">
