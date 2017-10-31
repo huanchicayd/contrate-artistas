@@ -1,68 +1,157 @@
 .header {
-  height: 65px;
-  color: #fff;
-  box-shadow: 0 5px 3px rgba(0, 0, 0, 1);
   position: absolute;
   width: 100%;
+  height: 65px;
   top: 0;
   left: 0;
-  z-index: 10;
-  background: rgba(20,20,20,1);
-background: -moz-linear-gradient(top, rgba(20,20,20,1) 0%, rgba(2,1,1,0.95) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(20,20,20,1)), color-stop(100%, rgba(2,1,1,0.95)));
-background: -webkit-linear-gradient(top, rgba(20,20,20,1) 0%, rgba(2,1,1,0.95) 100%);
-background: -o-linear-gradient(top, rgba(20,20,20,1) 0%, rgba(2,1,1,0.95) 100%);
-background: -ms-linear-gradient(top, rgba(20,20,20,1) 0%, rgba(2,1,1,0.95) 100%);
-background: linear-gradient(to bottom, rgba(20,20,20,1) 0%, rgba(2,1,1,0.95) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#141414', endColorstr='#020101', GradientType=0 );
+  z-index: 1;
+  color: #fff;
+  box-shadow: 0 5px 3px rgba(0, 0, 0, 1);
+  @include bg-header-gradient;
 
-  &-menu {
-    width: 40px;
-    height: 40px;
+  >.container {
     position: relative;
-    padding: 0;
-    background: transparent;
-    cursor: pointer;
-    border: 0;
-    margin-top: 18px;
+  }
 
-    span {
-      display: block;
-      width: 30px;
-      height: 2px;
-      background: #fff;
-      border-radius: 3px;
+  &-menu-wrap {
+    position: absolute;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    transform: translatey(65px);
+    opacity: 0;
+    visibility: hidden;
+    transition: .25s;
+
+    .header-menu {
+      display: flex;
+      background: $color-one;
+      height: 34px;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+      padding: 5px 50px;
+      justify-content: space-between;
+    }
+
+    .header-menu__links {
+      text-transform: uppercase;
+      font-family: $text-bold;
+      text-decoration: none;
+      color: #000;
+      @include font-size(12px);
+    }
+  }
+
+  &-brand {
+    //border: 1px solid red;
+    display: flex;
+    margin-top: 15px;
+
+    .header-menu-btn {
+      width: 40px;
+      height: 40px;
+      position: relative;
+      padding: 0;
+      background: transparent;
+      cursor: pointer;
+      border: 0;
+      display: inline-block;
+  
+      span {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background: #fff;
+        border-radius: 3px;
+  
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 12px;
+          left: 0;
+          width: 30px;
+          height: 2px;
+          background: #fff;
+          border-radius: 3px;
+        }
+  
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          bottom: 12px;
+          left: 0;
+          width: 30px;
+          height: 2px;
+          background: #fff;
+          border-radius: 3px;
+        }
+      }
+    }
+
+
+    >a {
+      display: inline-block;
+    }
+
+    img {
+      width: 245px;
+      transform: translatey(5px);
+    }
+  }
+
+  &-search {
+    visibility: hidden;
+
+    &__form {
+      width: 350px;
+      position: relative;
+      transform: translatey(18px);
+    }
+
+    &__input {
+      width: 100%;
+      height: 32px;
+      padding: 0 47px 0 15px;
+      color: #1e1e1e;
+      @include placeholder {
+        color: #1e1e1e;
+      }
+    }
+
+    &__btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 32px;
+      height: 32px;
+      border: 0;
+      cursor: pointer;
+      @include background-button;
 
       &:before {
         content: '';
         display: block;
         position: absolute;
-        top: 13px;
+        top: 0;
         left: 0;
-        width: 30px;
-        height: 2px;
-        background: #fff;
-        border-radius: 3px;
+        background: rgba(255, 255, 255, 0.30);
+        width: 100%;
+        height: 50%;
       }
 
       &:after {
         content: '';
         display: block;
         position: absolute;
-        bottom: 13px;
+        top: 0;
         left: 0;
-        width: 30px;
-        height: 2px;
-        background: #fff;
-        border-radius: 3px;
+        background: url("../images/search-icon.svg") no-repeat center center;
+        background-size: 20px;
+        width: 100%;
+        height: 100%;
       }
-    }
-  }
-
-  &-brand {
-    img {
-      width: 245px;
-      margin-top: 22px;
     }
   }
 
@@ -84,4 +173,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#141414', end
 .header-fixed {
   position: fixed;
   z-index: 100;
+}
+
+.header-search--on {
+  visibility: visible;
+}
+
+.header-menu--on {
+  visibility: visible;
+  transform: translatey(70px);
+  opacity: 1;
 }

@@ -58,12 +58,23 @@
 }
 
 @mixin background-footer-info {
-  background: rgba(50,50,50,1);
-  background: -moz-radial-gradient(center, ellipse cover, rgba(50,50,50,1) 0%, rgba(0,0,0,0.85) 75%, rgba(0,0,0,0.8) 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(50,50,50,1)), color-stop(75%, rgba(0,0,0,0.85)), color-stop(100%, rgba(0,0,0,0.8)));
-  background: -webkit-radial-gradient(center, ellipse cover, rgba(50,50,50,1) 0%, rgba(0,0,0,0.85) 75%, rgba(0,0,0,0.8) 100%);
-  background: -o-radial-gradient(center, ellipse cover, rgba(50,50,50,1) 0%, rgba(0,0,0,0.85) 75%, rgba(0,0,0,0.8) 100%);
-  background: -ms-radial-gradient(center, ellipse cover, rgba(50,50,50,1) 0%, rgba(0,0,0,0.85) 75%, rgba(0,0,0,0.8) 100%);
-  background: radial-gradient(ellipse at center, rgba(50,50,50,1) 0%, rgba(0,0,0,0.85) 75%, rgba(0,0,0,0.8) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#323232', endColorstr='#000000', GradientType=1 );
+    background: rgba(50,50,50,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(50,50,50,1) 0%, rgba(0,0,0,0.85) 75%, rgba(0,0,0,0.8) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(50,50,50,1)), color-stop(75%, rgba(0,0,0,0.85)), color-stop(100%, rgba(0,0,0,0.8)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(50,50,50,1) 0%, rgba(0,0,0,0.85) 75%, rgba(0,0,0,0.8) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(50,50,50,1) 0%, rgba(0,0,0,0.85) 75%, rgba(0,0,0,0.8) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(50,50,50,1) 0%, rgba(0,0,0,0.85) 75%, rgba(0,0,0,0.8) 100%);
+    background: radial-gradient(ellipse at center, rgba(50,50,50,1) 0%, rgba(0,0,0,0.85) 75%, rgba(0,0,0,0.8) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#323232', endColorstr='#000000', GradientType=1 );
+}
+
+@mixin bg-header-gradient {
+    background: rgba(20,20,20,1);
+    background: -moz-linear-gradient(top, rgba(20,20,20,1) 0%, rgba(2,1,1,0.95) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(20,20,20,1)), color-stop(100%, rgba(2,1,1,0.95)));
+    background: -webkit-linear-gradient(top, rgba(20,20,20,1) 0%, rgba(2,1,1,0.95) 100%);
+    background: -o-linear-gradient(top, rgba(20,20,20,1) 0%, rgba(2,1,1,0.95) 100%);
+    background: -ms-linear-gradient(top, rgba(20,20,20,1) 0%, rgba(2,1,1,0.95) 100%);
+    background: linear-gradient(to bottom, rgba(20,20,20,1) 0%, rgba(2,1,1,0.95) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#141414', endColorstr='#020101', GradientType=0 );
 }

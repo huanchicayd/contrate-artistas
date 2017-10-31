@@ -11,27 +11,27 @@
 
     <div class="header-banner__filtros">
       <a href="#" class="header_banner__filtros-option">
-        <img src="images/filtro-show-icon.svg" alt="">
+        <img src="../images/filtro-show-icon.svg" alt="">
         Show
       </a>
       <a href="#" class="header_banner__filtros-option">
-        <img src="images/filtro-ator-icon.svg" alt="">
+        <img src="../images/filtro-ator-icon.svg" alt="">
         Ator
       </a>
       <a href="#" class="header_banner__filtros-option">
-        <img src="images/filtro-atriz-icon.svg" alt="">
+        <img src="../images/filtro-atriz-icon.svg" alt="">
         Atriz
       </a>
       <a href="#" class="header_banner__filtros-option">
-        <img src="images/filtro-celebridade-icon.svg" alt="">
+        <img src="../images/filtro-celebridade-icon.svg" alt="">
         Celebridade
       </a>
       <a href="#" class="header_banner__filtros-option">
-        <img src="images/filtro-comediante-icon.svg" alt="">
+        <img src="../images/filtro-comediante-icon.svg" alt="">
         Comediante
       </a>
       <a href="#" class="header_banner__filtros-option">
-        <img src="images/filtro-vertodos-icon.svg" alt="">
+        <img src="../images/filtro-vertodos-icon.svg" alt="">
         Todas
       </a>
     </div>
@@ -82,9 +82,7 @@
       </div>
       <div class="col-lg-9">
         <div class="home-content">
-          <div class="home-content__status">
-
-          </div>
+          <div class="home-content__status"></div>
           <div class="home-content__artista-wrap">
             <div class="artista-box">
               <div class="artista-box__profile">
@@ -130,6 +128,5 @@
     </div>
   </div>
 </div>
-
 
 <?php include('footer.php') ?>
