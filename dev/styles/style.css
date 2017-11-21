@@ -2644,7 +2644,6 @@ textarea {
 }
 
 .sidebar-categorias__checkbox .styled-checkbox:hover + label:before {
-  background: #ffcc00;
   border: 1px solid #ffcc00;
 }
 

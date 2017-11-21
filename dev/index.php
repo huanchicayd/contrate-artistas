@@ -107,8 +107,8 @@
                                 <label for="check-teatro">Teatro</label>
                             </div>
                             <div class="sidebar-categorias__checkbox">
-                                <input type="checkbox" name="" value="false" id="check-apresentador" class="styled-checkbox">
-                                <label for="">Youtuber</label>
+                                <input type="checkbox" name="" value="false" id="check-youtuber" class="styled-checkbox">
+                                <label for="check-youtuber">Youtuber</label>
                             </div>
                         </form>
                     </div>
