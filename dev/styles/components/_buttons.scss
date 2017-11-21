@@ -1,0 +1,8 @@
+.btn-primary {
+  @include bg-btn-primary;
+  border: 0;
+
+  &:hover {
+    @include bg-btn-primary-hover;
+  }
+}

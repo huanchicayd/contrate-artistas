@@ -1,10 +1,11 @@
-.header-banner {
+.home-banner {
+  position: relative;
   width: 100%;
-  height: 380px;
+  height: 450px;
+  margin-bottom: 25px;
   color: #fff;
   background: url('../images/header_banner.jpg') no-repeat center center;
   background-size: cover;
-  
 
   >.container {
     position: relative;
@@ -12,7 +13,7 @@
   }
 
   &__chamada {
-    @include font-size(18px);
+    @include font-size(30);
     transform: translatey(120px);
     font-family: $text-regular;
     text-align: center;
@@ -40,13 +41,13 @@
     font-family: $text-bold;
     padding-left: 70px;
     padding-right: 150px;
-    @include font-size(18px);
+    @include font-size(18);
 
     @include placeholder {
       font-family: $text-bold;
       color: #000;
       opacity: 1;
-      @include font-size(18px);
+      @include font-size(18);
       transform: translatey(-1px);
     }
   }
@@ -58,10 +59,8 @@
     z-index: 1;
     padding: 0 20px;
     height: 50px;
-    @include background-button;
-    border: 0;
     font-family: $text-bold;
-    @include font-size(16px);
+    @include font-size(16);
     text-transform: uppercase;
     cursor: pointer;
 
@@ -99,7 +98,7 @@
       color: #fff;
       text-decoration: none;
       padding: 20px 0;
-      @include font-size(12px);
+      @include font-size(12);
       transition: color 0.25s;
 
       &:hover {

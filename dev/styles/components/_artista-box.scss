@@ -1,6 +1,6 @@
 .artista-box {
   border: 1px solid $color-one;
-  height: 100px;
+  height: 142px;
   display: flex;
   margin-bottom: 30px;
 
@@ -16,9 +16,8 @@
     h2 {
       font-family: $text-bold;
       text-transform: uppercase;
-      margin-top: 10px;
-      margin-bottom: 15px;
-      @include font-size(18px);
+      margin: 10px 0;
+      @include font-size(18);
     }
 
     span {
@@ -28,8 +27,7 @@
       margin-left: 10px;
       height: 22px;
       position: relative;
-      //border: 1px solid red;
-      @include font-size(12px);
+      @include font-size(12);
 
       &:before {
         content: '';
@@ -82,7 +80,7 @@
       display: flex;
       width: 50%;
       height: 50%;
-      @include font-size(12px);
+      @include font-size(12);
       text-decoration: none;
       color: #000;
       align-items: center
@@ -91,7 +89,7 @@
     i {
       color: #fff;
       line-height: 30px;
-      @include font-size(20px);
+      @include font-size(20);
     }
   }
 
@@ -99,10 +97,9 @@
     height: 40px;
     padding: 0 25px;
     border: 0;
-    @include font-size(12px);
+    @include font-size(12);
     text-transform: uppercase;
     font-family: $text-bold;
-    @include background-button;
     position: relative;
     cursor: pointer;
     margin: auto;
@@ -118,5 +115,4 @@
       background: rgba(255, 255, 255, .2);
     }
   }
-
 }

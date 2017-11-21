@@ -1,13 +1,13 @@
 .home-clientes {
-    margin-top: 50px;
+  margin-top: 50px;
 
-    > h2 {
-        color: #fff;
-        @include font-size(14px);
-        text-transform: uppercase;
-        background: #000;
-        padding: 6px;
-        text-align: center;
-        font-family: $text-bold;
-    }
+  > h2 {
+    color: #fff;
+    @include font-size(14);
+    text-transform: uppercase;
+    background: #000;
+    padding: 6px;
+    text-align: center;
+    font-family: $text-bold;
+  }
 }

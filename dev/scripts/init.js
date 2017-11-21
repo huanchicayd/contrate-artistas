@@ -1,4 +1,4 @@
-(function(){
+(function(win, doc){
   'use strict';
 
   var $headerMenu = $('[data-js="header-menu"]');
@@ -9,6 +9,12 @@
     var $headerSearch = $('[data-js="header-search"]');
     window.addEventListener('scroll', function(){
       var $tela = window.pageYOffset;
+      if($tela >= 300){
+        $navbar.addClass('header-fixed-appear');
+      } else {
+        $navbar.removeClass('header-fixed-appear');
+      }
+
       if($tela >= 380){
         $navbar.addClass('header-fixed');
         $headerSearch.addClass('header-search--on');
@@ -19,7 +25,7 @@
     });
   }
   
-  function activeHeaderMenu() {
+  function openHeaderMenu() {
     var $headerBtn = $('[data-js="header-menu-btn"]');
     var $headerMenu = $('[data-js="header-menu"]');
     $headerBtn.click(function(){
@@ -40,7 +46,7 @@
   }
   
   showHeaderOnScroll();
-  activeHeaderMenu();
+  openHeaderMenu();
   
   
-})();
+})(window, document);

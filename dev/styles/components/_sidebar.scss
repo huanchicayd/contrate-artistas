@@ -1,6 +1,7 @@
 .sidebar {
 
   &-stats {
+    @include font-size(22);
     margin-bottom: 25px;
 
     &__number {
@@ -13,12 +14,12 @@
 
     &__input {
       border: 1px solid #acacac;
-      width: 185px;
-      height: 30px;
+      width: 260px;
+      height: 42px;
       padding: 0 10px;
       background: url('../images/search-icon.svg') no-repeat 95% center;
       background-size: 14px;
-      @include font-size(12px);
+      @include font-size(12);
       @include placeholder {
         font-family: $text-regular;
       }
@@ -29,18 +30,58 @@
     &__checkbox {
       display: flex;
       margin-bottom: 10px;
-    }
 
-    input[type="checkbox"] {
-      width: 15px;
-      height: 15px;
-      background: transparent;
-      margin-right: 5px;
-    }
+      .styled-checkbox {
+        position: absolute;
+        opacity: 0;
 
-    label {
-      width: 100%;
-      @include font-size(12px);
+        & + label {
+          position: relative;
+          cursor: pointer;
+          padding: 0;
+          @include font-size(18);
+        }
+
+        & + label:before {
+          content: '';
+          margin-right: 10px;
+          display: inline-block;
+          vertical-align: text-top;
+          width: 20px;
+          height: 20px;
+          background: white;
+          border: 1px solid #000;
+          transition: .5s;
+        }
+
+        &:hover + label:before {
+          background: $color-one;
+          border: 1px solid $color-one;
+        }
+
+        &:checked + label:before {
+          background: $color-one;
+          border: 0;
+        }
+
+        &:checked + label:after {
+          content: '';
+          position: absolute;
+          left: 5px;
+          top: 9px;
+          background: white;
+          width: 2px;
+          height: 2px;
+          box-shadow:
+            2px 0 0 white,
+            4px 0 0 white,
+            4px -2px 0 white,
+            4px -4px 0 white,
+            4px -6px 0 white,
+            4px -8px 0 white;
+          transform: rotate(45deg);
+        }
+      }
     }
   }
 }

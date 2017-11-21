@@ -1,10 +1,11 @@
-var gulp = require('gulp');
-imagemin = require('gulp-imagemin');
-imageminJpegRecompress = require('imagemin-jpeg-recompress');
-clean = require('gulp-clean');
-uglify = require('gulp-uglify');
-cssmin = require('gulp-cssmin');
-htmlmin = require('gulp-htmlmin');
+var gulp = require('gulp'),
+imagemin = require('gulp-imagemin'),
+imageminJpegRecompress = require('imagemin-jpeg-recompress'),
+clean = require('gulp-clean'),
+uglify = require('gulp-uglify'),
+cssmin = require('gulp-cssmin'),
+htmlmin = require('gulp-htmlmin'),
+autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('default', ['copy'], function(){
     gulp.start('build-img', 'build-js', 'build-css', 'build-html');
@@ -45,6 +46,7 @@ gulp.task('build-js', function(){
 gulp.task('build-css', function(){
     gulp.src('dev/styles/*.css')
         .pipe(cssmin())
+        .pipe(autoprefixer())
         .pipe(gulp.dest('dist/styles'));
 });
 

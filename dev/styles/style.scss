@@ -1,21 +1,20 @@
-@import 'helpers/_variables.scss';
-@import 'helpers/_functions.scss';
-@import 'helpers/_mixins.scss';
+@import 'helpers/_variables';
+@import 'helpers/_mixins';
 
-@import 'typography/_typography.scss';
+@import 'base/_normalize';
+@import 'base/_grid';
+@import 'base/_typography';
+@import 'base/_icons';
+@import 'base/_guide-style';
 
-@import 'base/_normalize.scss';
-@import 'base/_grid.scss';
-@import 'base/_base.scss';
+@import 'components/_header';
+@import 'components/_buttons';
+@import 'components/_home-banner';
+@import 'components/_sidebar';
+@import 'components/_artista-box';
+@import 'components/_home-clientes';
+@import 'components/_home-filtros';
 
-@import 'components/_header.scss';
-@import 'components/_header-banner.scss';
-@import 'components/_sidebar.scss';
-@import 'components/_artista-box.scss';
-@import 'components/_home-clientes.scss';
-@import 'components/_home-filtros.scss';
-
-@import 'layout/_footer.scss';
-@import 'layout/_home.scss';
-@import 'layout/_content.scss';
-
+@import 'layout/_home';
+@import 'layout/_content';
+@import 'layout/_footer';
