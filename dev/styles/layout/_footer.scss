@@ -3,7 +3,7 @@
   background: #000;
   color: #fff;
 
-  &-news {
+  &-newsletter {
     border-bottom: 3px solid $color-one;
     height: 185px;
 
@@ -18,28 +18,28 @@
         color: $color-one;
         font-family: $text-bold;
         margin-top: 7px;
-        @include font-size(18);
+        @include font-size(20);
       }
     }
 
     &__form {
       font-size: inherit;
-      width: 430px;
+
       display: flex;
       margin-top: 26px;
     }
 
     &__form-email {
-      width: 340px;
-      height: 30px;
+      width: 480px;
+      //height: 40px;
       font-family: $text-regular;
       padding: 0 10px;
       outline: 0;
       display: block;
       border: 0;
-      @include font-size(14);
+      @include font-size(18);
       @include placeholder {
-        @include font-size(14);
+        @include font-size(18);
         opacity: 1;
         color: #000;
         font-family: $text-regular;
@@ -47,13 +47,12 @@
     }
 
     &__form-btn {
-      height: 30px;
-      padding: 0 10px;
+      padding: 0 20px;
       position: relative;
       border: 0;
       font-family: $text-bold;
       text-transform: uppercase;
-      @include font-size(12);
+      @include font-size(16);
       cursor: pointer;
 
       &:after {
@@ -73,6 +72,7 @@
       width: 123px;
       height: 175px;
       transform: translatey(7px);
+      margin-left: 90px;
 
       &-bg {
         position: absolute;
@@ -110,7 +110,7 @@
     }
   }
 
-  /*End of footer-news*/
+  /*End of footer-newsletter*/
 
   &-info {
     overflow: hidden;
@@ -153,7 +153,6 @@
       color: #fff;
       text-decoration: none;
       @include font-size(25);
-      transition: 0.25s;
 
       &:hover {
         color: $color-one;
@@ -176,18 +175,14 @@
     }
   }
 
-  &-resume {
+  &-quick-links {
     text-transform: uppercase;
     margin-top: 35px;
     margin-bottom: 50px;
     @include font-size(14);
 
-    h4 {
+    &__title {
       margin-bottom: 5px;
-    }
-
-    ul {
-      list-style: none;
     }
 
     a {
@@ -195,37 +190,41 @@
       text-decoration: none;
       font-family: $text-bold;
       line-height: 20px;
-      transition: color 0.25s;
 
       &:hover {
         color: $color-one;
       }
     }
 
-    &__atracao-columns{
+    &__atracao__column {
       display: flex;
 
-      ul {
+      .footer-quick-links__list {
         width: 50%;
       }
     }
 
-    &__teste {
+
+    &__column2 {
       display: flex;
     }
 
-    &__insti-servicos {
-      width: 50%;
+    &__servicos {
+      &__column {
+        width: 50%;
+      }
 
-      &__col-1 {
+      &__institucional {
         margin-bottom: 50px;
       }
     }
 
     &__eventos-fale {
-      width: 50%;
+      &__column {
+        width: 50%;
+      }
 
-      &__col-1 {
+      &__portfolio {
         margin-bottom: 50px;
       }
     }
@@ -239,6 +238,10 @@
 
     strong {
       font-family: $text-bold;
+    }
+
+    .natio {
+      text-align: right;
     }
   }
 }

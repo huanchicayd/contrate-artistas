@@ -4,7 +4,39 @@
   margin-bottom: 30px;
 
   button {
+    position: relative;
     width: 40px;
     height: 40px;
+    padding: 0;
+    border: 0;
+    transition: color .5s;
+
+    &:hover {
+      color: $color-one;
+    }
+
+    &:first-child {
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 1px;
+        height: 50px;
+        background: #000;
+        transform: translatey(-36px) translatex(39px);
+      }
+    }
+
+    i {
+      @include font-size(26);
+    }
+
+    &:first-child {
+      i {
+        @include font-size(20);
+        display: inline-block;
+        transform: translateY(-1px);
+      }
+    }
   }
 }

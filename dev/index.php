@@ -4,7 +4,7 @@
     <section class="home-banner">
         <div class="container">
             <h1 class="home-banner__chamada">
-                Mais de <strong class="home-banner__highlight-text">1.000 artistas disponíveis</strong> para o seu evento ser um sucesso!
+                Mais de <strong class="home-banner__highlight-text">1.000 artistas disponíveis</strong> para o seu <br>evento ser um sucesso!
             </h1>
             <form class="home-banner__search-field">
                 <input type="search" name="" value="" placeholder="Qual atração artística está buscando?" class="home-banner__search-input">
@@ -175,7 +175,46 @@
                 <section class="home-clientes">
                     <h2>Nossos clientes</h2>
                     <div class="home-clientes__slider">
-                        <img src="" alt="">Alguma coisa 1
+                        <div>
+                            <img src="" alt="">
+                            <p>Imagem1</p>
+                        </div>
+                        <div>
+                            <img src="" alt="">
+                            <p>Imagem2</p>
+                        </div>
+                        <div>
+                            <img src="" alt="">
+                            <p>Imagem3</p>
+                        </div>
+                        <div>
+                            <img src="" alt="">
+                            <p>Imagem4</p>
+                        </div>
+                        <div>
+                            <img src="" alt="">
+                            <p>Imagem5</p>
+                        </div>
+                        <div>
+                            <img src="" alt="">
+                            <p>Imagem1</p>
+                        </div>
+                        <div>
+                            <img src="" alt="">
+                            <p>Imagem2</p>
+                        </div>
+                        <div>
+                            <img src="" alt="">
+                            <p>Imagem3</p>
+                        </div>
+                        <div>
+                            <img src="" alt="">
+                            <p>Imagem4</p>
+                        </div>
+                        <div>
+                            <img src="" alt="">
+                            <p>Imagem5</p>
+                        </div>
                     </div>
                 </section>
             </div>

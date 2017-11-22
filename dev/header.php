@@ -36,13 +36,15 @@
             </div>
         </div>
         <nav class="header-menu-wrap" data-js="header-menu">
-            <ul class="container header-menu">
-                <li><a href="#" class="header-menu__links">Quem somos</a></li>
-                <li><a href="#" class="header-menu__links">Corporativo</a></li>
-                <li><a href="#" class="header-menu__links">Particular</a></li>
-                <li><a href="#" class="header-menu__links">Cases selecionados</a></li>
-                <li><a href="#" class="header-menu__links">Galeria de fotos</a></li>
-                <li><a href="#" class="header-menu__links">Contato</a></li>
-            </ul>
+            <div class="container">
+                <ul class="header-menu">
+                    <li><a href="#" class="header-menu__links">Quem somos</a></li>
+                    <li><a href="#" class="header-menu__links">Corporativo</a></li>
+                    <li><a href="#" class="header-menu__links">Particular</a></li>
+                    <li><a href="#" class="header-menu__links">Cases selecionados</a></li>
+                    <li><a href="#" class="header-menu__links">Galeria de fotos</a></li>
+                    <li><a href="#" class="header-menu__links">Contato</a></li>
+                </ul>
+            </div>
         </nav>
     </header>

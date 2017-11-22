@@ -36,11 +36,12 @@
       cursor: pointer;
       border: 0;
       display: inline-block;
+      transform: translatey(5px);
 
       span {
         display: block;
         width: 30px;
-        height: 2px;
+        height: 3px;
         background: #fff;
         border-radius: 3px;
 
@@ -51,7 +52,7 @@
           top: 12px;
           left: 0;
           width: 30px;
-          height: 2px;
+          height: 3px;
           background: #fff;
           border-radius: 3px;
         }
@@ -60,10 +61,10 @@
           content: '';
           display: block;
           position: absolute;
-          bottom: 12px;
+          bottom: 11px;
           left: 0;
           width: 30px;
-          height: 2px;
+          height: 3px;
           background: #fff;
           border-radius: 3px;
         }
@@ -77,8 +78,8 @@
     }
 
     img {
-      width: 245px;
-      transform: translatey(5px);
+      width: 270px;
+      transform: translatey(7px);
     }
   }
 
@@ -139,7 +140,7 @@
 
   &-info {
     text-align: right;
-    margin-top: 14px;
+    margin-top: 17px;
 
     &__atendimento {
       @include font-size(13);
@@ -157,8 +158,6 @@
 .header-menu-wrap {
   position: absolute;
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
   transform: translatey(60px);
   opacity: 0;
   visibility: hidden;
@@ -168,16 +167,15 @@
   .header-menu {
     display: flex;
     height: 35px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 9px 50px;
+    justify-content: space-between;
     background: #ffcd00;
     background: -moz-linear-gradient(-45deg, #ffcd00 0%, #db8a06 100%);
     background: -webkit-linear-gradient(-45deg, #ffcd00 0%,#db8a06 100%);
     background: linear-gradient(135deg, #ffcd00 0%,#db8a06 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcd00', endColorstr='#db8a06',GradientType=1 );
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    padding: 9px 50px;
-    justify-content: space-between;
-    width: 71.5%;
   }
 
   .header-menu__links {

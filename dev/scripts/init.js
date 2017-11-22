@@ -24,7 +24,7 @@
       }
     });
   }
-  
+
   function openHeaderMenu() {
     var $headerBtn = $('[data-js="header-menu-btn"]');
     var $headerMenu = $('[data-js="header-menu"]');
@@ -44,9 +44,14 @@
       }
     });
   }
-  
+
   showHeaderOnScroll();
   openHeaderMenu();
-  
-  
+
+  $('.home-clientes__slider').slick({
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    dots: true
+  });
+
 })(window, document);
