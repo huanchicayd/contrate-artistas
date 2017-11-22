@@ -110,10 +110,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-9">
-                    <strong>Contrate Artistas</strong> Ⓒ Todos os direitos reservados
+                    <p>
+                        <strong>Contrate Artistas</strong> Ⓒ Todos os direitos reservados
+                    </p>
                 </div>
                 <div class="col-lg-3">
-                    <p class="natio">Desenvolvido por <a href="#">Natio</a></p>
+                    <p class="natio">Desenvolvido por <a href="http://www.natiocriativo.com" title="Desenvolvido por Natio Criativo. Visite nosso site: www.natiocriativo.com" target="_blank">Natio</a></p>
                 </div>
             </div>
         </div>

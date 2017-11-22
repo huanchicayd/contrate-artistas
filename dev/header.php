@@ -24,7 +24,7 @@
                     <div class="col-lg-4 header-search" data-js="header-search">
                         <form action="" class="header-search__form">
                             <input type="search" class="header-search__input" placeholder="Qual atração artística está buscando?">
-                            <button class="header-search__btn"></button>
+                            <button class="btn-primary header-search__btn"></button>
                         </form>
                     </div>
                     <div class="col-lg-4 header-info">

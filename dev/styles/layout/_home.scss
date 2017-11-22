@@ -1,8 +1,13 @@
-.home-content {
-    //margin-top: 20px;
-}
-
 .home-ver-mais {
   text-align: center;
+  font-family: $text-bold;
 
+  a {
+    color: #000;
+    transition: .5s;
+
+    &:hover {
+      color: $color-one;
+    }
+  }
 }

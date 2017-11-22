@@ -2085,6 +2085,10 @@ html {
   font-size: 10px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: unset;
+}
+
 h3 {
   font-size: 22px;
   font-size: 2.2rem;
@@ -2269,17 +2273,13 @@ textarea {
 }
 
 /* Slider */
-.slick-loading .slick-list {
-  background: #fff url("./ajax-loader.gif") center center no-repeat;
-}
-
 /* Icons */
 @font-face {
   font-family: 'slick';
   font-weight: normal;
   font-style: normal;
-  src: url("./fonts/slick.eot");
-  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
+  src: url("../fonts/slick/slick.eot");
+  src: url("../fonts/slick/slick.eot?#iefix") format("embedded-opentype"), url("../fonts/slick/slick.woff") format("woff"), url("../fonts/slick/slick.ttf") format("truetype"), url("../fonts/slick/slick.svg#slick") format("svg");
 }
 
 /* Arrows */
@@ -2472,11 +2472,16 @@ textarea {
 
 .header > .container {
   position: relative;
+  height: 100%;
+}
+
+.header > .container .row {
+  height: 100%;
 }
 
 .header-brand {
   display: flex;
-  margin-top: 15px;
+  align-items: center;
 }
 
 .header-brand .header-menu-btn {
@@ -2488,7 +2493,7 @@ textarea {
   cursor: pointer;
   border: 0;
   display: inline-block;
-  transform: translatey(5px);
+  transform: translatey(2px);
 }
 
 .header-brand .header-menu-btn span {
@@ -2503,7 +2508,7 @@ textarea {
   content: '';
   display: block;
   position: absolute;
-  top: 12px;
+  top: 10px;
   left: 0;
   width: 30px;
   height: 3px;
@@ -2526,11 +2531,11 @@ textarea {
 .header-brand > a {
   display: inline-block;
   margin-left: 10px;
+  line-height: 0;
 }
 
 .header-brand img {
   width: 270px;
-  transform: translatey(7px);
 }
 
 .header-search {
@@ -2540,32 +2545,42 @@ textarea {
 .header-search__form {
   width: 350px;
   position: relative;
-  transform: translatey(18px);
-  margin: auto;
+  margin: 0 auto;
 }
 
 .header-search__input {
   width: 100%;
   height: 32px;
   padding: 0 47px 0 15px;
+  font-size: 15px;
+  font-size: 1.5rem;
+  font-family: "HurmeGeometricSans1-Bold", sans-serif;
   color: #1e1e1e;
 }
 
 .header-search__input::-webkit-input-placeholder {
+  font-size: 15px;
+  font-size: 1.5rem;
   color: #1e1e1e;
 }
 
 .header-search__input:-moz-placeholder {
   /* Firefox 18- */
+  font-size: 15px;
+  font-size: 1.5rem;
   color: #1e1e1e;
 }
 
 .header-search__input::-moz-placeholder {
   /* Firefox 19+ */
+  font-size: 15px;
+  font-size: 1.5rem;
   color: #1e1e1e;
 }
 
 .header-search__input:-ms-input-placeholder {
+  font-size: 15px;
+  font-size: 1.5rem;
   color: #1e1e1e;
 }
 
@@ -2611,8 +2626,10 @@ textarea {
 }
 
 .header-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: right;
-  margin-top: 17px;
 }
 
 .header-info__atendimento {
@@ -2650,6 +2667,7 @@ textarea {
   background: -webkit-linear-gradient(-45deg, #ffcd00 0%, #db8a06 100%);
   background: linear-gradient(135deg, #ffcd00 0%, #db8a06 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcd00', endColorstr='#db8a06',GradientType=1 );
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 .header-menu-wrap .header-menu__links {
@@ -2657,8 +2675,8 @@ textarea {
   font-family: "HurmeGeometricSans1-Bold", sans-serif;
   text-decoration: none;
   color: #000;
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 15px;
+  font-size: 1.5rem;
   transition: .25s;
 }
 
@@ -2679,6 +2697,8 @@ textarea {
 
 .header-search--on {
   visibility: visible;
+  display: flex;
+  align-items: center;
 }
 
 .header-menu--on {
@@ -2744,7 +2764,7 @@ textarea {
 .home-banner__search-field {
   margin: 180px auto 0 auto;
   position: relative;
-  width: 630px;
+  max-width: 770px;
 }
 
 .home-banner__search-input {
@@ -2756,7 +2776,7 @@ textarea {
   background-size: 30px;
   font-family: "HurmeGeometricSans1-Bold", sans-serif;
   padding-left: 70px;
-  padding-right: 150px;
+  padding-right: 170px;
   font-size: 18px;
   font-size: 1.8rem;
 }
@@ -2807,8 +2827,8 @@ textarea {
   padding: 0 20px;
   height: 50px;
   font-family: "HurmeGeometricSans1-Bold", sans-serif;
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 20px;
+  font-size: 2rem;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -2829,7 +2849,7 @@ textarea {
   position: absolute;
   left: 50%;
   bottom: 0;
-  width: 60%;
+  width: 70%;
   display: flex;
   flex-wrap: wrap;
   margin-left: -15px;
@@ -2847,8 +2867,8 @@ textarea {
   color: #fff;
   text-decoration: none;
   padding: 20px 0;
-  font-size: 12px;
-  font-size: 1.2rem;
+  font-size: 14px;
+  font-size: 1.4rem;
   transition: color 0.25s;
 }
 
@@ -2969,43 +2989,50 @@ textarea {
 }
 
 .artista-box {
-  border: 1px solid #ffcc00;
   height: 142px;
   display: flex;
   margin-bottom: 30px;
+  border: 2px solid #ffcc00;
 }
 
 .artista-box__profile {
   display: flex;
-  width: 40%;
-  margin-right: 50px;
+  width: 50%;
 }
 
-.artista-box__profile img {
-  margin-right: 20px;
-  width: 287px;
+.artista-box__profile__image {
+  width: calc(100% - 185px);
+  height: 100%;
+}
+
+.artista-box__profile__image img {
+  height: 100%;
+}
+
+.artista-box__profile-info {
+  padding: 15px;
 }
 
 .artista-box__profile h2 {
   font-family: "HurmeGeometricSans1-Bold", sans-serif;
   text-transform: uppercase;
-  margin: 10px 0;
-  font-size: 18px;
-  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-size: 2rem;
 }
 
-.artista-box__profile span {
+.artista-box__profile-tag span {
   display: inline-block;
   background: #ffcc00;
-  padding: 4px 8px;
-  margin-left: 10px;
-  height: 22px;
+  padding: 6px 8px;
+  margin-left: 15px;
+  margin-bottom: 5px;
   position: relative;
-  font-size: 12px;
-  font-size: 1.2rem;
+  font-size: 14px;
+  font-size: 1.4rem;
 }
 
-.artista-box__profile span:before {
+.artista-box__profile-tag span:before {
   content: '';
   display: block;
   position: absolute;
@@ -3014,11 +3041,11 @@ textarea {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 11px 11px 11px 0;
+  border-width: 14px 11px 14px 0;
   border-color: transparent #ffcc00 transparent transparent;
 }
 
-.artista-box__profile span:after {
+.artista-box__profile-tag span:after {
   content: '';
   display: block;
   position: absolute;
@@ -3032,15 +3059,14 @@ textarea {
 }
 
 .artista-box__social-media {
-  width: 30%;
+  width: 25%;
   display: flex;
   flex-wrap: wrap;
-  margin-right: 25px;
 }
 
 .artista-box__social-media__icon-wrap {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   background: #000;
   border-radius: 50%;
   margin-right: 5px;
@@ -3049,13 +3075,14 @@ textarea {
 
 .artista-box__social-media > a {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 50%;
   height: 50%;
-  font-size: 12px;
-  font-size: 1.2rem;
+  font-size: 14px;
+  font-size: 1.4rem;
   text-decoration: none;
   color: #000;
-  align-items: center;
 }
 
 .artista-box__social-media i {
@@ -3066,11 +3093,10 @@ textarea {
 }
 
 .artista-box__button {
-  height: 40px;
   padding: 0 25px;
   border: 0;
-  font-size: 12px;
-  font-size: 1.2rem;
+  font-size: 16px;
+  font-size: 1.6rem;
   text-transform: uppercase;
   font-family: "HurmeGeometricSans1-Bold", sans-serif;
   position: relative;
@@ -3177,6 +3203,16 @@ textarea {
 
 .home-ver-mais {
   text-align: center;
+  font-family: "HurmeGeometricSans1-Bold", sans-serif;
+}
+
+.home-ver-mais a {
+  color: #000;
+  transition: .5s;
+}
+
+.home-ver-mais a:hover {
+  color: #ffcc00;
 }
 
 .footer {
@@ -3191,8 +3227,14 @@ textarea {
   height: 185px;
 }
 
+.footer-newsletter > .container {
+  height: 100%;
+}
+
 .footer-newsletter__cadastro {
-  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .footer-newsletter__cadastro p {
@@ -3362,7 +3404,7 @@ textarea {
 }
 
 .footer-brand img {
-  width: 327px;
+  width: 290px;
 }
 
 .footer-social-media {
@@ -3400,7 +3442,7 @@ textarea {
 
 .footer-quick-links {
   text-transform: uppercase;
-  margin-top: 35px;
+  margin-top: 65px;
   margin-bottom: 50px;
   font-size: 14px;
   font-size: 1.4rem;
@@ -3415,6 +3457,8 @@ textarea {
   text-decoration: none;
   font-family: "HurmeGeometricSans1-Bold", sans-serif;
   line-height: 20px;
+  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .footer-quick-links a:hover {
@@ -3453,8 +3497,6 @@ textarea {
   background: #fff;
   color: #000;
   padding: 15px 0;
-  font-size: 14px;
-  font-size: 1.4rem;
 }
 
 .footer-copyright strong {

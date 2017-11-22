@@ -7,8 +7,14 @@
     border-bottom: 3px solid $color-one;
     height: 185px;
 
+    >.container {
+      height: 100%;
+    }
+
     &__cadastro {
-      margin-top: 45px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
       p {
         @include font-size(16);
@@ -138,7 +144,7 @@
 
   &-brand {
     img {
-      width: 327px;
+      width: 290px;
     }
   }
 
@@ -177,7 +183,7 @@
 
   &-quick-links {
     text-transform: uppercase;
-    margin-top: 35px;
+    margin-top: 65px;
     margin-bottom: 50px;
     @include font-size(14);
 
@@ -190,6 +196,7 @@
       text-decoration: none;
       font-family: $text-bold;
       line-height: 20px;
+      @include font-size(14);
 
       &:hover {
         color: $color-one;
@@ -234,7 +241,7 @@
     background: #fff;
     color: #000;
     padding: 15px 0;
-    @include font-size(14);
+    //@include font-size(14);
 
     strong {
       font-family: $text-bold;

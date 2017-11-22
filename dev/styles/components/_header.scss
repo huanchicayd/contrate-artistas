@@ -21,11 +21,16 @@
 
   >.container {
     position: relative;
+    height: 100%;
+
+    .row {
+      height: 100%;
+    }
   }
 
   &-brand {
     display: flex;
-    margin-top: 15px;
+    align-items: center;
 
     .header-menu-btn {
       width: 40px;
@@ -36,7 +41,7 @@
       cursor: pointer;
       border: 0;
       display: inline-block;
-      transform: translatey(5px);
+      transform: translatey(2px);
 
       span {
         display: block;
@@ -49,7 +54,7 @@
           content: '';
           display: block;
           position: absolute;
-          top: 12px;
+          top: 10px;
           left: 0;
           width: 30px;
           height: 3px;
@@ -75,11 +80,11 @@
     > a {
         display: inline-block;
         margin-left: 10px;
+        line-height: 0;
     }
 
     img {
       width: 270px;
-      transform: translatey(7px);
     }
   }
 
@@ -89,17 +94,21 @@
     &__form {
       width: 350px;
       position: relative;
-      transform: translatey(18px);
-      margin: auto;
+      margin: 0 auto;
     }
 
     &__input {
       width: 100%;
       height: 32px;
       padding: 0 47px 0 15px;
+      @include font-size(15);
+      font-family: $text-bold;
       color: #1e1e1e;
       @include placeholder {
+        @include font-size(15);
         color: #1e1e1e;
+        //transform: translatey(5px);
+        //line-height: 0;
       }
     }
 
@@ -139,8 +148,10 @@
   }
 
   &-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: right;
-    margin-top: 17px;
 
     &__atendimento {
       @include font-size(13);
@@ -176,6 +187,7 @@
     background: -webkit-linear-gradient(-45deg, #ffcd00 0%,#db8a06 100%);
     background: linear-gradient(135deg, #ffcd00 0%,#db8a06 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcd00', endColorstr='#db8a06',GradientType=1 );
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, .25);
   }
 
   .header-menu__links {
@@ -183,7 +195,7 @@
     font-family: $text-bold;
     text-decoration: none;
     color: #000;
-    @include font-size(16);
+    @include font-size(15);
     transition: .25s;
 
     &:hover {
@@ -205,6 +217,8 @@
 
 .header-search--on {
   visibility: visible;
+  display: flex;
+  align-items: center;
 }
 
 .header-menu--on {

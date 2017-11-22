@@ -28,7 +28,7 @@
   &__search-field {
     margin: 180px auto 0 auto;
     position: relative;
-    width: 630px;
+    max-width: 770px;
   }
 
   &__search-input {
@@ -40,7 +40,7 @@
     background-size: 30px;
     font-family: $text-bold;
     padding-left: 70px;
-    padding-right: 150px;
+    padding-right: 170px;
     @include font-size(18);
 
     @include placeholder {
@@ -60,7 +60,7 @@
     padding: 0 20px;
     height: 50px;
     font-family: $text-bold;
-    @include font-size(16);
+    @include font-size(20);
     text-transform: uppercase;
     cursor: pointer;
 
@@ -81,7 +81,7 @@
     position: absolute;
     left: 50%;
     bottom: 0;
-    width: 60%;
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
     margin-left: -15px;
@@ -98,7 +98,7 @@
       color: #fff;
       text-decoration: none;
       padding: 20px 0;
-      @include font-size(12);
+      @include font-size(14);
       transition: color 0.25s;
 
       &:hover {
