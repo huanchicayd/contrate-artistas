@@ -10,6 +10,7 @@
     padding: 0;
     border: 0;
     transition: color .5s;
+    color: rgba(0,0,0,.3);
 
     &:hover {
       color: $color-one;
@@ -39,4 +40,8 @@
       }
     }
   }
+}
+
+.home-content__filtros button.filter-btn-active {
+  color: #000;
 }

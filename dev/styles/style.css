@@ -2508,24 +2508,24 @@ textarea {
   content: '';
   display: block;
   position: absolute;
-  top: 10px;
   left: 0;
   width: 30px;
   height: 3px;
   background: #fff;
   border-radius: 3px;
+  transform: translatey(-8px);
 }
 
 .header-brand .header-menu-btn span:after {
   content: '';
   display: block;
   position: absolute;
-  bottom: 11px;
   left: 0;
   width: 30px;
   height: 3px;
   background: #fff;
   border-radius: 3px;
+  transform: translatey(8px);
 }
 
 .header-brand > a {
@@ -2988,6 +2988,14 @@ textarea {
   transform: rotate(45deg);
 }
 
+.artista-box__link {
+  display: flex;
+}
+
+.artista-box__link:hover span {
+  color: #000;
+}
+
 .artista-box {
   height: 142px;
   display: flex;
@@ -3001,7 +3009,7 @@ textarea {
 }
 
 .artista-box__profile__image {
-  width: calc(100% - 185px);
+  width: 138px;
   height: 100%;
 }
 
@@ -3017,6 +3025,7 @@ textarea {
   font-family: "HurmeGeometricSans1-Bold", sans-serif;
   text-transform: uppercase;
   margin-bottom: 10px;
+  color: #000;
   font-size: 20px;
   font-size: 2rem;
 }
@@ -3028,6 +3037,7 @@ textarea {
   margin-left: 15px;
   margin-bottom: 5px;
   position: relative;
+  color: #000;
   font-size: 14px;
   font-size: 1.4rem;
 }
@@ -3062,6 +3072,7 @@ textarea {
   width: 25%;
   display: flex;
   flex-wrap: wrap;
+  padding: 25px 0;
 }
 
 .artista-box__social-media__icon-wrap {
@@ -3073,7 +3084,7 @@ textarea {
   text-align: center;
 }
 
-.artista-box__social-media > a {
+.artista-box__social-media__wrap {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3113,6 +3124,73 @@ textarea {
   width: 100%;
   height: 20px;
   background: rgba(255, 255, 255, 0.2);
+}
+
+/*Vertical view*/
+.artista-box-vertical {
+  width: 30%;
+  height: auto;
+  flex-direction: column;
+}
+
+.artista-box-vertical .artista-box {
+  height: auto;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.artista-box-vertical .artista-box__profile {
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  line-height: 0;
+}
+
+.artista-box-vertical .artista-box__profile h2 {
+  text-align: center;
+}
+
+.artista-box-vertical .artista-box__profile__image {
+  width: 100%;
+  height: auto;
+}
+
+.artista-box-vertical .artista-box__profile__image img {
+  width: 100%;
+}
+
+.artista-box-vertical:hover .artista-box__profile-info {
+  background: rgba(0, 0, 0, 0.9);
+  visibility: visible;
+  opacity: 1;
+}
+
+.artista-box-vertical:hover h2 {
+  color: #fff;
+}
+
+.artista-box-vertical:hover span {
+  color: #000;
+}
+
+.artista-box-vertical .artista-box__profile-info {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  opacity: 0;
+  height: 100%;
+  transition: opacity .5s;
+  line-height: 1.15;
+}
+
+.artista-box-vertical .artista-box__social-media {
+  width: 100%;
+  margin: 15px 0;
+  padding: 0;
+}
+
+.artista-box-vertical .artista-box__social-media__wrap {
+  margin-bottom: 10px;
 }
 
 .home-clientes {
@@ -3173,6 +3251,7 @@ textarea {
   padding: 0;
   border: 0;
   transition: color .5s;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .home-content__filtros button:hover {
@@ -3199,6 +3278,16 @@ textarea {
   font-size: 2rem;
   display: inline-block;
   transform: translateY(-1px);
+}
+
+.home-content__filtros button.filter-btn-active {
+  color: #000;
+}
+
+.home-content__artista-wrap-vertical {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .home-ver-mais {

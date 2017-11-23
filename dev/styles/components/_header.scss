@@ -54,24 +54,24 @@
           content: '';
           display: block;
           position: absolute;
-          top: 10px;
           left: 0;
           width: 30px;
           height: 3px;
           background: #fff;
           border-radius: 3px;
+          transform: translatey(-8px);
         }
 
         &:after {
           content: '';
           display: block;
           position: absolute;
-          bottom: 11px;
           left: 0;
           width: 30px;
           height: 3px;
           background: #fff;
           border-radius: 3px;
+          transform: translatey(8px);
         }
       }
     }

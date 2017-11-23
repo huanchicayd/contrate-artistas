@@ -117,96 +117,186 @@
             <div class="col-lg-8 offset-lg-1">
                 <section>
                     <div class="home-content__filtros">
-                        <button>
+                        <button data-js="view-grid-btn">
                             <i class="icon-view-grid"></i>
                         </button>
-                        <button>
+                        <button data-js="view-list-btn">
                             <i class="icon-view-list"></i>
                         </button>
                     </div>
                     <div class="home-content__artista-wrap">
-                        <div class="artista-box">
-                            <div class="artista-box__profile">
-                                <div class="artista-box__profile__image">
-                                    <img src="images/artista-img.jpg" alt="Nome do artista">
-                                </div>
-                                <div class="artista-box__profile-info">
-                                    <h2 class="artista-box__profile-title">George Henrique e Rodrigo</h2>
-                                    <div class="artista-box__profile-tag">
-                                        <span>Show</span>
-                                        <span>Comediante</span>
+                        <a href="#" class="artista-box__link">
+                            <div class="artista-box">
+                                <div class="artista-box__profile">
+                                    <div class="artista-box__profile__image">
+                                        <img src="images/artista-img.jpg" alt="Nome do artista">
+                                    </div>
+                                    <div class="artista-box__profile-info">
+                                        <h2 class="artista-box__profile-title">George Henrique e Rodrigo</h2>
+                                        <div class="artista-box__profile-tag">
+                                            <span>Show</span>
+                                            <span>Comediante</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="artista-box__social-media">
-                                <a href="#">
-                                    <div class="artista-box__social-media__icon-wrap">
-                                        <i class="icon-facebook"></i>
+                                <div class="artista-box__social-media">
+                                    <div class="artista-box__social-media__wrap">
+                                        <div class="artista-box__social-media__icon-wrap">
+                                            <i class="icon-facebook"></i>
+                                        </div>
+                                        5.5kk
                                     </div>
-                                    5.5kk
-                                </a>
-                                <a href="#">
-                                    <div class="artista-box__social-media__icon-wrap">
-                                        <i class="icon-twitter"></i>
+                                    <div class="artista-box__social-media__wrap">
+                                        <div class="artista-box__social-media__icon-wrap">
+                                            <i class="icon-twitter"></i>
+                                        </div>
+                                        5.5kk
                                     </div>
-                                    5.5kk
-                                </a>
-                                <a href="#">
-                                    <div class="artista-box__social-media__icon-wrap">
-                                        <i class="icon-instagram"></i>
+                                    <div class="artista-box__social-media__wrap">
+                                        <div class="artista-box__social-media__icon-wrap">
+                                            <i class="icon-instagram"></i>
+                                        </div>
+                                        5.5kk
                                     </div>
-                                    5.5kk
-                                </a>
-                                <a href="#">
-                                    <div class="artista-box__social-media__icon-wrap">
-                                        <i class="icon-youtube-play"></i>
-                                    </div>
-                                    5.5kk
-                                </a>
-                            </div>
-                            <button type="button" name="button" class="btn-primary artista-box__button">Orçamento</button>
-                        </div>
-                        <div class="artista-box">
-                            <div class="artista-box__profile">
-                                <div class="artista-box__profile__image">
-                                    <img src="images/artista-img.jpg" alt="Nome do artista">
-                                </div>
-                                <div class="artista-box__profile-info">
-                                    <h2 class="artista-box__profile-title">George Henrique e Rodrigo</h2>
-                                    <div class="artista-box__profile-tag">
-                                        <span>Show</span>
-                                        <span>Comediante</span>
+                                    <div class="artista-box__social-media__wrap">
+                                        <div class="artista-box__social-media__icon-wrap">
+                                            <i class="icon-youtube-play"></i>
+                                        </div>
+                                        5.5kk
                                     </div>
                                 </div>
+                                <button type="button" name="button" class="btn-primary artista-box__button">Orçamento</button>
                             </div>
-                            <div class="artista-box__social-media">
-                                <a href="#">
-                                    <div class="artista-box__social-media__icon-wrap">
-                                        <i class="icon-facebook"></i>
+                        </a>
+                        <a href="#" class="artista-box__link">
+                            <div class="artista-box">
+                                <div class="artista-box__profile">
+                                    <div class="artista-box__profile__image">
+                                        <img src="images/artista-img.jpg" alt="Nome do artista">
                                     </div>
-                                    5.5kk
-                                </a>
-                                <a href="#">
-                                    <div class="artista-box__social-media__icon-wrap">
-                                        <i class="icon-twitter"></i>
+                                    <div class="artista-box__profile-info">
+                                        <h2 class="artista-box__profile-title">George Henrique e Rodrigo</h2>
+                                        <div class="artista-box__profile-tag">
+                                            <span>Show</span>
+                                            <span>Comediante</span>
+                                        </div>
                                     </div>
-                                    5.5kk
-                                </a>
-                                <a href="#">
-                                    <div class="artista-box__social-media__icon-wrap">
-                                        <i class="icon-instagram"></i>
+                                </div>
+                                <div class="artista-box__social-media">
+                                    <div class="artista-box__social-media__wrap">
+                                        <div class="artista-box__social-media__icon-wrap">
+                                            <i class="icon-facebook"></i>
+                                        </div>
+                                        5.5kk
                                     </div>
-                                    5.5kk
-                                </a>
-                                <a href="#">
-                                    <div class="artista-box__social-media__icon-wrap">
-                                        <i class="icon-youtube-play"></i>
+                                    <div class="artista-box__social-media__wrap">
+                                        <div class="artista-box__social-media__icon-wrap">
+                                            <i class="icon-twitter"></i>
+                                        </div>
+                                        5.5kk
                                     </div>
-                                    5.5kk
-                                </a>
+                                    <div class="artista-box__social-media__wrap">
+                                        <div class="artista-box__social-media__icon-wrap">
+                                            <i class="icon-instagram"></i>
+                                        </div>
+                                        5.5kk
+                                    </div>
+                                    <div class="artista-box__social-media__wrap">
+                                        <div class="artista-box__social-media__icon-wrap">
+                                            <i class="icon-youtube-play"></i>
+                                        </div>
+                                        5.5kk
+                                    </div>
+                                </div>
+                                <button type="button" name="button" class="btn-primary artista-box__button">Orçamento</button>
                             </div>
-                            <button type="button" name="button" class="btn-primary artista-box__button">Orçamento</button>
-                        </div>
+                        </a>
+                        <a href="#" class="artista-box__link">
+                            <div class="artista-box">
+                                <div class="artista-box__profile">
+                                    <div class="artista-box__profile__image">
+                                        <img src="images/artista-img.jpg" alt="Nome do artista">
+                                    </div>
+                                    <div class="artista-box__profile-info">
+                                        <h2 class="artista-box__profile-title">George Henrique e Rodrigo</h2>
+                                        <div class="artista-box__profile-tag">
+                                            <span>Show</span>
+                                            <span>Comediante</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="artista-box__social-media">
+                                    <div class="artista-box__social-media__wrap">
+                                        <div class="artista-box__social-media__icon-wrap">
+                                            <i class="icon-facebook"></i>
+                                        </div>
+                                        5.5kk
+                                    </div>
+                                    <div class="artista-box__social-media__wrap">
+                                        <div class="artista-box__social-media__icon-wrap">
+                                            <i class="icon-twitter"></i>
+                                        </div>
+                                        5.5kk
+                                    </div>
+                                    <div class="artista-box__social-media__wrap">
+                                        <div class="artista-box__social-media__icon-wrap">
+                                            <i class="icon-instagram"></i>
+                                        </div>
+                                        5.5kk
+                                    </div>
+                                    <div class="artista-box__social-media__wrap">
+                                        <div class="artista-box__social-media__icon-wrap">
+                                            <i class="icon-youtube-play"></i>
+                                        </div>
+                                        5.5kk
+                                    </div>
+                                </div>
+                                <button type="button" name="button" class="btn-primary artista-box__button">Orçamento</button>
+                            </div>
+                        </a>
+                        <a href="#" class="artista-box__link">
+                            <div class="artista-box">
+                                <div class="artista-box__profile">
+                                    <div class="artista-box__profile__image">
+                                        <img src="images/artista-img.jpg" alt="Nome do artista">
+                                    </div>
+                                    <div class="artista-box__profile-info">
+                                        <h2 class="artista-box__profile-title">George Henrique e Rodrigo</h2>
+                                        <div class="artista-box__profile-tag">
+                                            <span>Show</span>
+                                            <span>Comediante</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="artista-box__social-media">
+                                    <div class="artista-box__social-media__wrap">
+                                        <div class="artista-box__social-media__icon-wrap">
+                                            <i class="icon-facebook"></i>
+                                        </div>
+                                        5.5kk
+                                    </div>
+                                    <div class="artista-box__social-media__wrap">
+                                        <div class="artista-box__social-media__icon-wrap">
+                                            <i class="icon-twitter"></i>
+                                        </div>
+                                        5.5kk
+                                    </div>
+                                    <div class="artista-box__social-media__wrap">
+                                        <div class="artista-box__social-media__icon-wrap">
+                                            <i class="icon-instagram"></i>
+                                        </div>
+                                        5.5kk
+                                    </div>
+                                    <div class="artista-box__social-media__wrap">
+                                        <div class="artista-box__social-media__icon-wrap">
+                                            <i class="icon-youtube-play"></i>
+                                        </div>
+                                        5.5kk
+                                    </div>
+                                </div>
+                                <button type="button" name="button" class="btn-primary artista-box__button">Orçamento</button>
+                            </div>
+                        </a>
                     </div>
                     <div class="home-ver-mais">
                         <a href="#">[+] Veja mais</a>
