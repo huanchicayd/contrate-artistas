@@ -19,6 +19,11 @@
   @include bg-header-gradient;
   z-index: 1;
 
+  @media screen and (max-width: 1199px){
+    height: 133px;
+    //padding-bottom: 10px;
+  }
+
   >.container {
     position: relative;
     height: 100%;
@@ -31,6 +36,10 @@
   &-brand {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 1199px){
+      margin-bottom: 10px;
+    }
 
     .header-menu-btn {
       width: 40px;
@@ -85,16 +94,31 @@
 
     img {
       width: 270px;
+
+      @media screen and (max-width: 320px){
+        width: 250px;
+      }
     }
   }
 
   &-search {
     visibility: hidden;
 
+    @media screen and(max-width: 1199px){
+      visibility: visible;
+      position: relative;
+      z-index: 2;
+      height: 50px;
+    }
+
     &__form {
       width: 350px;
       position: relative;
       margin: 0 auto;
+
+      @media screen and (max-width: 1199px){
+        width: 100%;
+      }
     }
 
     &__input {
@@ -110,6 +134,10 @@
         //transform: translatey(5px);
         //line-height: 0;
       }
+
+      @media screen and (max-width: 1199px){
+        height: 50px;
+      }
     }
 
     &__btn {
@@ -121,6 +149,11 @@
       border: 0;
       cursor: pointer;
       @include bg-btn-primary;
+
+      @media screen and (max-width: 1199px){
+        width: 50px;
+        height: 50px;
+      }
 
       &:before {
         content: '';
@@ -153,6 +186,11 @@
     justify-content: center;
     text-align: right;
 
+    @media screen and (max-width: 1199px){
+      //display: none;
+      text-align: center;
+    }
+
     &__atendimento {
       @include font-size(13);
       margin: 0 0 5px 0;
@@ -175,31 +213,81 @@
   transition: 0.25s;
   z-index: -1;
 
+  @media screen and (max-width: 1199px){
+    z-index: 2;
+  }
+
   .header-menu {
-    display: flex;
     height: 35px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     padding: 9px 50px;
-    justify-content: space-between;
     background: #ffcd00;
     background: -moz-linear-gradient(-45deg, #ffcd00 0%, #db8a06 100%);
     background: -webkit-linear-gradient(-45deg, #ffcd00 0%,#db8a06 100%);
     background: linear-gradient(135deg, #ffcd00 0%,#db8a06 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcd00', endColorstr='#db8a06',GradientType=1 );
     box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, .25);
-  }
+    position: relative;
 
-  .header-menu__links {
-    text-transform: uppercase;
-    font-family: $text-bold;
-    text-decoration: none;
-    color: #000;
-    @include font-size(15);
-    transition: .25s;
+    @media screen and (max-width:1199px){
+      height: auto;
+      border-radius: 0;
+      background: #ffd61b;
+      padding: 10px;
+    }
 
-    &:hover {
-      color: #fff;
+    &:before {
+      @media screen and (max-width:1199px){
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        transform:translatey(-7px);
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 5px 8px 5px;
+        border-color: transparent transparent #ffd51b transparent;
+      }
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+
+      @media screen and (max-width: 1199px){
+        flex-direction: column;
+        margin: 25px 0;
+      }
+
+      li:last-child {
+        @media screen and (max-width: 1199px){
+          border-bottom: 1px solid #fecd0f;
+        }
+      }
+    }
+
+    &__links {
+      text-transform: uppercase;
+      font-family: $text-bold;
+      text-decoration: none;
+      color: #000;
+      @include font-size(15);
+      transition: .25s;
+
+      @media screen and (max-width: 1199px){
+        text-align: center;
+        width: 100%;
+        display: block;
+        padding: 10px 0;
+        border-top: 1px solid #fecd0f;
+        @include font-size(18);
+      }
+
+      &:hover {
+        color: #fff;
+      }
     }
   }
 }
@@ -225,4 +313,8 @@
   visibility: visible;
   transform: translatey(75px);
   opacity: 1;
+
+  @media screen and (max-width: 1199px){
+    transform: translatey(58px);
+  }
 }

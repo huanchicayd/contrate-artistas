@@ -3,6 +3,10 @@
   justify-content: flex-end;
   margin-bottom: 30px;
 
+  @media screen and (max-width: 1199px){
+    display: none;
+  }
+
   button {
     position: relative;
     width: 40px;

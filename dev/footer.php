@@ -124,7 +124,14 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="scripts/vendors/slick.js"></script>
+
+<script src="scripts/variables.js"></script>
+<script src="scripts/appendHeaderInfoMobile.js"></script>
+<script src="scripts/openNavMenu.js"></script>
+<script src="scripts/header-scroll.js"></script>
+<script src="scripts/filtro-artistas.js"></script>
 <script src="scripts/init.js"></script>
+
 
 </body>
 </html>

@@ -10,6 +10,10 @@
   text-align: center;
   font-family: $text-bold;
 
+  @media screen and (max-width: 1199px){
+    display: none;
+  }
+
   a {
     color: #000;
     transition: .5s;

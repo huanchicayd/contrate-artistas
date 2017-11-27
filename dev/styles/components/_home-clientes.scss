@@ -1,6 +1,10 @@
 .home-clientes {
   margin-top: 50px;
 
+  @media screen and (max-width: 1199px){
+    display: none;
+  }
+
   > h2 {
     color: #fff;
     @include font-size(22);

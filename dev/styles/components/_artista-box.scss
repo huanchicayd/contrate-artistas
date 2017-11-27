@@ -1,9 +1,17 @@
 .artista-box__link {
   display: flex;
 
+  @media screen and (max-width: 1199px){
+    width: 100%;
+  }
+
   &:hover {
     span {
       color: #000;
+    }
+
+    .artista-box {
+      box-shadow: 5px 5px 15px rgba(0,0,0,.2);
     }
   }
 }
@@ -13,10 +21,20 @@
   display: flex;
   margin-bottom: 30px;
   border: 2px solid $color-one;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0);
+  transition: box-shadow .5s;
+
+  @media screen and (max-width: 1199px){
+    width: 100%;
+  }
 
   &__profile {
     display: flex;
     width: 50%;
+
+    @media screen and (max-width: 1199px){
+      width: 100%;
+    }
 
     &__image {
       width: 138px;
@@ -85,6 +103,10 @@
     flex-wrap: wrap;
     padding: 25px 0;
 
+    @media screen and (max-width: 1199px){
+      display: none;
+    }
+
     &__icon-wrap {
       width: 32px;
       height: 32px;
@@ -121,6 +143,10 @@
     position: relative;
     cursor: pointer;
     margin: auto;
+
+    @media screen and (max-width: 1199px){
+      display: none;
+    }
 
     &:before {
       content: '';

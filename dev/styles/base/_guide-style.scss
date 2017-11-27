@@ -15,6 +15,16 @@ html {
   font-size: 10px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+main {
+  @media screen and (max-width: 1199px){
+    margin-top: 150px;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: unset;
 }
