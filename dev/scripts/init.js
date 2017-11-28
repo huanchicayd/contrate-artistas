@@ -10,7 +10,7 @@
   //Init functions
 
   openNavMenu(); //Active menu on click
-  showHeaderOnScroll(); //Active fixed header bar on scroll
+  //showHeaderOnScroll(); //Active fixed header bar on scroll
   filtroArtistas(); //Active grid/list panel of home artists
 
 })(window, document);

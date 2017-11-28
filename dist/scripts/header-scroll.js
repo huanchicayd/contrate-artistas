@@ -1,0 +1,1 @@
+function showHeaderOnScroll(){var e=$('[data-js="navbar"]');window.addEventListener("scroll",function(){var a=window.pageYOffset;a>=300?e.addClass("header-fixed-appear"):e.removeClass("header-fixed-appear"),a>=380?(e.addClass("header-fixed"),$headerSearch.addClass("header-search--on")):(e.removeClass("header-fixed"),$headerSearch.removeClass("header-search--on"))})}

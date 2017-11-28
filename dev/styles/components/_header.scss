@@ -21,7 +21,6 @@
 
   @media screen and (max-width: 1199px){
     height: 133px;
-    //padding-bottom: 10px;
   }
 
   >.container {
@@ -85,11 +84,10 @@
       }
     }
 
-
     > a {
-        display: inline-block;
-        margin-left: 10px;
-        line-height: 0;
+      display: inline-block;
+      margin-left: 10px;
+      line-height: 0;
     }
 
     img {
@@ -131,8 +129,6 @@
       @include placeholder {
         @include font-size(15);
         color: #1e1e1e;
-        //transform: translatey(5px);
-        //line-height: 0;
       }
 
       @media screen and (max-width: 1199px){
@@ -235,6 +231,7 @@
       border-radius: 0;
       background: #ffd61b;
       padding: 10px;
+      //position: fixed;
     }
 
     &:before {

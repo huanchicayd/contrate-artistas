@@ -3,11 +3,7 @@
   justify-content: flex-end;
   margin-bottom: 30px;
 
-  @media screen and (max-width: 1199px){
-    display: none;
-  }
-
-  button {
+  > button {
     position: relative;
     width: 40px;
     height: 40px;
@@ -42,6 +38,53 @@
         display: inline-block;
         transform: translateY(-1px);
       }
+    }
+  }
+
+  .view-grid-btn,
+  .view-list-btn {
+    @media screen and (max-width: 991px){
+      display: none;
+    }
+  }
+
+  .sidebar-categorias__btn {
+    display: none;
+
+    @media screen and (max-width: 991px){
+      display: flex;
+      align-items: center;
+      background: #000;
+      text-transform: uppercase;
+      text-align: left;
+      @include font-size(16);
+      font-family: $text-bold;
+      color: #fff;
+      width: auto;
+      height: 50px;
+      padding: 0 10px;
+      transform: translatey(-10px);
+    }
+
+    &:hover {
+      color: #fff;
+    }
+
+    &:before {
+      @media screen and (max-width: 991px){
+        content: '';
+        display: block;
+        width: 33px;
+        height: 33px;
+        background: url('../images/filtro-vertodos-icon.svg') no-repeat center center;
+        background-size: 180%;
+        margin-right: 10px;
+      }
+    }
+
+    &--isabove {
+      z-index: 10;
+      width: 320px;
     }
   }
 }

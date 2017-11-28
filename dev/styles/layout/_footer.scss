@@ -3,6 +3,10 @@
   background: #000;
   color: #fff;
 
+  @media screen and (max-width: 1199px){
+    overflow-x: hidden;
+  }
+
   &-newsletter {
     border-bottom: 3px solid $color-one;
     height: 185px;
@@ -186,6 +190,10 @@
     margin-top: 65px;
     margin-bottom: 50px;
     @include font-size(14);
+
+    @media screen and (max-width: 1199px){
+      display: none;
+    }
 
     &__title {
       margin-bottom: 5px;

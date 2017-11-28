@@ -2095,6 +2095,12 @@ body {
   }
 }
 
+@media screen and (max-width: 991px) {
+  main {
+    margin-top: 135px;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: unset;
 }
@@ -3024,13 +3030,28 @@ textarea {
   transition: .5s;
 }
 
+@media screen and (max-width: 991px) {
+  .sidebar {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    right: -270px;
+    z-index: 10;
+    background: #fff;
+    padding: 20px;
+    min-width: 270px;
+    transition: .5s;
+    padding-top: 85px;
+  }
+}
+
 .sidebar-stats {
   font-size: 22px;
   font-size: 2.2rem;
   margin-bottom: 25px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 991px) {
   .sidebar-stats {
     display: none;
   }
@@ -3044,7 +3065,7 @@ textarea {
   margin-bottom: 25px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 991px) {
   .sidebar-search {
     display: none;
   }
@@ -3089,6 +3110,10 @@ textarea {
   font-size: 16px;
   font-size: 1.6rem;
   color: #b6b6b6;
+}
+
+.sidebar-categorias h3 {
+  display: none;
 }
 
 .sidebar-categorias__checkbox {
@@ -3145,6 +3170,22 @@ textarea {
   height: 2px;
   box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
   transform: rotate(45deg);
+}
+
+.sidebar--slide {
+  visibility: visible;
+  opacity: 1;
+  transform: translatex(-270px);
+}
+
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
 }
 
 .artista-box__link {
@@ -3445,13 +3486,7 @@ textarea {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 1199px) {
-  .home-content__filtros {
-    display: none;
-  }
-}
-
-.home-content__filtros button {
+.home-content__filtros > button {
   position: relative;
   width: 40px;
   height: 40px;
@@ -3461,11 +3496,11 @@ textarea {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.home-content__filtros button:hover {
+.home-content__filtros > button:hover {
   color: #ffcc00;
 }
 
-.home-content__filtros button:first-child:after {
+.home-content__filtros > button:first-child:after {
   content: '';
   display: block;
   position: absolute;
@@ -3475,20 +3510,76 @@ textarea {
   transform: translatey(-36px) translatex(39px);
 }
 
-.home-content__filtros button i {
+.home-content__filtros > button i {
   font-size: 26px;
   font-size: 2.6rem;
 }
 
-.home-content__filtros button:first-child i {
+.home-content__filtros > button:first-child i {
   font-size: 20px;
   font-size: 2rem;
   display: inline-block;
   transform: translateY(-1px);
 }
 
+@media screen and (max-width: 991px) {
+  .home-content__filtros .view-grid-btn,
+  .home-content__filtros .view-list-btn {
+    display: none;
+  }
+}
+
+.home-content__filtros .sidebar-categorias__btn {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .home-content__filtros .sidebar-categorias__btn {
+    display: flex;
+    align-items: center;
+    background: #000;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-family: "HurmeGeometricSans1-Bold", sans-serif;
+    color: #fff;
+    width: auto;
+    height: 50px;
+    padding: 0 10px;
+    transform: translatey(-10px);
+  }
+}
+
+.home-content__filtros .sidebar-categorias__btn:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  .home-content__filtros .sidebar-categorias__btn:before {
+    content: '';
+    display: block;
+    width: 33px;
+    height: 33px;
+    background: url("../images/filtro-vertodos-icon.svg") no-repeat center center;
+    background-size: 180%;
+    margin-right: 10px;
+  }
+}
+
+.home-content__filtros .sidebar-categorias__btn--isabove {
+  z-index: 10;
+  width: 320px;
+}
+
 .home-content__filtros button.filter-btn-active {
   color: #000;
+}
+
+@media screen and (max-width: 991px) {
+  .home-content__wrap {
+    margin-top: 20px;
+  }
 }
 
 .home-content__artista-wrap-vertical {
@@ -3522,6 +3613,12 @@ textarea {
   background: #000;
   color: #fff;
   /*End of footer-newsletter*/
+}
+
+@media screen and (max-width: 1199px) {
+  .footer {
+    overflow-x: hidden;
+  }
 }
 
 .footer-newsletter {
@@ -3748,6 +3845,12 @@ textarea {
   margin-bottom: 50px;
   font-size: 14px;
   font-size: 1.4rem;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-quick-links {
+    display: none;
+  }
 }
 
 .footer-quick-links__title {

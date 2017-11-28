@@ -1,5 +1,5 @@
-<footer class="footer">
-    <div class="footer-newsletter">
+<footer class="footer" data-js="footer">
+    <div class="footer-newsletter" data-js="footer-newsletter">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
@@ -130,6 +130,7 @@
 <script src="scripts/openNavMenu.js"></script>
 <script src="scripts/header-scroll.js"></script>
 <script src="scripts/filtro-artistas.js"></script>
+<script src="scripts/toggleSidebarArtistFilter.js"></script>
 <script src="scripts/init.js"></script>
 
 

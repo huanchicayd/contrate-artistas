@@ -1,10 +1,22 @@
 .sidebar {
+  @media screen and (max-width: 991px){
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    right: -270px;
+    z-index: 10;
+    background: #fff;
+    padding: 20px;
+    min-width: 270px;
+    transition: .5s;
+    padding-top: 85px;
+  }
 
   &-stats {
     @include font-size(22);
     margin-bottom: 25px;
 
-    @media screen and (max-width: 1199px){
+    @media screen and (max-width: 991px){
       display: none;
     }
 
@@ -16,7 +28,7 @@
   &-search {
     margin-bottom: 25px;
 
-    @media screen and (max-width: 1199px){
+    @media screen and (max-width: 991px){
       display: none;
     }
 
@@ -37,6 +49,10 @@
   }
 
   &-categorias {
+    h3 {
+      display: none;
+    }
+
     &__checkbox {
       display: flex;
       margin-bottom: 10px;
@@ -100,4 +116,18 @@
   }
 }
 
+.sidebar--slide {
+  visibility: visible;
+  opacity: 1;
+  transform: translatex(-270px);
+}
 
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.5);
+  z-index: 5;
+}

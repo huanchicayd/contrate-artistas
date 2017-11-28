@@ -1,5 +1,6 @@
 <?php include('header.php') ?>
 
+<div id="overlay"></div>
 <main class="home-content">
     <section class="home-banner">
         <div class="container">
@@ -40,8 +41,8 @@
     </section>
     <div class="container">
         <div class="row">
-            <div class="col-lg-3">
-                <aside class="sidebar">
+            <div class="col-lg-3 col-12">
+                <aside class="sidebar" data-js="sidebar">
                     <div class="sidebar-stats">
                         <span class="sidebar-stats__number">302821</span> atrações artísticas
                     </div>
@@ -114,15 +115,16 @@
                     </div>
                 </aside>
             </div>
-            <div class="col-lg-8 offset-lg-1">
-                <section>
+            <div class="col-lg-8 offset-lg-1 col-12">
+                <section class="home-content__wrap">
                     <div class="home-content__filtros">
-                        <button data-js="view-grid-btn">
+                        <button class="view-grid-btn" data-js="view-grid-btn">
                             <i class="icon-view-grid"></i>
                         </button>
-                        <button data-js="view-list-btn">
+                        <button class="view-list-btn" data-js="view-list-btn">
                             <i class="icon-view-list"></i>
                         </button>
+                        <button class="sidebar-categorias__btn" data-js="sidebar-categorias-btn">Filtrar</button>
                     </div>
                     <div class="home-content__artista-wrap">
                         <a href="#" class="artista-box__link">
