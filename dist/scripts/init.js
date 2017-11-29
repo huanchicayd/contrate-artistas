@@ -1,1 +1,1 @@
-!function(o,s){"use strict";$(".home-clientes__slider").slick({slidesToShow:5,slidesToScroll:5,dots:!0}),openNavMenu(),showHeaderOnScroll(),filtroArtistas()}(window,document);
+!function(e,i){"use strict";$(".home-clientes__slider").slick({slidesToShow:5,slidesToScroll:5,dots:!0}),openNavMenu(),filtroArtistas(),toggleSidebarArtistFilter(),e.addEventListener("resize",function(){appendHeaderInfoMobile(),toggleSidebarArtistFilter()})}(window,document);

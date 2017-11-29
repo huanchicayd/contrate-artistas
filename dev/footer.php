@@ -2,12 +2,12 @@
     <div class="footer-newsletter" data-js="footer-newsletter">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-xl-3 col-md-4 col-12">
                     <div class="footer-newsletter__microfone">
                         <div class="footer-newsletter__microfone-bg"></div>
                     </div>
                 </div>
-                <div class="col-lg-9 footer-newsletter__cadastro">
+                <div class="col-xl-9 col-md-8 col-12 footer-newsletter__cadastro">
                     <p>Receba periodicamente as melhores dicas para eventos de alto impacto!</p>
                     <h4>Assine abaixo a nossa newsletter!</p>
                     <form class="footer-newsletter__form" action="index.html" method="post">
@@ -21,12 +21,12 @@
     <div class="footer-info">
         <div class="container">
             <div class="row footer-brand-wrap">
-                <div class="col-lg-6 footer-brand">
+                <div class="col-xl-6 col-12 footer-brand">
                     <a href="#">
                         <img src="images/logo.svg" alt="">
                     </a>
                 </div>
-                <div class="col-lg-6 footer-social-media">
+                <div class="col-xl-6 col-12 footer-social-media">
                     <a href="#" title="Visite nosso facebook!">
                         <i class="icon-facebook"></i>
                     </a>
@@ -109,12 +109,12 @@
     <div class="footer-copyright">
         <div class="container">
             <div class="row">
-                <div class="col-lg-9">
+                <div class="col-xl-9 col-md-9 col-12">
                     <p>
                         <strong>Contrate Artistas</strong> Ⓒ Todos os direitos reservados
                     </p>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-xl-3 col-md-3 col-12">
                     <p class="natio">Desenvolvido por <a href="http://www.natiocriativo.com" title="Desenvolvido por Natio Criativo. Visite nosso site: www.natiocriativo.com" target="_blank">Natio</a></p>
                 </div>
             </div>

@@ -3,13 +3,14 @@
     visibility: hidden;
     position: absolute;
     opacity: 0;
-    right: -270px;
+    right: 0;
+    transform: translate(100%);
     z-index: 10;
     background: #fff;
     padding: 20px;
-    min-width: 270px;
-    transition: .5s;
+    width: 90%;
     padding-top: 85px;
+    transition: .5s;
   }
 
   &-stats {
@@ -119,7 +120,7 @@
 .sidebar--slide {
   visibility: visible;
   opacity: 1;
-  transform: translatex(-270px);
+  transform: translate(0);
 }
 
 .sidebar-overlay {

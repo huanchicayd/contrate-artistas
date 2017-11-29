@@ -23,9 +23,44 @@
   border: 2px solid $color-one;
   box-shadow: 5px 5px 15px rgba(0,0,0,0);
   transition: box-shadow .5s;
+  position: relative;
 
   @media screen and (max-width: 1199px){
     width: 100%;
+  }
+
+  @media screen and (max-width: 991px){
+    height: 120px;
+  }
+
+  &:before {
+    display: none;
+    @media screen and (max-width: 1199px){
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 25px;
+      width: 10px;
+      height: 3px;
+      transform: translatey(-100%) rotate(45deg);
+      background: $color-one;
+    }
+  }
+
+  &:after {
+    display: none;
+    @media screen and (max-width: 1199px){
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 25px;
+      width: 10px;
+      height: 3px;
+      transform: translatey(3px) rotate(-45deg);
+      background: $color-one;
+    }
   }
 
   &__profile {
@@ -39,6 +74,9 @@
     &__image {
       width: 138px;
       height: 100%;
+      @media screen and (max-width: 991px){
+        width: 120px;
+      }
 
       img {
         height: 100%;
@@ -47,6 +85,14 @@
 
     &-info {
       padding: 15px;
+      @media screen and (max-width: 1199px){
+        width: 65%;
+      }
+
+      @media screen and (max-width: 480px){
+        display: flex;
+        align-items: center;
+      }
     }
 
     h2 {
@@ -55,9 +101,20 @@
       margin-bottom: 10px;
       color: #000;
       @include font-size(20);
+
+      @media screen and (max-width: 575px){
+        @include font-size(16);
+      }
+
+      @media screen and (max-width: 480px){
+        margin-bottom: 0;
+      }
     }
 
     &-tag {
+      @media screen and (max-width: 480px){
+        display: none;
+      }
       span {
         display: inline-block;
         background: $color-one;

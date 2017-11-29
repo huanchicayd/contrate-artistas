@@ -1,16 +1,22 @@
 function toggleSidebarArtistFilter(){
-  $sidebarFiltrosBtn.addEventListener('click', function(){
-    if($sidebarFiltrosBtn.innerText === 'FILTRAR'){
-      this.innerText = 'Filtrar Categorias';
-      this.classList.add('sidebar-categorias__btn--isabove');
-      $sidebar.classList.add('sidebar--slide');
-      $body.classList.add('sidebar-overlay');
+
+  $sidebarFiltrosBtn.click(function(event){
+    event.preventDefault();
+    if($sidebarFiltrosBtn.text() === 'Filtrar') {
+      $sidebarFiltrosBtn.text('Filtrar categorias')
+                        .addClass('sidebar-categorias__btn--isabove');
+      $sidebar.addClass('sidebar--slide');
+      $body.addClass('sidebar-overlay');
+
     } else {
-      this.innerText = 'Filtrar';
-      this.classList.remove('sidebar-categorias__btn--isabove');
-      $sidebar.classList.remove('sidebar--slide');
-      $body.classList.remove('sidebar-overlay');
+      $sidebarFiltrosBtn.text('Filtrar')
+                        .removeClass('sidebar-categorias__btn--isabove');
+      $sidebar.removeClass('sidebar--slide');
+      $body.removeClass('sidebar-overlay');
     }
-  })
+
+  });
 }
-toggleSidebarArtistFilter();
+
+
+

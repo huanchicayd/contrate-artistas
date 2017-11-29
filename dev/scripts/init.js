@@ -8,9 +8,15 @@
   });
 
   //Init functions
-
   openNavMenu(); //Active menu on click
   //showHeaderOnScroll(); //Active fixed header bar on scroll
   filtroArtistas(); //Active grid/list panel of home artists
+  toggleSidebarArtistFilter();
+
+  win.addEventListener('resize', function(){
+    appendHeaderInfoMobile();
+    toggleSidebarArtistFilter();
+    //$body.style.display = 'none';
+  })
 
 })(window, document);

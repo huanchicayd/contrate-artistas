@@ -1,6 +1,15 @@
+.home-content {
+  > .container {
+    @media screen and (max-width: 991px) {
+      overflow: hidden;
+    }
+  }
+}
+
 .home-content__wrap {
   @media screen and (max-width: 991px){
     margin-top: 20px;
+
   }
 }
 
