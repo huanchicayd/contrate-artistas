@@ -1,8 +1,9 @@
 function openNavMenu() {
-    $headerBtn.click(function(){
-      $headerMenu.toggleClass('header-menu--on');
-      $navMenu.toggleClass('header-menu--show');
+  $headerBtn.click(function(){
+    $headerMenu.toggleClass('header-menu--on');
+    $navMenu.toggleClass('header-menu--show');
 
+    function appendSearchForm(){
       if($headerMenu.hasClass('header-menu--on') && window.innerWidth <= windowMobileWidth){
         $navMenu.prepend($headerSearchForm);
         $headerSearchBtn.addClass('btn-black');
@@ -10,9 +11,11 @@ function openNavMenu() {
         $headerSearch.append($headerSearchForm);
         $headerSearchBtn.removeClass('btn-black');
       }
-    });
-    //closeHeaderMenuOutside();
-  }
+    }
+    appendSearchForm();
+  });
+  //closeHeaderMenuOutside();
+}
 
   // function closeHeaderMenuOutside(){
   //   window.addEventListener('click', function(e){

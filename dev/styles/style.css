@@ -3051,7 +3051,6 @@ textarea {
 
 @media screen and (max-width: 991px) {
   .sidebar {
-    visibility: hidden;
     position: absolute;
     opacity: 0;
     right: 0;
@@ -3193,7 +3192,6 @@ textarea {
 }
 
 .sidebar--slide {
-  visibility: visible;
   opacity: 1;
   transform: translate(0);
 }

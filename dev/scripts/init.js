@@ -16,7 +16,6 @@
   win.addEventListener('resize', function(){
     appendHeaderInfoMobile();
     toggleSidebarArtistFilter();
-    //$body.style.display = 'none';
   })
 
 })(window, document);
