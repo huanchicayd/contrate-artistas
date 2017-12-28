@@ -1,1 +1,0 @@
-function appendHeaderInfoMobile(){window.innerWidth<=1199?($navMenu.append($headerInfo),$navMenu.append($footer)):($headerRow.append($headerInfo),$bodyB.append($footer))}appendHeaderInfoMobile();

@@ -1,1 +1,0 @@
-function openNavMenu(){$headerBtn.click(function(){$headerMenu.toggleClass("header-menu--on"),$navMenu.toggleClass("header-menu--show"),$headerMenu.hasClass("header-menu--on")&&window.innerWidth<=windowMobileWidth?($navMenu.prepend($headerSearchForm),$headerSearchBtn.addClass("btn-black")):($headerSearch.append($headerSearchForm),$headerSearchBtn.removeClass("btn-black"))})}

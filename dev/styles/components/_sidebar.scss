@@ -1,15 +1,26 @@
+.sidebar-wrap--isactive {
+  height: 100%;
+  position: absolute;
+}
+
 .sidebar {
   @media screen and (max-width: 991px){
     position: absolute;
     opacity: 0;
-    right: 0;
-    transform: translate(100%);
+    right: -90%;
     z-index: 10;
     background: #fff;
     padding: 20px;
     width: 90%;
     padding-top: 85px;
-    transition: .5s;
+    transition: right .5s, opacity .5s;;
+    height: 100%;
+    margin-top: 2px;
+
+    &--active {
+      right: 0;
+      opacity: 1;
+    }
   }
 
   &-stats {
@@ -113,11 +124,6 @@
       }
     }
   }
-}
-
-.sidebar--slide {
-  opacity: 1;
-  transform: translate(0);
 }
 
 .sidebar-overlay {

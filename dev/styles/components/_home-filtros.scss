@@ -47,6 +47,9 @@
 
   .view-grid-btn,
   .view-list-btn {
+    @media screen and (max-width: 1199px){
+      visibility: hidden;
+    }
     @media screen and (max-width: 991px){
       display: none;
     }

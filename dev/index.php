@@ -41,7 +41,7 @@
     </section>
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-12">
+            <div class="col-lg-3 col-12" data-js="sidebar-wrap">
                 <aside class="sidebar" data-js="sidebar">
                     <div class="sidebar-stats">
                         <span class="sidebar-stats__number">302821</span> atrações artísticas
