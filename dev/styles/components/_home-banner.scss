@@ -4,7 +4,7 @@
   height: 450px;
   margin-bottom: 25px;
   color: #fff;
-  background: url('../images/header_banner.jpg') no-repeat center center;
+  background: #000 url('../images/header_banner.jpg') no-repeat center center;
   background-size: cover;
 
   @media screen and (max-width: 1199px){
@@ -26,7 +26,7 @@
 
   &__highlight-text {
     color: $color-one;
-    font-family: $text-bold;
+    font-weight: 700;
   }
 
   &__search-field {
@@ -42,13 +42,14 @@
     border: 0;
     background: url('../images/search-icon.svg') no-repeat rgba(255, 255, 255, 0.8) 20px center;
     background-size: 30px;
-    font-family: $text-bold;
+    font-weight: 700;
     padding-left: 70px;
     padding-right: 170px;
     @include font-size(18);
 
     @include placeholder {
-      font-family: $text-bold;
+      font-family: $text-regular;
+      font-weight: 400;
       color: #000;
       opacity: 1;
       @include font-size(18);
@@ -63,7 +64,7 @@
     z-index: 1;
     padding: 0 20px;
     height: 50px;
-    font-family: $text-bold;
+    font-weight: 700;
     @include font-size(20);
     text-transform: uppercase;
     cursor: pointer;
@@ -98,7 +99,7 @@
       width: 16.6%;
       text-align: center;
       text-transform: uppercase;
-      font-family: $text-bold;
+      font-weight: 700;
       color: #fff;
       text-decoration: none;
       padding: 20px 0;

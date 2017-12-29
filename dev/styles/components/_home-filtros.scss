@@ -65,12 +65,17 @@
       text-transform: uppercase;
       text-align: left;
       @include font-size(16);
-      font-family: $text-bold;
+      font-family: $text-special;
       color: #fff;
       width: auto;
       height: 50px;
       padding: 0 10px;
       transform: translatey(-10px);
+    }
+
+    @media screen and (max-width: 575px){
+      padding: 0 20px 0 10px;
+      transform: translatey(-10px) translatex(15px);
     }
 
     &:hover {

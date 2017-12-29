@@ -7,18 +7,18 @@
   @media screen and (max-width: 991px){
     position: absolute;
     opacity: 0;
-    right: -90%;
+    right: -82%;
     z-index: 10;
     background: #fff;
     padding: 20px;
-    width: 90%;
+    width: 82%;
     padding-top: 85px;
-    transition: right .5s, opacity .5s;;
+    transition: transform .5s, opacity .5s;;
     height: 100%;
-    margin-top: 2px;
+    transform: translatex(0) translateY(-3px);
 
     &--active {
-      right: 0;
+      transform: translateX(-100%);
       opacity: 1;
     }
   }
@@ -26,13 +26,14 @@
   &-stats {
     @include font-size(22);
     margin-bottom: 25px;
+    letter-spacing: -0.5pt;
 
     @media screen and (max-width: 991px){
       display: none;
     }
 
     &__number {
-      font-family: $text-bold;
+      font-weight: 700;
     }
   }
 
@@ -52,6 +53,7 @@
       @include font-size(16);
       @include placeholder {
         font-family: $text-regular;
+        font-weight: 400;
         @include font-size(16);
         color: #b6b6b6;
       }
@@ -127,11 +129,13 @@
 }
 
 .sidebar-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,.5);
-  z-index: 5;
+  @media screen and(max-width: 991px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 5;
+  }
 }

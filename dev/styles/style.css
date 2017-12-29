@@ -2007,15 +2007,15 @@ html {
 }
 
 @font-face {
-  font-family: 'HurmeGeometricSans1-Light';
-  src: url("HurmeGeometricSans1-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/hurme/HurmeGeometricSans1-Light.otf") format("opentype"), url("../fonts/hurme/HurmeGeometricSans1-Light.woff") format("woff"), url("../fonts/hurme/HurmeGeometricSans1-Light.ttf") format("truetype"), url("../fonts/hurme/HurmeGeometricSans1-Light.svg#HurmeGeometricSans1-Light") format("svg");
+  font-family: 'OpenSans-Bold';
+  src: url("../fonts/open_sans/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/open_sans/OpenSans-Bold.woff") format("woff"), url("../fonts/open_sans/OpenSans-Bold.ttf") format("truetype"), url("../fonts/open_sans/OpenSans-Bold.svg#OpenSans-Bold") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'HurmeGeometricSans1-Regular';
-  src: url("../fonts/hurme/HurmeGeometricSans1-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/hurme/HurmeGeometricSans1-Regular.otf") format("opentype"), url("../fonts/hurme/HurmeGeometricSans1-Regular.woff") format("woff"), url("../fonts/hurme/HurmeGeometricSans1-Regular.ttf") format("truetype"), url("../fonts/hurme/HurmeGeometricSans1-Regular.svg#HurmeGeometricSans1-Regular") format("svg");
+  font-family: 'OpenSans-Regular';
+  src: url("../fonts/open_sans/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/open_sans/OpenSans-Regular.woff") format("woff"), url("../fonts/open_sans/OpenSans-Regular.ttf") format("truetype"), url("../fonts/open_sans/OpenSans-Regular.svg#OpenSans-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -2068,6 +2068,28 @@ html {
   content: "\e906";
 }
 
+@font-face {
+  font-family: 'natio';
+  src: url("../fonts/natio/natio.eot?x70y3q");
+  src: url("../fonts/natio/natio.eot?x70y3q#iefix") format("embedded-opentype"), url("../fonts/natio/natio.ttf?x70y3q") format("truetype"), url("../fonts/natio/natio.woff?x70y3q") format("woff"), url("../fonts/natio/natio.svg?x70y3q#natio") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="logo-"], [class*=" logo-"] {
+  font-family: 'natio', sans-serif !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+
+.logo-natio:before {
+  content: "\e900";
+}
+
 *, *:before, *:after {
   margin: 0;
   padding: 0;
@@ -2080,7 +2102,7 @@ html {
 }
 
 html {
-  font-family: "HurmeGeometricSans1-Regular", sans-serif;
+  font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
   font-size: 10px;
 }
@@ -2093,6 +2115,7 @@ html {
 
 body {
   overflow: hidden;
+  background: #f8f8f8;
 }
 
 @media screen and (max-width: 1199px) {
@@ -2114,7 +2137,8 @@ h1, h2, h3, h4, h5, h6 {
 h3 {
   font-size: 22px;
   font-size: 2.2rem;
-  font-family: "HurmeGeometricSans1-Bold", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
@@ -2151,11 +2175,12 @@ input {
   height: 40px;
   border: 0;
   outline: 0;
-  font-family: "HurmeGeometricSans1-Regular", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 input::-webkit-input-placeholder {
-  font-family: "HurmeGeometricSans1-Bold", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
   color: #000;
   font-size: 12px;
   font-size: 1.2rem;
@@ -2163,7 +2188,8 @@ input::-webkit-input-placeholder {
 
 input:-moz-placeholder {
   /* Firefox 18- */
-  font-family: "HurmeGeometricSans1-Bold", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
   color: #000;
   font-size: 12px;
   font-size: 1.2rem;
@@ -2171,14 +2197,16 @@ input:-moz-placeholder {
 
 input::-moz-placeholder {
   /* Firefox 19+ */
-  font-family: "HurmeGeometricSans1-Bold", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
   color: #000;
   font-size: 12px;
   font-size: 1.2rem;
 }
 
 input:-ms-input-placeholder {
-  font-family: "HurmeGeometricSans1-Bold", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
   color: #000;
   font-size: 12px;
   font-size: 1.2rem;
@@ -2587,6 +2615,7 @@ textarea {
 
 .header-brand img {
   width: 270px;
+  transform: translatey(-2px);
 }
 
 @media screen and (max-width: 320px) {
@@ -2626,7 +2655,7 @@ textarea {
   padding: 0 47px 0 15px;
   font-size: 15px;
   font-size: 1.5rem;
-  font-family: "HurmeGeometricSans1-Bold", sans-serif;
+  font-weight: 700;
   color: #1e1e1e;
 }
 
@@ -2734,21 +2763,34 @@ textarea {
 }
 
 .header-info__atendimento {
-  font-size: 13px;
-  font-size: 1.3rem;
+  font-size: 14px;
+  font-size: 1.4rem;
+  letter-spacing: -0.2pt;
   margin: 0 0 5px 0;
+}
+
+@media screen and (max-width: 575px) {
+  .header-info__atendimento {
+    width: 215px;
+    margin: 0 auto 10px auto;
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
 }
 
 .header-info__telefones {
   font-size: 20px;
   font-size: 2rem;
-  font-family: "HurmeGeometricSans1-Bold", sans-serif;
+  font-weight: 700;
   margin: 0;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 575px) {
   .header-info__telefones {
-    padding: 0 15%;
+    width: 200px;
+    margin: auto;
+    font-size: 24px;
+    font-size: 2.4rem;
   }
 }
 
@@ -2835,7 +2877,7 @@ textarea {
 
 .nav-menu__links {
   text-transform: uppercase;
-  font-family: "HurmeGeometricSans1-Bold", sans-serif;
+  font-weight: 700;
   text-decoration: none;
   color: #000;
   font-size: 15px;
@@ -2886,6 +2928,7 @@ textarea {
   background: linear-gradient(to bottom, #ffcc00 0%, #e79c00 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', endColorstr='#e79c00', GradientType=0 );
   border: 0;
+  font-family: "HurmeGeometricSans1-Bold", sans-serif;
 }
 
 .btn-primary:hover {
@@ -2911,7 +2954,7 @@ textarea {
   height: 450px;
   margin-bottom: 25px;
   color: #fff;
-  background: url("../images/header_banner.jpg") no-repeat center center;
+  background: #000 url("../images/header_banner.jpg") no-repeat center center;
   background-size: cover;
 }
 
@@ -2930,14 +2973,14 @@ textarea {
   font-size: 28px;
   font-size: 2.8rem;
   transform: translatey(150px);
-  font-family: "HurmeGeometricSans1-Regular", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   line-height: 32px;
 }
 
 .home-banner__highlight-text {
   color: #ffcc00;
-  font-family: "HurmeGeometricSans1-Bold", sans-serif;
+  font-weight: 700;
 }
 
 .home-banner__search-field {
@@ -2953,7 +2996,7 @@ textarea {
   border: 0;
   background: url("../images/search-icon.svg") no-repeat rgba(255, 255, 255, 0.8) 20px center;
   background-size: 30px;
-  font-family: "HurmeGeometricSans1-Bold", sans-serif;
+  font-weight: 700;
   padding-left: 70px;
   padding-right: 170px;
   font-size: 18px;
@@ -2961,7 +3004,8 @@ textarea {
 }
 
 .home-banner__search-input::-webkit-input-placeholder {
-  font-family: "HurmeGeometricSans1-Bold", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   color: #000;
   opacity: 1;
   font-size: 18px;
@@ -2971,7 +3015,8 @@ textarea {
 
 .home-banner__search-input:-moz-placeholder {
   /* Firefox 18- */
-  font-family: "HurmeGeometricSans1-Bold", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   color: #000;
   opacity: 1;
   font-size: 18px;
@@ -2981,7 +3026,8 @@ textarea {
 
 .home-banner__search-input::-moz-placeholder {
   /* Firefox 19+ */
-  font-family: "HurmeGeometricSans1-Bold", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   color: #000;
   opacity: 1;
   font-size: 18px;
@@ -2990,7 +3036,8 @@ textarea {
 }
 
 .home-banner__search-input:-ms-input-placeholder {
-  font-family: "HurmeGeometricSans1-Bold", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   color: #000;
   opacity: 1;
   font-size: 18px;
@@ -3005,7 +3052,7 @@ textarea {
   z-index: 1;
   padding: 0 20px;
   height: 50px;
-  font-family: "HurmeGeometricSans1-Bold", sans-serif;
+  font-weight: 700;
   font-size: 20px;
   font-size: 2rem;
   text-transform: uppercase;
@@ -3042,7 +3089,7 @@ textarea {
   width: 16.6%;
   text-align: center;
   text-transform: uppercase;
-  font-family: "HurmeGeometricSans1-Bold", sans-serif;
+  font-weight: 700;
   color: #fff;
   text-decoration: none;
   padding: 20px 0;
@@ -3075,18 +3122,18 @@ textarea {
   .sidebar {
     position: absolute;
     opacity: 0;
-    right: -90%;
+    right: -82%;
     z-index: 10;
     background: #fff;
     padding: 20px;
-    width: 90%;
+    width: 82%;
     padding-top: 85px;
-    transition: right .5s, opacity .5s;
+    transition: transform .5s, opacity .5s;
     height: 100%;
-    margin-top: 2px;
+    transform: translatex(0) translateY(-3px);
   }
   .sidebar--active {
-    right: 0;
+    transform: translateX(-100%);
     opacity: 1;
   }
 }
@@ -3095,6 +3142,7 @@ textarea {
   font-size: 22px;
   font-size: 2.2rem;
   margin-bottom: 25px;
+  letter-spacing: -0.5pt;
 }
 
 @media screen and (max-width: 991px) {
@@ -3104,7 +3152,7 @@ textarea {
 }
 
 .sidebar-stats__number {
-  font-family: "HurmeGeometricSans1-Bold", sans-serif;
+  font-weight: 700;
 }
 
 .sidebar-search {
@@ -3129,7 +3177,8 @@ textarea {
 }
 
 .sidebar-search__input::-webkit-input-placeholder {
-  font-family: "HurmeGeometricSans1-Regular", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
   color: #b6b6b6;
@@ -3137,7 +3186,8 @@ textarea {
 
 .sidebar-search__input:-moz-placeholder {
   /* Firefox 18- */
-  font-family: "HurmeGeometricSans1-Regular", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
   color: #b6b6b6;
@@ -3145,14 +3195,16 @@ textarea {
 
 .sidebar-search__input::-moz-placeholder {
   /* Firefox 19+ */
-  font-family: "HurmeGeometricSans1-Regular", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
   color: #b6b6b6;
 }
 
 .sidebar-search__input:-ms-input-placeholder {
-  font-family: "HurmeGeometricSans1-Regular", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
   color: #b6b6b6;
@@ -3218,14 +3270,16 @@ textarea {
   transform: rotate(45deg);
 }
 
-.sidebar-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 5;
+@media screen and (max-width: 991px) {
+  .sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+  }
 }
 
 .artista-box__link {
@@ -3250,9 +3304,9 @@ textarea {
   height: 142px;
   display: flex;
   margin-bottom: 30px;
-  border: 2px solid #ffcc00;
-  box-shadow: 5px 5px 15px transparent;
-  transition: box-shadow .5s;
+  border-right: 2px solid #ffcc00;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+  transition: box-shadow .25s;
   position: relative;
 }
 
@@ -3265,6 +3319,7 @@ textarea {
 @media screen and (max-width: 991px) {
   .artista-box {
     height: 120px;
+    margin-bottom: 5px;
   }
 }
 
@@ -3278,7 +3333,7 @@ textarea {
     display: block;
     position: absolute;
     top: 50%;
-    right: 25px;
+    right: 10px;
     width: 10px;
     height: 3px;
     transform: translatey(-100%) rotate(45deg);
@@ -3296,7 +3351,7 @@ textarea {
     display: block;
     position: absolute;
     top: 50%;
-    right: 25px;
+    right: 10px;
     width: 10px;
     height: 3px;
     transform: translatey(3px) rotate(-45deg);
@@ -3348,7 +3403,7 @@ textarea {
 }
 
 .artista-box__profile h2 {
-  font-family: "HurmeGeometricSans1-Bold", sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 10px;
   color: #000;
@@ -3460,7 +3515,7 @@ textarea {
   font-size: 16px;
   font-size: 1.6rem;
   text-transform: uppercase;
-  font-family: "HurmeGeometricSans1-Bold", sans-serif;
+  font-weight: 700;
   position: relative;
   cursor: pointer;
   margin: auto;
@@ -3494,6 +3549,8 @@ textarea {
   height: auto;
   flex-direction: column;
   padding: 10px;
+  border-right: none;
+  border-bottom: 2px solid #ffcc00;
 }
 
 .artista-box-vertical .artista-box__profile {
@@ -3568,7 +3625,7 @@ textarea {
   background: #000;
   padding: 6px;
   text-align: center;
-  font-family: "HurmeGeometricSans1-Bold", sans-serif;
+  font-weight: 700;
 }
 
 .home-clientes__slider {
@@ -3685,6 +3742,13 @@ textarea {
   }
 }
 
+@media screen and (max-width: 575px) {
+  .home-content__filtros .sidebar-categorias__btn {
+    padding: 0 20px 0 10px;
+    transform: translatey(-10px) translatex(15px);
+  }
+}
+
 .home-content__filtros .sidebar-categorias__btn:hover {
   color: #fff;
 }
@@ -3730,7 +3794,7 @@ textarea {
 
 .home-ver-mais {
   text-align: center;
-  font-family: "HurmeGeometricSans1-Bold", sans-serif;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 1199px) {
@@ -3765,7 +3829,7 @@ textarea {
 }
 
 .footer-newsletter {
-  border-bottom: 3px solid #ffcc00;
+  border-bottom: 5px solid #ffcc00;
   height: 185px;
 }
 
@@ -3786,6 +3850,12 @@ textarea {
   justify-content: center;
 }
 
+@media screen and (max-width: 1199px) {
+  .footer-newsletter__cadastro {
+    text-align: center;
+  }
+}
+
 .footer-newsletter__cadastro p {
   font-size: 16px;
   font-size: 1.6rem;
@@ -3793,7 +3863,7 @@ textarea {
 
 .footer-newsletter__cadastro > h4 {
   color: #ffcc00;
-  font-family: "HurmeGeometricSans1-Bold", sans-serif;
+  font-weight: 700;
   margin-top: 7px;
   font-size: 20px;
   font-size: 2rem;
@@ -3808,12 +3878,13 @@ textarea {
 @media screen and (max-width: 1199px) {
   .footer-newsletter__form {
     flex-direction: column;
+    margin-bottom: 25px;
   }
 }
 
 .footer-newsletter__form-email {
   width: 480px;
-  font-family: "HurmeGeometricSans1-Regular", sans-serif;
+  font-family: "Open Sans", sans-serif;
   padding: 0 10px;
   outline: 0;
   display: block;
@@ -3827,7 +3898,8 @@ textarea {
   font-size: 1.8rem;
   opacity: 1;
   color: #000;
-  font-family: "HurmeGeometricSans1-Regular", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
 }
 
 .footer-newsletter__form-email:-moz-placeholder {
@@ -3836,7 +3908,8 @@ textarea {
   font-size: 1.8rem;
   opacity: 1;
   color: #000;
-  font-family: "HurmeGeometricSans1-Regular", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
 }
 
 .footer-newsletter__form-email::-moz-placeholder {
@@ -3845,7 +3918,8 @@ textarea {
   font-size: 1.8rem;
   opacity: 1;
   color: #000;
-  font-family: "HurmeGeometricSans1-Regular", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
 }
 
 .footer-newsletter__form-email:-ms-input-placeholder {
@@ -3853,7 +3927,8 @@ textarea {
   font-size: 1.8rem;
   opacity: 1;
   color: #000;
-  font-family: "HurmeGeometricSans1-Regular", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 1199px) {
@@ -3866,7 +3941,7 @@ textarea {
   padding: 0 20px;
   position: relative;
   border: 0;
-  font-family: "HurmeGeometricSans1-Bold", sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
   font-size: 1.6rem;
@@ -3895,8 +3970,13 @@ textarea {
   position: relative;
   width: 123px;
   height: 175px;
-  transform: translatey(7px);
-  margin-left: 90px;
+  transform: translatey(5px);
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-newsletter__microfone {
+    display: none;
+  }
 }
 
 .footer-newsletter__microfone-bg {
@@ -3984,6 +4064,12 @@ textarea {
 }
 
 @media screen and (max-width: 1199px) {
+  .footer-brand-wrap {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1199px) {
   .footer-brand {
     display: none;
   }
@@ -4035,7 +4121,7 @@ textarea {
 }
 
 .footer-about p strong {
-  font-family: "HurmeGeometricSans1-Bold", sans-serif;
+  font-weight: 700;
 }
 
 .footer-quick-links {
@@ -4059,7 +4145,7 @@ textarea {
 .footer-quick-links a {
   color: #fff;
   text-decoration: none;
-  font-family: "HurmeGeometricSans1-Bold", sans-serif;
+  font-weight: 700;
   line-height: 20px;
   font-size: 14px;
   font-size: 1.4rem;
@@ -4109,21 +4195,30 @@ textarea {
   }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767px) {
   .footer-copyright {
     text-align: center;
   }
 }
 
 .footer-copyright strong {
-  font-family: "HurmeGeometricSans1-Bold", sans-serif;
+  font-weight: 700;
 }
 
 .footer-copyright .natio {
   text-align: right;
 }
 
-@media screen and (max-width: 575px) {
+.footer-copyright .natio > a {
+  color: #000;
+  transition: .25s;
+}
+
+.footer-copyright .natio > a:hover {
+  color: #ffcc00;
+}
+
+@media screen and (max-width: 767px) {
   .footer-copyright .natio {
     text-align: center;
   }

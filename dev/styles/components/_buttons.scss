@@ -1,6 +1,7 @@
 .btn-primary {
   @include bg-btn-primary;
   border: 0;
+  font-family: $text-special;
 
   &:hover {
     @include bg-btn-primary-hover;

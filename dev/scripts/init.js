@@ -9,8 +9,8 @@
     var $headerSearchForm = document.querySelector('[data-js="header-search-form"]');
     var $footer = document.querySelector('[data-js="footer"]');
 
-    function checkWindowInnerWidth(){
-        return window.innerWidth <= 1199;
+    function checkWindowInnerWidth(value){
+        return window.innerWidth <= value;
     }
 
     var mobileScreenChanges = {
@@ -54,13 +54,13 @@
         }
 
         function appendElementsInNav(){
-            if(checkWindowInnerWidth()){
+            if(checkWindowInnerWidth(1199)){
                 navMenuAppendedElements();
             }
         }
 
         function appendHeaderSearchInNav(){
-            if($navWrap.classList.contains('nav-menu--on') && checkWindowInnerWidth()){
+            if($navWrap.classList.contains('nav-menu--on') && checkWindowInnerWidth(1199)){
                 $navWrap.firstElementChild.insertBefore($headerSearchForm, $navMenu);
             } else {
                 $headerSearch.appendChild($headerSearchForm);
@@ -75,18 +75,19 @@
         function manipulateHeaderInfo(){
             $headerInfo.style.display = 'block';
             var headerInfoText = $headerInfo.firstElementChild.nextElementSibling;
-            headerInfoText.textContent = headerInfoText.textContent.replace('/', ' ');
+            if(checkWindowInnerWidth(575))
+                headerInfoText.textContent = headerInfoText.textContent.replace('/', '');
         }
 
         function showFooterElement(){
-            if($navWrap.classList.contains('nav-menu--on') && checkWindowInnerWidth())
+            if($navWrap.classList.contains('nav-menu--on') && checkWindowInnerWidth(1199))
                 $footer.style.display = 'block';
         }
 
         function toggleNavDisplay(){
-            if($navWrap.classList.contains('nav-menu--on') && checkWindowInnerWidth()){
+            if($navWrap.classList.contains('nav-menu--on') && checkWindowInnerWidth(1199)){
                 $navWrap.style.display = 'block';
-            } else if(checkWindowInnerWidth()) {
+            } else if(checkWindowInnerWidth(1199)) {
                 $navWrap.style.display = 'none';
             }
         }
@@ -96,6 +97,10 @@
             $navWrap.appendChild($headerInfo);
             $navWrap.appendChild($footer);
             showFooterElement();
+            var $footerInfo = document.querySelector('.footer-info');
+            var $footerBrandWrap = document.querySelector('.footer-brand-wrap');
+            var teste = $footer.lastElementChild;
+            $footerInfo.appendChild($footerBrandWrap);
         }
 
     })();
@@ -150,11 +155,11 @@
         var $sidebarBtnFilter = document.querySelector('[data-js="sidebar-categorias-btn"]');
         var $sidebarWrap = document.querySelector('[data-js="sidebar-wrap"]');
         var $sidebar = document.querySelector('[data-js="sidebar"]');
+        var $sidebarOverlay = document.querySelector('#overlay');
 
         $sidebarBtnFilter.addEventListener('click', activeSidebarFilter, false);
         function activeSidebarFilter(){
-            var btnText = $sidebarBtnFilter.textContent;
-            btnText === 'Filtrar' ? btnText = 'Filtrar Categorias' : btnText = 'Filtrar';
+            $sidebarBtnFilter.textContent === 'Filtrar' ? $sidebarBtnFilter.textContent = 'Filtrar Categorias' : $sidebarBtnFilter.textContent = 'Filtrar';
 
             var sidebarParent = $sidebarWrap.parentElement;
             sidebarParent.style.position = 'relative';
@@ -162,8 +167,19 @@
             $sidebarWrap.classList.toggle('sidebar-wrap--isactive');
             $sidebarBtnFilter.classList.toggle('sidebar-categorias__btn--isabove');
             $sidebar.classList.toggle('sidebar--active');
+            $sidebarOverlay.classList.toggle('sidebar-overlay');
+
+            mobileScreenChanges.reloadForDesktop();
         }
 
     })();
+
+    if(!checkWindowInnerWidth(1199)){
+        $('.home-clientes__slider').slick({
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            dots: true
+        });
+    }
 
 })(window);

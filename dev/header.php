@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="robots" content="nofollow">
     <title>Contrate Artistas</title>
+    <link rel="icon" href="images/favicon.png" />
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>

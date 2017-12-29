@@ -109,6 +109,7 @@
 
     img {
       width: 270px;
+      transform: translatey(-2px);
 
       @media screen and (max-width: 320px){
         width: 250px;
@@ -141,7 +142,7 @@
       height: 32px;
       padding: 0 47px 0 15px;
       @include font-size(15);
-      font-family: $text-bold;
+      font-weight: 700;
       color: #1e1e1e;
       @include placeholder {
         @include font-size(15);
@@ -215,17 +216,26 @@
     }
 
     &__atendimento {
-      @include font-size(13);
+      @include font-size(14);
+      letter-spacing: -0.2pt;
       margin: 0 0 5px 0;
+
+      @media screen and (max-width: 575px){
+        width: 215px;
+        margin: 0 auto 10px auto;
+        @include font-size(16);
+      }
     }
 
     &__telefones {
       @include font-size(20);
-      font-family: $text-bold;
+      font-weight: 700;
       margin: 0;
 
-      @media screen and (max-width: 480px){
-        padding: 0 15%;
+      @media screen and (max-width: 575px){
+        width: 200px;
+        margin: auto;
+        @include font-size(24);
       }
     }
   }
@@ -309,7 +319,7 @@
 
   &__links {
     text-transform: uppercase;
-    font-family: $text-bold;
+    font-weight: 700;
     text-decoration: none;
     color: #000;
     @include font-size(15);
