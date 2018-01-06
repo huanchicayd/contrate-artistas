@@ -1,4 +1,5 @@
 var gulp = require('gulp'),
+<<<<<<< HEAD
 imagemin = require('gulp-imagemin'),
 imageminJpegRecompress = require('imagemin-jpeg-recompress'),
 clean = require('gulp-clean'),
@@ -7,6 +8,18 @@ cssmin = require('gulp-cssmin'),
 htmlmin = require('gulp-htmlmin'),
 autoprefixer = require('gulp-autoprefixer'),
 critical = require('critical');
+=======
+    imagemin = require('gulp-imagemin'),
+    imageminJpegRecompress = require('imagemin-jpeg-recompress'),
+    clean = require('gulp-clean'),
+    uglify = require('gulp-uglify'),
+    cssmin = require('gulp-cssmin'),
+    htmlmin = require('gulp-htmlmin'),
+    autoprefixer = require('gulp-autoprefixer'),
+    babel = require('gulp-babel'),
+    useref = require('gulp-useref'),
+    inlineSource = require('gulp-inline-source');
+>>>>>>> Ultimo update com above the fold e ajustes nas fontes
 
 gulp.task('default', ['copy'], function(){
     gulp.start('build-img', 'build-js', 'build-css', 'build-html');
@@ -50,12 +63,24 @@ gulp.task('build-css', function(){
 
 gulp.task('build-js', function(){
     gulp.src('dev/scripts/**/*.js')
+<<<<<<< HEAD
+=======
+        .pipe(babel({
+            presets: ['env']
+        }))
+>>>>>>> Ultimo update com above the fold e ajustes nas fontes
         .pipe(uglify())
         .pipe(gulp.dest('dist/scripts'));
 });
 
 gulp.task('build-html', function(){
+<<<<<<< HEAD
     gulp.src('dev/*.php')
+=======
+    return gulp.src('dev/*.php')
+        .pipe(useref())
+        .pipe(inlineSource())
+>>>>>>> Ultimo update com above the fold e ajustes nas fontes
         .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest('dist'));
 });

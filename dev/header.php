@@ -6,9 +6,20 @@
     <meta name="theme-color" content="#000000">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="robots" content="nofollow">
+<<<<<<< HEAD
     <title>Contrate Artistas</title>
     <link rel="icon" href="images/favicon.png" />
     <link rel="stylesheet" href="styles/style.css">
+=======
+    <title>Contrate Artistas, A Maior Agência Online de Artistas do Brasil</title>
+    <link rel="icon" href="images/favicon.png" />
+
+    <link inline rel="stylesheet" href="styles/critical.css">
+
+    <link rel="preload" as="style" href="styles/style.css" onload="this.rel='stylesheet'">
+    <link rel="stylesheet" href="styles/style.css">
+    <noscript><link rel="stylesheet" href="styles/style.css"></noscript>
+>>>>>>> Ultimo update com above the fold e ajustes nas fontes
 </head>
 <body>
     <header class="header-wrap" data-js="navbar">
@@ -19,7 +30,11 @@
                         <button type="button" name="button" class="header-menu-btn" data-js="nav-btn">
                             <span class="header-menu-btn__bar"></span>
                         </button>
+<<<<<<< HEAD
                         <a href="#">
+=======
+                        <a href="index.php">
+>>>>>>> Ultimo update com above the fold e ajustes nas fontes
                             <img src="images/logo.svg" alt="Logotipo da Contrate Artistas">
                         </a>
                     </div>
@@ -40,12 +55,21 @@
             <div class="container">
                 <div class="nav-menu__menu" data-js="nav-menu">
                     <ul class="nav-menu__list">
+<<<<<<< HEAD
                         <li><a href="#" class="nav-menu__links">Quem somos</a></li>
                         <li><a href="#" class="nav-menu__links">Corporativo</a></li>
                         <li><a href="#" class="nav-menu__links">Particular</a></li>
                         <li><a href="#" class="nav-menu__links">Cases selecionados</a></li>
                         <li><a href="#" class="nav-menu__links">Galeria de fotos</a></li>
                         <li><a href="#" class="nav-menu__links">Contato</a></li>
+=======
+                        <li><a href="quem_somos.php" class="nav-menu__links">Quem somos</a></li>
+                        <li><a href="corporativo.php" class="nav-menu__links">Corporativo</a></li>
+                        <li><a href="particular.php" class="nav-menu__links">Particular</a></li>
+                        <li><a href="cases.php" class="nav-menu__links">Cases selecionados</a></li>
+                        <li><a href="galeria.php" class="nav-menu__links">Galeria de fotos</a></li>
+                        <li><a href="contato.php" class="nav-menu__links">Contato</a></li>
+>>>>>>> Ultimo update com above the fold e ajustes nas fontes
                     </ul>
                 </div>
             </div>

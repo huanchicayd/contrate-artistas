@@ -37,7 +37,11 @@
 
       > h4 {
         color: $color-one;
+<<<<<<< HEAD
         font-weight: 700;
+=======
+        font-family: $text-bold;
+>>>>>>> Ultimo update com above the fold e ajustes nas fontes
         margin-top: 7px;
         @include font-size(20);
       }
@@ -230,7 +234,11 @@
       }
 
       strong {
+<<<<<<< HEAD
         font-weight: 700;
+=======
+        font-family: $text-bold;
+>>>>>>> Ultimo update com above the fold e ajustes nas fontes
       }
     }
   }
@@ -252,7 +260,11 @@
     a {
       color: #fff;
       text-decoration: none;
+<<<<<<< HEAD
       font-weight: 700;
+=======
+      font-family: $text-bold;
+>>>>>>> Ultimo update com above the fold e ajustes nas fontes
       line-height: 20px;
       @include font-size(14);
 
@@ -310,7 +322,11 @@
     }
 
     strong {
+<<<<<<< HEAD
       font-weight: 700;
+=======
+      font-family: $text-bold;
+>>>>>>> Ultimo update com above the fold e ajustes nas fontes
     }
 
     .natio {
