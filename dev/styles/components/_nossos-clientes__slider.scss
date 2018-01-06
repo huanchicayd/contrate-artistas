@@ -1,0 +1,38 @@
+.nossos-clientes {
+
+    &__slider {
+        width: 100%;
+        margin-top: 25px;
+
+        .slick-dots li {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        
+        .slick-dots li button {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 1px solid grey;
+
+            &:before {
+                display: none;
+            }
+        }
+
+        .slick-dots li.slick-active {
+            background: $color-one;
+        }
+    }
+
+    &__item {
+        text-align: center;
+
+        img {
+            display: block;
+            margin: auto;
+            width: 150px;
+        }
+    }
+}

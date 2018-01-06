@@ -40,12 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h3 {
   @include font-size(22);
-<<<<<<< HEAD
-  font-family: $text-regular;
-  font-weight: 700;
-=======
   font-family: $text-bold;
->>>>>>> Ultimo update com above the fold e ajustes nas fontes
   margin-bottom: 20px;
 }
 

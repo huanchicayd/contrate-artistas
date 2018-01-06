@@ -1,0 +1,133 @@
+.infografico {
+    &__wrap {
+        display: flex;
+    }
+
+    &__estrela {
+        width: 70%;
+        position: relative;
+        margin-top: 75px;
+
+        &__info {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 250px;
+            font-style: oblique;
+            font-family: $text-bold;
+        }
+
+        img {
+            display: block;
+            width: 330px;
+            margin: auto;
+        }
+
+        &__box {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 300px;
+            padding: 20px;
+            border: 2px solid $color-one;
+            @include font-size(14);
+            border-radius: 3px;
+            transform: translate(25px, -50px);
+        }
+
+        &__inner-wrap {
+            position: relative;
+            width: 300px;
+            margin: 40px auto 0 auto;
+
+            a {
+                &:hover {
+                    div {
+                        background: $color-one;
+                        color: #000;
+                    }
+                }
+            }
+        }
+
+        &__button {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            color: #fff;
+
+            > div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 35px;
+                height: 35px;
+                background: #000;
+                color: #fff;
+                font-family: $text-bold;
+                border-radius: 50%;
+                margin: 15px;
+                transition: .25s;
+            }
+        }
+    }
+
+    &__texto {
+        width: 30%;
+        line-height: 36px;
+        margin-top: 75px;
+        margin-left: 100px;
+
+        > h4 {
+            @include font-size(20);
+            font-family: $text-bold;
+            margin-bottom: 30px;
+        }
+
+        > p {
+            @include font-size(18);
+        }
+    }
+}
+
+.estrela__button-01 {
+    left: 50%;
+    transform: translate(-18px, -25px);
+
+    &__text {
+        transform: translate(-62px, -40px);
+    }
+}
+
+.estrela__button-02 {
+    right: 0;
+    transform: translate(140px, 90px);
+}
+
+.estrela__button-03 {
+    right: 0;
+    transform: translate(130px, 162px);
+}
+
+.estrela__button-04 {
+    right: 0;
+    transform: translate(150px, 275px);
+}
+
+.estrela__button-05 {
+    left: 0;
+    transform: translate(25px, 275px);
+
+    &__text {
+        transform: translate(-170px, 0px);
+    }
+}
+
+.estrela__button-06 {
+    left: 0;
+    transform: translate(-20px, 90px);
+
+    &__text {
+        transform: translate(-138px, 0px);
+    }
+}

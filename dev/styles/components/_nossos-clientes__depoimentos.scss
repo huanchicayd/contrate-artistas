@@ -1,0 +1,61 @@
+.nossos-clientes {
+    &__depoimentos {
+        margin-top: 85px;
+    
+        .slick-dots li {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        
+        .slick-dots li button {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 1px solid grey;
+    
+            &:before {
+                display: none;
+            }
+        }
+    
+        .slick-dots li.slick-active {
+            background: $color-one;
+        }
+    
+        &__item {
+            display: flex;
+            padding: 0 50px;
+        }
+    
+        &__user {
+            width: 25%;
+    
+            > img {
+                width: 250px;
+                border-radius: 50%;
+            }
+        }
+    
+        &__text {
+            display: flex;
+            align-items: center;
+            width: 75%;
+            padding-left: 50px;
+            
+        }
+    
+        &__quote {
+            > p {
+                @include font-size(16);
+                line-height: 20pt;
+                margin-bottom: 30px;
+            }
+    
+            > h5 {
+                @include font-size(16);
+                font-family: $text-bold;
+            }
+        }
+    }
+}

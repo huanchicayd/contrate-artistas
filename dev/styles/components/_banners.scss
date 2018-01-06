@@ -1,0 +1,14 @@
+.banner-cortado {
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        background: white;
+        width: 120%;
+        height: 30px;
+        transform: translateX(-50%) rotateZ(-1deg);
+    }
+}

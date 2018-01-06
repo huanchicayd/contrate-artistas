@@ -169,29 +169,13 @@
         height: 50px;
       }
 
-
-      &:before {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: rgba(255, 255, 255, 0.30);
-        width: 100%;
-        height: 50%;
-      }
-
       &:after {
         content: '';
         display: block;
         position: absolute;
         top: 0;
         left: 0;
-<<<<<<< HEAD
-        background: url("../images/search-icon.svg") no-repeat center center;
-=======
         background: url("images/search-icon.svg") no-repeat center center;
->>>>>>> Ultimo update com above the fold e ajustes nas fontes
         background-size: 20px;
         width: 100%;
         height: 100%;
@@ -201,11 +185,7 @@
         background: #000 !important;
 
         &:after {
-<<<<<<< HEAD
-          background: url("../images/search-icon-white.svg") no-repeat center center;
-=======
           background: url("images/search-icon-white.svg") no-repeat center center;
->>>>>>> Ultimo update com above the fold e ajustes nas fontes
           background-size: 20px;
         }
       }
@@ -237,11 +217,7 @@
 
     &__telefones {
       @include font-size(20);
-<<<<<<< HEAD
-      font-weight: 700;
-=======
       font-family: $text-bold;
->>>>>>> Ultimo update com above the fold e ajustes nas fontes
       margin: 0;
 
       @media screen and (max-width: 575px){
@@ -331,11 +307,7 @@
 
   &__links {
     text-transform: uppercase;
-<<<<<<< HEAD
-    font-weight: 700;
-=======
     font-family: $text-bold;
->>>>>>> Ultimo update com above the fold e ajustes nas fontes
     text-decoration: none;
     color: #000;
     @include font-size(15);

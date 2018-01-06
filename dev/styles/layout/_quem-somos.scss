@@ -1,0 +1,115 @@
+.quem-somos__sobre {
+    margin: 50px;
+}
+
+.quem-somos__destaque,
+.quem-somos__resultados {
+    margin-bottom: 100px;
+}
+
+
+.quem-somos__servicos,
+.quem-somos__clientes {
+    margin-bottom: 50px;
+}
+
+.quem-somos {
+    &__banner {
+        position: relative;
+        height: 620px;
+        background: url('../images/quem-somos_banner.jpg') no-repeat center center;
+        background-size: cover; 
+        overflow: hidden;
+
+        &__link {
+            display: block;
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            color: #fff;
+            text-transform: uppercase;
+            transform: translatex(-50%);
+            font-family: $text-bold;
+            z-index: 10;
+        }
+    }
+
+    &__sobre {
+        max-width: 770px;
+        margin: 100px auto;
+
+        &__title {
+            font-family: $text-bold;
+            @include font-size(30);
+            line-height: 30pt;
+            margin-bottom: 25px;
+
+        }
+
+        &__text {
+            @include font-size(20);
+            line-height: 20pt;
+
+        }
+    }
+
+    &__resultados {
+        text-align: center;
+    }
+
+    &__numbers {
+        @include font-size(48);
+        font-family: $text-bold;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        @include font-size(18);
+        font-family: $text-bold;
+        font-style: oblique;
+    }
+
+    &__galeria {
+        height: 600px;
+        transform: translateY(50px);
+    
+        &__parent {
+            display: flex;
+            width: 100%;
+            height: 600px;
+    
+            > div {
+                width: 33.33%;
+            }
+        }
+
+        &__child {
+            width: 100%;
+            height: 50%;
+        }
+    
+        &__image01 {
+            background: url('../images/galeria__image01.jpg') no-repeat;
+            background-size: cover;
+        }
+    
+        &__image02 {
+            background: url('../images/galeria__image02.jpg') no-repeat;
+            background-size: cover;
+        }
+    
+        &__image03 {
+            background: url('../images/galeria__image03.jpg') no-repeat;
+            background-size: cover;
+        }
+    
+        &__image04 {
+            background: url('../images/galeria__image04.jpg') no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+
+
+

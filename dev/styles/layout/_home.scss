@@ -9,7 +9,6 @@
 .home-content__wrap {
   @media screen and (max-width: 991px){
     margin-top: 20px;
-
   }
 }
 
@@ -34,5 +33,13 @@
     &:hover {
       color: $color-one;
     }
+  }
+}
+
+.home-clientes {
+  margin-top: 50px;
+
+  @media screen and (max-width: 1199px){
+    display: none;
   }
 }

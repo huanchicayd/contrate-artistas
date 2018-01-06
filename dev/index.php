@@ -309,48 +309,28 @@
         <div class="row">
             <div class="col-lg-12">
                 <section class="home-clientes">
-                    <h2>Nossos clientes</h2>
-                    <div class="home-clientes__slider">
-                        <div>
-                            <img src="" alt="" width="100" height="100">
-                            <p>Imagem1</p>
-                        </div>
-                        <div>
-                            <img src="" alt="" width="100" height="100">
-                            <p>Imagem2</p>
-                        </div>
-                        <div>
-                            <img src="" alt="" width="100" height="100">
-                            <p>Imagem3</p>
-                        </div>
-                        <div>
-                            <img src="" alt="" width="100" height="100">
-                            <p>Imagem4</p>
-                        </div>
-                        <div>
-                            <img src="" alt="" width="100" height="100">
-                            <p>Imagem5</p>
-                        </div>
-                        <div>
-                            <img src="" alt="" width="100" height="100">
-                            <p>Imagem1</p>
-                        </div>
-                        <div>
-                            <img src="" alt="" width="100" height="100">
-                            <p>Imagem2</p>
-                        </div>
-                        <div>
-                            <img src="" alt="" width="100" height="100">
-                            <p>Imagem3</p>
-                        </div>
-                        <div>
-                            <img src="" alt="" width="100" height="100">
-                            <p>Imagem4</p>
-                        </div>
-                        <div>
-                            <img src="" alt="" width="100" height="100">
-                            <p>Imagem5</p>
-                        </div>
+                    <div class="section-title">
+                        <h2 class="section-title__title">Nossos clientes</h2>
+                    </div>
+                    <div class="nossos-clientes__slider">
+                        <a href="#" class="nossos-clientes__item">
+                            <img src="images/coca-logo.png" alt="">
+                        </a>
+                        <a href="#" class="nossos-clientes__item">
+                            <img src="images/coca-logo.png" alt="">
+                        </a>
+                        <a href="#" class="nossos-clientes__item">
+                            <img src="images/coca-logo.png" alt="">
+                        </a>
+                        <a href="#" class="nossos-clientes__item">
+                            <img src="images/coca-logo.png" alt="">
+                        </a>
+                        <a href="#" class="nossos-clientes__item">
+                            <img src="images/coca-logo.png" alt="">
+                        </a>
+                        <a href="#" class="nossos-clientes__item">
+                            <img src="images/coca-logo.png" alt="">
+                        </a>
                     </div>
                 </section>
             </div>

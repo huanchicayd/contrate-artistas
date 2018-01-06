@@ -1,5 +1,4 @@
 .footer {
-  margin-top: 50px;
   background: #000;
   color: #fff;
 
@@ -37,11 +36,7 @@
 
       > h4 {
         color: $color-one;
-<<<<<<< HEAD
-        font-weight: 700;
-=======
         font-family: $text-bold;
->>>>>>> Ultimo update com above the fold e ajustes nas fontes
         margin-top: 7px;
         @include font-size(20);
       }
@@ -92,17 +87,6 @@
         width: 250px;
         margin: 25px auto 0 auto;
       }
-
-      &:after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 50%;
-        background: rgba(255, 255, 255, 0.30);
-      }
     }
 
     &__microfone {
@@ -110,7 +94,7 @@
       width: 123px;
       height: 175px;
       transform: translatey(5px);
-      //margin-left: 90px;
+
       @media screen and (max-width: 1199px){
         display: none;
       }
@@ -234,11 +218,7 @@
       }
 
       strong {
-<<<<<<< HEAD
-        font-weight: 700;
-=======
         font-family: $text-bold;
->>>>>>> Ultimo update com above the fold e ajustes nas fontes
       }
     }
   }
@@ -260,11 +240,7 @@
     a {
       color: #fff;
       text-decoration: none;
-<<<<<<< HEAD
-      font-weight: 700;
-=======
       font-family: $text-bold;
->>>>>>> Ultimo update com above the fold e ajustes nas fontes
       line-height: 20px;
       @include font-size(14);
 
@@ -322,11 +298,7 @@
     }
 
     strong {
-<<<<<<< HEAD
-      font-weight: 700;
-=======
       font-family: $text-bold;
->>>>>>> Ultimo update com above the fold e ajustes nas fontes
     }
 
     .natio {

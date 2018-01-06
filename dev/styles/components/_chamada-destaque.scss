@@ -1,0 +1,26 @@
+.chamada-destaque {
+    &__wrap {
+        position: relative;
+        height: 240px;
+    }
+
+    &__rotated {
+        width: 120%;
+        background: url('../images/textura-estrela.svg'), $color-one;
+        background-position: 0 -50px;
+        position: absolute;
+        left: 50%;
+        transform: translatex(-50%) rotatez(-1deg);
+        height: 240px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__text {
+        text-align: center;
+        @include font-size(30);
+        font-family: $text-bold;
+        font-style: oblique;
+        transform: rotateZ(1deg);
+    }
+}

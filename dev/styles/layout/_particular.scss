@@ -1,0 +1,47 @@
+.particular {
+    &__sobre {
+        background: url('../images/particular_banner.jpg') no-repeat;
+        background-size: cover;
+        height: 970px;
+        color: #fff;
+
+        &__content {
+            margin-top: 135px;
+        }
+    }
+
+    &__destaque {
+        transform: translateY(-25px);
+    }
+
+    &__outros {
+        margin-top: 100px;
+
+        &__btn {
+            display: flex;
+
+            p {
+                @include font-size(24);
+                font-family: $text-bold;
+                text-transform: uppercase;
+            }
+
+            > div {
+                width: 50%;
+                height: 250px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        &__btn-cases {
+            @include bg-btn-primary;
+        }
+
+        &__btn-fotos {
+            background: #000;
+            color: #fff;
+        }
+    }
+}

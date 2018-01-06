@@ -1,33 +1,23 @@
-<<<<<<< HEAD
-@import 'helpers/_variables';
-@import 'helpers/_mixins';
-
-@import 'base/_normalize';
-@import 'base/_grid';
-@import 'base/_typography';
-@import 'base/_icons';
-@import 'base/_guide-style';
-
-@import 'vendors/_slick';
-
-@import 'components/_header';
-@import 'components/_buttons';
-@import 'components/_home-banner';
-=======
 //Below the fold
 @import 'helpers/_variables';
 @import 'helpers/_mixins';
 
->>>>>>> Ultimo update com above the fold e ajustes nas fontes
+@import 'base/_typography';
+@import 'base/_icons';
+@import 'base/_content';
+
 @import 'components/_sidebar';
 @import 'components/_artista-box';
-@import 'components/_home-clientes';
 @import 'components/_home-filtros';
+@import 'components/_banners';
+@import 'components/_chamada-destaque.scss';
+@import 'components/_nossos-servicos';
+@import 'components/_nossos-clientes__slider';
+@import 'components/_nossos-clientes__depoimentos';
+@import 'components/_infografico';
 
 @import 'layout/_home';
-@import 'layout/_content';
-<<<<<<< HEAD
+@import 'layout/_quem-somos';
+@import 'layout/_particular';
+@import 'layout/_galeria-fotos.scss';
 @import 'layout/_footer';
-=======
-@import 'layout/_footer';
->>>>>>> Ultimo update com above the fold e ajustes nas fontes

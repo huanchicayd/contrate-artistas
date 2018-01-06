@@ -4,11 +4,7 @@
   height: 450px;
   margin-bottom: 25px;
   color: #fff;
-<<<<<<< HEAD
-  background: #000 url('../images/header_banner.jpg') no-repeat center center;
-=======
   background: #000 url('images/header_banner.jpg') no-repeat center center;
->>>>>>> Ultimo update com above the fold e ajustes nas fontes
   background-size: cover;
 
   @media screen and (max-width: 1199px){
@@ -30,11 +26,7 @@
 
   &__highlight-text {
     color: $color-one;
-<<<<<<< HEAD
-    font-weight: 700;
-=======
     font-family: $text-bold;
->>>>>>> Ultimo update com above the fold e ajustes nas fontes
   }
 
   &__search-field {
@@ -48,11 +40,7 @@
     height: 50px;
     position: relative;
     border: 0;
-<<<<<<< HEAD
-    background: url('../images/search-icon.svg') no-repeat rgba(255, 255, 255, 0.8) 20px center;
-=======
     background: url('images/search-icon.svg') no-repeat rgba(255, 255, 255, 0.8) 20px center;
->>>>>>> Ultimo update com above the fold e ajustes nas fontes
     background-size: 30px;
     font-weight: 700;
     padding-left: 70px;
@@ -80,18 +68,6 @@
     @include font-size(20);
     text-transform: uppercase;
     cursor: pointer;
-
-    &:before {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
-      width: 100%;
-      height: 50%;
-      background: rgba(255, 255, 255, 0.25);
-    }
   }
 
   &__filtros {
@@ -111,11 +87,7 @@
       width: 16.6%;
       text-align: center;
       text-transform: uppercase;
-<<<<<<< HEAD
-      font-weight: 700;
-=======
       font-family: $text-bold;
->>>>>>> Ultimo update com above the fold e ajustes nas fontes
       color: #fff;
       text-decoration: none;
       padding: 20px 0;
