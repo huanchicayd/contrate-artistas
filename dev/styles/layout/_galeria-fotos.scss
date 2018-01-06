@@ -77,6 +77,8 @@
         justify-content: space-between;
 
         a {
+            display: block;
+            line-height: 0;
         }
 
         a:hover {
@@ -87,51 +89,36 @@
         }
     }
 
-    &__col {
-        width: 33.333333%;
-        display: flex;
-        flex-direction: column;
-    }
-
     &__small-block {
-        flex: 0 0 33.333333%;
-        height: 33.33%;
-        padding-top: 33.33%;
-        background: #ccc;
-        text-align: center;
-        position: relative;
-        flex-direction: column;
-
-        img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-        }
-    }
-
-    &__vertical--block {
-        padding-top: 100%;
+        width: 33.333333%;
         position: relative;
 
         img {
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
         }
     }
 
     &__large-block {
-        flex: 0 0 66.666667%;
-        height: 66.666667%;
-        padding-top: 66.666667%;
+        width: 66.66667%;
         position: relative;
 
         img {
-            position: absolute;
-            top: 0;
-            left: 0;
+            width: 100%;
+        }
+    }
+
+    &__col {
+        width: 33.333333%;
+
+        a {
+            width: 100%;
+        }
+    }
+
+    &__vertical--block {
+        position: relative;
+
+        img {
             width: 100%;
         }
     }
@@ -154,5 +141,7 @@
         font-family: $text-bold;
         text-transform: uppercase;
         transition: opacity .5s;
+        line-height: initial;
+        text-align: center;
     }
 }

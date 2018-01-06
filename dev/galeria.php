@@ -28,56 +28,68 @@
                         <a href="#" class="galeria-fotos__small-block">
                             <img src="images/galeria-fotos_img01.jpg" alt="">
                             <div class="galeria-fotos__overlay">
-                                <h4>
-                                    Título do evento
-                                </h4>
-                                <p>Show</span>
+                                <div class="galeria-fotos__overlay__content">
+                                    <h4>
+                                        Título do evento
+                                    </h4>
+                                    <p>Show</p>
+                                </div>
                             </div>
                         </a>
                         <a href="#" class="galeria-fotos__small-block">
                             <img src="images/galeria-fotos_img01.jpg" alt="">
                             <div class="galeria-fotos__overlay">
-                                <h4>
-                                    Título do evento
-                                </h4>
-                                <p>Show</span>
+                                <div class="galeria-fotos__overlay__content">
+                                    <h4>
+                                        Título do evento
+                                    </h4>
+                                    <p>Show</p>
+                                </div>
                             </div>
                         </a>
                         <a href="#" class="galeria-fotos__small-block">
                             <img src="images/galeria-fotos_img01.jpg" alt="">
                             <div class="galeria-fotos__overlay">
-                                <h4>
-                                    Título do evento
-                                </h4>
-                                <p>Show</span>
+                                <div class="galeria-fotos__overlay__content">
+                                    <h4>
+                                        Título do evento
+                                    </h4>
+                                    <p>Show</p>
+                                </div>
                             </div>
                         </a>
                         <a href="#" class="galeria-fotos__large-block">
                             <img src="images/galeria-fotos_img01.jpg" alt="">
                             <div class="galeria-fotos__overlay">
-                                <h4>
-                                    Título do evento
-                                </h4>
-                                <p>Show</span>
+                                <div class="galeria-fotos__overlay__content">
+                                    <h4>
+                                        Título do evento
+                                    </h4>
+                                    <p>Show</p>
+                                </div>
                             </div>
                         </a>
                         <div class="galeria-fotos__col">
                             <a href="#" class="galeria-fotos__small-block galeria-fotos__vertical--block">
                                 <img src="images/galeria-fotos_img01.jpg" alt="">
                                 <div class="galeria-fotos__overlay">
-                                    <h4>
-                                        Título do evento
-                                    </h4>
-                                    <p>Show</span>
+                                    <div class="galeria-fotos__overlay__content">
+                                        <h4>
+                                            Título do evento
+                                        </h4>
+                                        <p>Show</p>
+                                    </div>
                                 </div>
                             </a>
                             <a href="#" class="galeria-fotos__small-block galeria-fotos__vertical--block">
                                 <img src="images/galeria-fotos_img01.jpg" alt="">
                                 <div class="galeria-fotos__overlay">
-                                    <h4>
-                                        Título do evento
-                                    </h4>
-                                    <p>Show</span>
+                                    <div class="galeria-fotos__overlay__content">
+                                        <h4>
+                                            Título do evento
+                                        </h4>
+                                        <p>Show</p>
+                                    </div>
                                 </div>
                             </a>
                         </div>
