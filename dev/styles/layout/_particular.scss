@@ -1,3 +1,15 @@
+/*
+    Mesma folha de estilo para 
+    as páginas particular.php
+    e corporativo.php já que são
+    quase idênticas
+
+*/
+
+.servicos {
+    margin-bottom: 50px;
+}
+
 .particular {
     &__sobre {
         background: url('../images/particular_banner.jpg') no-repeat;

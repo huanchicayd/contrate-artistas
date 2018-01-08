@@ -22,5 +22,12 @@
         font-family: $text-bold;
         font-style: oblique;
         transform: rotateZ(1deg);
+        max-width: 760px;
+        margin: auto;
+    }
+
+    &__text-menor {
+        @include font-size(26);
+        font-style: inherit;
     }
 }

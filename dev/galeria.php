@@ -24,53 +24,9 @@
                             <a href="#">Eventos corporativos</a>
                         </div>
                     </div>
-                    <div class="galeria-fotos__wrap">
-                        <a href="#" class="galeria-fotos__small-block">
-                            <img src="images/galeria-fotos_img01.jpg" alt="">
-                            <div class="galeria-fotos__overlay">
-                                <div class="galeria-fotos__overlay__content">
-                                    <h4>
-                                        Título do evento
-                                    </h4>
-                                    <p>Show</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="galeria-fotos__small-block">
-                            <img src="images/galeria-fotos_img01.jpg" alt="">
-                            <div class="galeria-fotos__overlay">
-                                <div class="galeria-fotos__overlay__content">
-                                    <h4>
-                                        Título do evento
-                                    </h4>
-                                    <p>Show</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="galeria-fotos__small-block">
-                            <img src="images/galeria-fotos_img01.jpg" alt="">
-                            <div class="galeria-fotos__overlay">
-                                <div class="galeria-fotos__overlay__content">
-                                    <h4>
-                                        Título do evento
-                                    </h4>
-                                    <p>Show</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="galeria-fotos__large-block">
-                            <img src="images/galeria-fotos_img01.jpg" alt="">
-                            <div class="galeria-fotos__overlay">
-                                <div class="galeria-fotos__overlay__content">
-                                    <h4>
-                                        Título do evento
-                                    </h4>
-                                    <p>Show</p>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="galeria-fotos__col">
-                            <a href="#" class="galeria-fotos__small-block galeria-fotos__vertical--block">
+                    <div class="galeria-fotos__masonry-wrap">
+                        <div class="galeria-fotos__masonry">
+                            <a href="#" class="galeria-fotos__small-block">
                                 <img src="images/galeria-fotos_img01.jpg" alt="">
                                 <div class="galeria-fotos__overlay">
                                     <div class="galeria-fotos__overlay__content">
@@ -81,7 +37,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#" class="galeria-fotos__small-block galeria-fotos__vertical--block">
+                            <a href="#" class="galeria-fotos__small-block">
                                 <img src="images/galeria-fotos_img01.jpg" alt="">
                                 <div class="galeria-fotos__overlay">
                                     <div class="galeria-fotos__overlay__content">
@@ -92,16 +48,62 @@
                                     </div>
                                 </div>
                             </a>
+                            <a href="#" class="galeria-fotos__small-block">
+                                <img src="images/galeria-fotos_img01.jpg" alt="">
+                                <div class="galeria-fotos__overlay">
+                                    <div class="galeria-fotos__overlay__content">
+                                        <h4>
+                                            Título do evento
+                                        </h4>
+                                        <p>Show</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="galeria-fotos__large-block">
+                                <img src="images/galeria-fotos_img01.jpg" alt="">
+                                <div class="galeria-fotos__overlay">
+                                    <div class="galeria-fotos__overlay__content">
+                                        <h4>
+                                            Título do evento
+                                        </h4>
+                                        <p>Show</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="galeria-fotos__col">
+                                <a href="#" class="galeria-fotos__small-block galeria-fotos__vertical--block">
+                                    <img src="images/galeria-fotos_img01.jpg" alt="">
+                                    <div class="galeria-fotos__overlay">
+                                        <div class="galeria-fotos__overlay__content">
+                                            <h4>
+                                                Título do evento
+                                            </h4>
+                                            <p>Show</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="galeria-fotos__small-block galeria-fotos__vertical--block">
+                                    <img src="images/galeria-fotos_img01.jpg" alt="">
+                                    <div class="galeria-fotos__overlay">
+                                        <div class="galeria-fotos__overlay__content">
+                                            <h4>
+                                                Título do evento
+                                            </h4>
+                                            <p>Show</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="home-ver-mais">
+                    <div class="ver-mais">
                         <a href="#">[+] Veja mais</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section>
+    <section class="galeria-fotos__nossos-clientes">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">

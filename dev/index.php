@@ -300,7 +300,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="home-ver-mais">
+                    <div class="ver-mais">
                         <a href="#">[+] Veja mais</a>
                     </div>
                 </section>

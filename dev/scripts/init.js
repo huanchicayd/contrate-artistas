@@ -8,8 +8,9 @@
     let mobileScreenChanges = {
         reloadForMobile: () => {
             var reload = window.addEventListener('resize', () => {
-                if(window.innerWidth <= 1199)
+                if(window.innerWidth <= 1199){
                     location.reload();
+                }
             });
             return reload;
         },
@@ -28,7 +29,7 @@
             dots: true
         });
 
-    $('.quem-somos__galeria').slick({
+    $('.galeria-menor').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true

@@ -71,7 +71,11 @@
         }
     }
 
-    &__wrap {
+    &__masonry-wrap {
+        margin-bottom: 25px;
+    }
+
+    &__masonry {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -143,5 +147,9 @@
         transition: opacity .5s;
         line-height: initial;
         text-align: center;
+    }
+
+    &__nossos-clientes {
+        margin-bottom: 50px;
     }
 }

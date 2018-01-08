@@ -1,4 +1,5 @@
 .home-content {
+  margin-bottom: 50px;
   > .container {
     @media screen and (max-width: 991px) {
       overflow: hidden;
@@ -16,24 +17,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.home-ver-mais {
-  text-align: center;
-  font-weight: 700;
-
-  @media screen and (max-width: 1199px){
-    display: none;
-  }
-
-  a {
-    color: #000;
-    transition: .5s;
-
-    &:hover {
-      color: $color-one;
-    }
-  }
 }
 
 .home-clientes {

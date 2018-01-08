@@ -14,6 +14,24 @@
     text-transform: uppercase;
 }
 
+.ver-mais {
+    text-align: center;
+    font-weight: 700;
+
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+
+    a {
+        color: #000;
+        transition: .5s;
+
+        &:hover {
+            color: $color-one;
+        }
+    }
+}
+
 .breadcrumb {
     @include font-size(14);
     text-align: right;

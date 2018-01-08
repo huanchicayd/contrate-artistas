@@ -143,23 +143,25 @@
         </div>
     </section>
     <section class="quem-somos__galeria">
-        <div>
-            <div class="quem-somos__galeria__parent">
-                <div class="quem-somos__galeria__image01"></div>
-                <div class="quem-somos__galeria__image02"></div>
-                <div>
-                    <div class="quem-somos__galeria__child quem-somos__galeria__image03"></div>
-                    <div class="quem-somos__galeria__child quem-somos__galeria__image04"></div>
+        <div class="galeria-menor">
+            <div class="galeria-menor__item">
+                <div class="galeria-menor__parent">
+                    <div class="galeria-menor__image01"></div>
+                    <div class="galeria-menor__image02"></div>
+                    <div>
+                        <div class="galeria-menor__child galeria-menor__image03"></div>
+                        <div class="galeria-menor__child galeria-menor__image04"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div>
-            <div class="quem-somos__galeria__parent">
-                <div class="quem-somos__galeria__image01"></div>
-                <div class="quem-somos__galeria__image02"></div>
-                <div>
-                    <div class="quem-somos__galeria__child quem-somos__galeria__image03"></div>
-                    <div class="quem-somos__galeria__child quem-somos__galeria__image04"></div>
+            <div class="galeria-menor__item">
+                <div class="galeria-menor__parent">
+                    <div class="galeria-menor__image01"></div>
+                    <div class="galeria-menor__image02"></div>
+                    <div>
+                        <div class="galeria-menor__child galeria-menor__image03"></div>
+                        <div class="galeria-menor__child galeria-menor__image04"></div>
+                    </div>
                 </div>
             </div>
         </div>

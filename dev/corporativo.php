@@ -1,6 +1,6 @@
 <?php include('header.php') ?>
 
-<main>
+<main class="servicos">
     <section class="particular__sobre">
         <div class="container">
             <div class="row">
@@ -11,10 +11,25 @@
                         </div>
                         <div class="section-title--secondary section-title--secondary--flex">
                             <h2 class="section-title__title">Corporativo</h2>
-                            <a href="#" class="section-title__link">ir para <span class="uppercase">particular</span></a>
+                            <a href="particular.php" class="section-title__link">ir para <span class="uppercase">particular</span></a>
                         </div>
                         <div class="infografico__wrap">
+                            <div class="infografico__texto infografico__texto--toleftside">
+                                <h4>
+                                    Procurando artistas para realização de Shows, campanhas ou ações publicitárias, presenças VIPS, apresentações e demais eventos
+                                    para alavancar sua empresa?
+                                </h4>
+                                <p>
+                                    Com anos de experiência no mercado e um banco de mais de 1000 artistas podemos orientâ-lo para a contratação mais adequada
+                                    as suas necessidades!
+                                </p>
+                            </div>
                             <div class="infografico__estrela">
+                                <div class="infografico__estrela__info">
+                                    <p>
+                                        Clique nos números para saber mais sobre o nosso processo!
+                                    </p>
+                                </div>
                                 <div class="infografico__estrela__box">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, excepturi totam? Quibusdam veritatis quasi corporis et repellendus omnis, a dolor. Veritatis asperiores suscipit excepturi quisquam natus iure porro voluptatem amet!
                                 </div>
@@ -46,14 +61,6 @@
                                     <img src="images/estrela.svg" alt="">
                                 </div>
                             </div>
-                            <div class="infografico__texto">
-                                <h4>
-                                    A Contrate Artistas é a escolha mais confiável para aqueles que visam qualidade, segurança e diversas opções na hora de contratar atrações artísticas para seus eventos especiais, sem pagar nada a mais por isso.
-                                </h4>
-                                <p>
-                                    Com um atendimento 360° que alia anos de experiência e apurado conhecimento, consolidamos informações precisas que nos torna capaz de entender e mediar com equilíbrio, eficiência e excelência os ensejos de cada um dos contratantes, desde cerimônias particulares intimistas como casamentos e bodas às grandes experiências corporativas de alto impacto.
-                                </p>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -66,8 +73,8 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-xl-12">
-                                <h2 class="chamada-destaque__text">
-                                    Baixe aqui nossa Cartilha e saiba porque você deve escolher a Contrate Artistas como parceira para seu evento!
+                                <h2 class="chamada-destaque__text chamada-destaque__text-menor">
+                                    Baixe aqui <span class="highlight-text__one">nossa Cartilha</span> e saiba porque você deve escolher a Contrate Artistas como parceira para seu evento!
                                 </h2>
                             </div>
                         </div>
@@ -154,6 +161,30 @@
                             </p>
                             
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="particular__galeria">
+        <div class="galeria-menor">
+            <div class="galeria-menor__item">
+                <div class="galeria-menor__parent">
+                    <div class="galeria-menor__image01"></div>
+                    <div class="galeria-menor__image02"></div>
+                    <div>
+                        <div class="galeria-menor__child galeria-menor__image03"></div>
+                        <div class="galeria-menor__child galeria-menor__image04"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="galeria-menor__item">
+                <div class="galeria-menor__parent">
+                    <div class="galeria-menor__image01"></div>
+                    <div class="galeria-menor__image02"></div>
+                    <div>
+                        <div class="galeria-menor__child galeria-menor__image03"></div>
+                        <div class="galeria-menor__child galeria-menor__image04"></div>
                     </div>
                 </div>
             </div>

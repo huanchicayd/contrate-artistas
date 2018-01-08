@@ -1,6 +1,6 @@
 <?php include('header.php') ?>
 
-<main>
+<main class="servicos">
     <section class="particular__sobre">
         <div class="container">
             <div class="row">
@@ -11,7 +11,7 @@
                         </div>
                         <div class="section-title--secondary section-title--secondary--flex">
                             <h2 class="section-title__title">Particular</h2>
-                            <a href="#" class="section-title__link">ir para <span class="uppercase">corporativo</span></a>
+                            <a href="corporativo.php" class="section-title__link">ir para <span class="uppercase">corporativo</span></a>
                         </div>
                         <div class="infografico__wrap">
                             <div class="infografico__estrela">
@@ -53,7 +53,7 @@
                             </div>
                             <div class="infografico__texto">
                                 <h4>
-                                    Procurando a atração perfeita para seu casamento, 15 anos e demais eventos particulares? A Contrate Artistas é a solução ideal para você!
+                                    Procurando artistas para realização de Shows, campanhas ou ações publicitárias, presenças VIPS, apresentações e demais eventos para alavancar sua empresa?
                                 </h4>
                                 <p>
                                     Com anos de experiência no mercado e um banco de mais de 1000 artistas podemos orientâ-lo para a contratação mais adequada as suas necessidades! Não tenha imprevistos no seu grande dia! 
@@ -71,8 +71,8 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-xl-12">
-                                <h2 class="chamada-destaque__text">
-                                    Baixe aqui nossa Cartilha e saiba porque você deve escolher a Contrate Artistas como parceira para seu evento!
+                                <h2 class="chamada-destaque__text chamada-destaque__text-menor">
+                                    Baixe aqui <span class="highlight-text__one">nossa Cartilha</span> e saiba porque você deve escolher a Contrate Artistas como parceira para seu evento!
                                 </h2>
                             </div>
                         </div>
@@ -159,6 +159,30 @@
                             </p>
                             
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="particular__galeria">
+        <div class="galeria-menor">
+            <div class="galeria-menor__item">
+                <div class="galeria-menor__parent">
+                    <div class="galeria-menor__image01"></div>
+                    <div class="galeria-menor__image02"></div>
+                    <div>
+                        <div class="galeria-menor__child galeria-menor__image03"></div>
+                        <div class="galeria-menor__child galeria-menor__image04"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="galeria-menor__item">
+                <div class="galeria-menor__parent">
+                    <div class="galeria-menor__image01"></div>
+                    <div class="galeria-menor__image02"></div>
+                    <div>
+                        <div class="galeria-menor__child galeria-menor__image03"></div>
+                        <div class="galeria-menor__child galeria-menor__image04"></div>
                     </div>
                 </div>
             </div>
