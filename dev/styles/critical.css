@@ -2121,6 +2121,7 @@ input:-ms-input-placeholder {
 }
 
 textarea {
+  width: 100%;
   resize: none;
 }
 

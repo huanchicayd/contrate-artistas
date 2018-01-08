@@ -1600,6 +1600,12 @@
   margin-bottom: 50px;
 }
 
+.contato__banner {
+  height: 500px;
+  background: url("../images/contato_banner.jpg") no-repeat center center;
+  background-size: cover;
+}
+
 .footer {
   background: #000;
   color: #fff;
