@@ -127,7 +127,7 @@
                         <button class="sidebar-categorias__btn" data-js="sidebar-categorias-btn">Filtrar</button>
                     </div>
                     <div class="home-content__artista-wrap">
-                        <a href="#" class="artista-box__link">
+                        <a href="artista_especifica.php" class="artista-box__link">
                             <div class="artista-box">
                                 <div class="artista-box__profile">
                                     <div class="artista-box__profile__image">
@@ -309,7 +309,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <section class="home-clientes">
-                    <div class="section-title">
+                    <div class="section-title__primary section-title--center">
                         <h2 class="section-title__title">Nossos clientes</h2>
                     </div>
                     <div class="nossos-clientes__slider">

@@ -9,7 +9,7 @@
                         <div class="breadcrumb">
                             Você está em: Home > Serviços > <span class="breadcrumb__actual-page breadcrumb__active01">Corporativo</span>
                         </div>
-                        <div class="section-title--secondary section-title--secondary--flex">
+                        <div class="section-title__secondary">
                             <h2 class="section-title__title">Corporativo</h2>
                             <a href="particular.php" class="section-title__link">ir para <span class="uppercase">particular</span></a>
                         </div>
@@ -89,7 +89,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
-                    <div class="section-title">
+                    <div class="section-title__primary section-title--center">
                         <h2 class="section-title__title">Nossos clientes</h2>
                     </div>
                     <div class="nossos-clientes__slider">

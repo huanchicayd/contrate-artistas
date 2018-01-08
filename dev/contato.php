@@ -12,7 +12,7 @@
                         Você está em: Home >
                         <span class="breadcrumb__actual-page breadcrumb__active02">Contato</span>
                     </div>
-                    <div class="section-title section-title--left">
+                    <div class="section-title__primary">
                         <h2 class="section-title__title">Solta a voz!</h2>
                     </div>
                 </div>
@@ -22,7 +22,7 @@
                     <div>
                         <h4>Sinta-se livre para conectar-se conosco!</h4>
                         <p>
-                             Estaremos prontos para atendê-lo e ajudá-lo a encontrar a atração perfeita para o seu evento.
+                            Estaremos prontos para atendê-lo e ajudá-lo a encontrar a atração perfeita para o seu evento.
                         </p>
                     </div>
                     <div>
@@ -70,7 +70,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
-                    <div class="section-title">
+                    <div class="section-title__primary section-title--center">
                         <h2 class="section-title__title">Nossos clientes</h2>
                     </div>
                     <div class="nossos-clientes__slider">
@@ -95,7 +95,7 @@
         </div>
     </section>
     <section class="nossos-servicos">
-        <div class="section-title">
+        <div class="section-title__primary section-title--center">
             <h2 class="section-title__title">Nossos serviços</h2>
         </div>
         <div class="nossos-servicos__wrap">

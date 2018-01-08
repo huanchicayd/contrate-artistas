@@ -58,7 +58,7 @@
         </div>
     </section>
     <section class="nossos-servicos quem-somos__servicos">
-        <div class="section-title">
+        <div class="section-title__primary section-title--center">
             <h2 class="section-title__title">Nossos serviços</h2>
         </div>
         <div class="nossos-servicos__wrap">
@@ -86,7 +86,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
-                    <div class="section-title">
+                    <div class="section-title__primary section-title--center">
                         <h2 class="section-title__title">Nossos clientes</h2>
                     </div>
                     <div class="nossos-clientes__slider">
