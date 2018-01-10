@@ -37,6 +37,7 @@
             top: 0;
             color: $color-one;
             @include font-size(10);
+            font-family: $text-bold;
             transform: translateY(0);
         }
 
@@ -54,12 +55,12 @@
     &__label {
         position: absolute;
         top: 50%;
+        left: 0;
         transform: translateY(-50%);
         @include font-size(18);
         transition: .5s ease all;
         pointer-events: none;
     }
-
 
     &__bar {
         position: relative;
@@ -76,5 +77,10 @@
             background: $color-one;
             transition: .5s;
         }
+    }
+    
+    button {
+        @include font-size(14);
+        padding: 10px 50px;
     }
 }

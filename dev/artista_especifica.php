@@ -24,7 +24,7 @@
                         <div class="form-box">
                             <p>Pedidos de orçamentos enviados até às 17 horas, poderão ser respondidos no mesmo dia.</p>
                             <form action="" class="form-box__form">
-                                <div class="form-box__wrap" data-js="form-box__wrap">
+                                <div class="form-box__wrap">
                                     <input type="text" id="nome" data-js="form-input" class="form-box__input" required autocomplete="off">
                                     <label for="nome" data-js="form-label" class="form-box__label">
                                         Nome

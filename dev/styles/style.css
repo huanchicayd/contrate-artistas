@@ -1408,6 +1408,7 @@
   color: #ffcc00;
   font-size: 10px;
   font-size: 1rem;
+  font-family: "OpenSans-Bold", sans-serif;
   transform: translateY(0);
 }
 
@@ -1424,6 +1425,7 @@
 .form-box__label {
   position: absolute;
   top: 50%;
+  left: 0;
   transform: translateY(-50%);
   font-size: 18px;
   font-size: 1.8rem;
@@ -1446,6 +1448,12 @@
   position: absolute;
   background: #ffcc00;
   transition: .5s;
+}
+
+.form-box button {
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding: 10px 50px;
 }
 
 .home-content {
@@ -1838,10 +1846,89 @@
   margin-left: 0;
 }
 
+.contato__breadcrumb {
+  margin-top: 25px;
+}
+
+.contato h4 {
+  font-size: 20px;
+  font-size: 2rem;
+  font-family: "OpenSans-Bold", sans-serif;
+}
+
 .contato__banner {
   height: 450px;
   background: url("../images/contato_banner.jpg") no-repeat center center;
   background-size: cover;
+}
+
+.contato__text {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.contato__social {
+  margin-top: 60px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contato__social a {
+  color: #000;
+}
+
+.contato__social i {
+  font-size: 40px;
+}
+
+.contato__endereco {
+  margin-bottom: 50px;
+}
+
+.contato__endereco__texto {
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-style: inherit;
+}
+
+.contato__endereco__title, .contato__telefone__title {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-family: "OpenSans-Bold", sans-serif;
+}
+
+.contato__email-img {
+  margin-top: 50px;
+}
+
+.contato__email {
+  margin: 50px 0;
+}
+
+.contato__email__box {
+  margin-bottom: 50px;
+}
+
+.contato__email__title {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-family: "OpenSans-Bold", sans-serif;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #000;
+}
+
+.contato__email__text {
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+.contato__email__text--break {
+  margin-bottom: 20px;
+}
+
+.contato__nossos-clientes {
+  margin-bottom: 50px;
 }
 
 .footer {

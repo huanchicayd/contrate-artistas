@@ -76,6 +76,7 @@ input {
   border: 0;
   outline: 0;
   font-family: $text-regular;
+  background: transparent;
 
   @include placeholder {
     font-family: $text-regular;
@@ -90,4 +91,5 @@ textarea {
   width: 100%;
   resize: none;
   border: 0;
+  background: transparent;
 }

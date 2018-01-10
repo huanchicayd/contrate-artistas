@@ -1,5 +1,82 @@
-.contato__banner {
-    height: 450px;
-    background: url('../images/contato_banner.jpg') no-repeat center center;
-    background-size: cover; 
+.contato {
+    &__breadcrumb {
+        margin-top: 25px;
+    }
+
+    h4 {
+        @include font-size(20);
+        font-family: $text-bold;
+    }
+
+    &__banner {
+        height: 450px;
+        background: url('../images/contato_banner.jpg') no-repeat center center;
+        background-size: cover; 
+    }
+
+    &__text {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    &__social {
+        margin-top: 60px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            color: #000;
+        }
+
+        i {
+            font-size: 40px;
+        }
+    }
+
+    &__endereco {
+        margin-bottom: 50px;
+
+        &__texto {
+            @include font-size(16);
+            font-style: inherit;
+        }
+    }
+
+    &__endereco__title,
+    &__telefone__title {
+        @include font-size(18);
+        font-family: $text-bold;
+    }
+
+    &__email-img {
+        margin-top: 50px;
+    }
+
+   &__email {
+       margin: 50px 0;
+
+       &__box {
+           margin-bottom: 50px;
+       }
+
+       &__title {
+           @include font-size(18);
+           font-family: $text-bold;
+           margin-bottom: 15px;
+           border-bottom: 1px solid #000;
+       }
+
+       &__text {
+           @include font-size(14);
+
+           &--break {
+               margin-bottom: 20px;
+           }
+       }
+   }
+
+   &__nossos-clientes {
+       margin-bottom: 50px;
+   }
 }

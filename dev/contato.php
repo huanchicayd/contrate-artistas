@@ -8,7 +8,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
-                    <div class="breadcrumb">
+                    <div class="breadcrumb contato__breadcrumb">
                         Você está em: Home >
                         <span class="breadcrumb__actual-page breadcrumb__active02">Contato</span>
                     </div>
@@ -18,50 +18,142 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-8">
-                    <div>
+                <div class="col-xl-7">
+                    <div class="contato__text">
                         <h4>Sinta-se livre para conectar-se conosco!</h4>
                         <p>
                             Estaremos prontos para atendê-lo e ajudá-lo a encontrar a atração perfeita para o seu evento.
                         </p>
                     </div>
-                    <div>
-                        <form action="">
-                            <label for="name">
-                                Nome
-                            </label>
-                            <input type="text" id="name">
-                            <label for="email">
-                                Email
-                            </label>
-                            <input type="text" id="email">
-                            <label for="phone">
-                                Telefone
-                            </label>
-                            <input type="text" id="phone">
-                            <label for="desc_evento">
-                                Descrição do evento
-                            </label>
-                            <textarea name="" id="desc_evento" cols="30" rows="10"></textarea>
+                    <div class="form-box">
+                        <form action="" class="form-box__form">
+                            <div class="form-box__wrap">
+                                <input type="text" id="name" data-js="form-input" class="form-box__input" required autocomplete="false" pattern="[A-z]{3,}" title="Você deve inserir letras. Deve ser mais de dois caracteres">
+                                <label for="name" class="form-box__label">
+                                    Nome
+                                </label>
+                                <span class="form-box__bar"></span>
+                            </div>
+                            <div class="form-box__wrap">
+                                <input type="email" id="email" data-js="form-input" class="form-box__input" required autocomplete="false" pattern="[a-z0-9.%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                                <label for="email" class="form-box__label">
+                                    Email
+                                </label>
+                                <span class="form-box__bar"></span>
+                            </div>
+                            <div class="form-box__wrap">
+                                <input type="text" id="phone" data-js="form-input" class="form-box__input" required autocomplete="false" pattern="([0-9]{2})[0-9]{4,6}[0-9]{3,4}$">
+                                <label for="phone" class="form-box__label">
+                                    Telefone
+                                </label>
+                                <span class="form-box__bar"></span>
+                            </div>
+                            <div class="form-box__wrap">
+                                <textarea name="" id="desc_evento" data-js="form-input" class="form-box__input" required autocomplete="false"></textarea>
+                                <label for="desc_evento" class="form-box__label">
+                                    Descrição do evento
+                                </label>
+                                <span class="form-box__bar"></span>
+                            </div>
                             <button type="submit" class="btn-primary">Enviar</button>
                         </form>
                     </div>
                 </div>
-                <div class="col-xl-4 col-push-1">
-                    <div>
-                        Social Icons
+                <div class="col-xl-3 offset-xl-2">
+                    <div class="contato__social">
+                        <a href="#">
+                            <i class="icon-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="icon-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="icon-youtube-play"></i>
+                        </a>
+                        <a href="#">
+                            <i class="icon-linkedin"></i>
+                        </a>
                     </div>
-                    <div>
-                        Address
+                    <div class="contato__endereco">
+                        <img src="" alt="">
+                        <h5 class="contato__endereco__title">Endereço</h5>
+                        <address class="contato__endereco__texto">
+                             Av das Americas 3333, sl. 202. Barra da Tijuca - Rio de Janeiro, RJ CEP 22631-003
+                        </address>
                     </div>
-                    <div>
-                        Phone
+                    <div class="contato__telefone">
+                        <img src="" alt="">
+                        <h5 class="contato__telefone__title">Telefone</h5>
+                        <p>
+                            (21) 3185-8766<br>(21) 3049-4910
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xl-12">
-                    Mail
+                    <div class="contato__email-img">
+                        Mail
+                    </div>
+                </div>
+            </div>
+            <div class="contato__email">
+                <div class="row">
+                    <div class="col-xl-3">
+                        <div class="contato__email__box">
+                            <h5 class="contato__email__title">CEO</h5>
+                            <p class="contato__email__text">
+                                Michel Kneit <br>
+                                michel@contrateartistas.com.br
+                            </p>
+                        </div>
+                        <div>
+                            <h5 class="contato__email__title">Produção</h5>
+                            <p class="contato__email__text">
+                                producao@contrateartistas.com.br
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <h5 class="contato__email__title">Comercial</h5>
+                        <p class="contato__email__text contato__email__text--break">
+                            Luciana Ramos<br>
+                            Sócia Diretora luciana@contrateartistas.com.br
+                        </p>
+                        <p class="contato__email__text">
+                            Bia da Matta<br>
+                            bia@contrateartistas.com.br
+                        </p>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="contato__email__box">
+                            <h5 class="contato__email__title">Prefeituras</h5>
+                            <p class="contato__email__text">
+                                Maria Fernanda Creuza<br>
+                                mariafernanda@contrateartistas.com.br
+                            </p>
+                        </div>
+                        <div>
+                            <h5 class="contato__email__title">Financeiro</h5>
+                            <p class="contato__email__text">
+                                financeiro@contrateartistas.com.br
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="contato__email__box">
+                            <h5 class="contato__email__title">Jurídico</h5>
+                            <p class="contato__email__text">
+                                juridico@contrateartistas.com.br
+                            </p>
+                        </div>
+                        <div>
+                            <h5 class="contato__email__title">Acessoria de imprensa</h5>
+                            <p class="contato__email__text">
+                                assessoria@contrateartistas.com.br
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

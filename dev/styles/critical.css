@@ -2070,6 +2070,7 @@ input {
   border: 0;
   outline: 0;
   font-family: "OpenSans-Regular", sans-serif;
+  background: transparent;
 }
 
 input::-webkit-input-placeholder {
@@ -2111,6 +2112,7 @@ textarea {
   width: 100%;
   resize: none;
   border: 0;
+  background: transparent;
 }
 
 /* Slider */
