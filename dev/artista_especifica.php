@@ -19,16 +19,107 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-4">
-                     SOLICITE UM ORÇAMENTO
+                <div class="col-xl-5">
+                     <div class="artistas-especifica__formulario">
+                        <div class="form-box">
+                            <p>Pedidos de orçamentos enviados até às 17 horas, poderão ser respondidos no mesmo dia.</p>
+                            <form action="" class="form-box__form">
+                                <div class="form-box__wrap" data-js="form-box__wrap">
+                                    <input type="text" id="nome" data-js="form-input" class="form-box__input" required autocomplete="off">
+                                    <label for="nome" data-js="form-label" class="form-box__label">
+                                        Nome
+                                    </label>
+                                    <span class="form-box__bar "data-js="active"></span>
+                                </div>
+
+                                <div class="form-box__wrap" data-js="form-input-wrap">
+                                    <input type="email" id="email" data-js="form-input" class="form-box__input" required autocomplete="off">
+                                    <label for="email" data-js="form-label" class="form-box__label">
+                                        E-mail
+                                    </label>
+                                    <span class="form-box__bar " data-js="active"></span>
+                                </div>
+
+                                <div class="form-box__wrap" data-js="form-input-wrap">
+                                    <input type="phone" id="telefone" data-js="form-input" class="form-box__input" required autocomplete="off">
+                                    <label for="telefone" data-js="form-label" class="form-box__label">
+                                        Telefone
+                                    </label>
+                                    <span class="form-box__bar " data-js="active"></span>
+                                </div>
+
+                                <div class="form-box__wrap" data-js="form-input-wrap">
+                                    <input type="text" id="tipo-evento" data-js="form-input" class="form-box__input" required autocomplete="off">
+                                    <label for="tipo-evento" data-js="form-label" class="form-box__label">
+                                        Tipo de evento
+                                    </label>
+                                    <span class="form-box__bar " data-js="active"></span>
+                                </div>
+
+                                <div class="form-box__wrap" data-js="form-input-wrap">
+                                    <input type="text" id="data-evento" data-js="form-input" class="form-box__input" required autocomplete="off">
+                                    <label for="data-evento" data-js="form-label" class="form-box__label">
+                                        Data do evento
+                                    </label>
+                                    <span class="form-box__bar " data-js="active"></span>
+                                </div>
+
+                                <div class="form-box__wrap" data-js="form-input-wrap">
+                                    <input type="text" id="cidade" data-js="form-input" class="form-box__input" required autocomplete="off">
+                                    <label for="cidade" data-js="form-label" class="form-box__label">
+                                        Cidade
+                                    </label>
+                                    <span class="form-box__bar" data-js="active"></span>
+                                </div>
+
+                                <div class="form-box__wrap" data-js="form-input-wrap">
+                                    <input type="text" id="estado" data-js="form-input" class="form-box__input" required autocomplete="off">
+                                    <label for="estado" data-js="form-label" class="form-box__label">
+                                        Estado
+                                    </label>
+                                    <span class="form-box__bar" data-js="active"></span>
+                                </div>
+
+                                <div class="form-box__wrap" data-js="form-input-wrap">
+                                    <textarea class="form-box__input" name="" id="" required autocomplete="off"></textarea>
+                                    <label for="" data-js="form-label" class="form-box__label">
+                                        Descrição
+                                    </label>
+                                    <span class="form-box__bar " data-js="active"></span>
+                                </div>
+
+                                <button class="btn-primary">Orçamento</button>
+                            </form>
+                        </div>
+                     </div>
                 </div>
-                <div class="col-xl-8">
+                <div class="col-xl-6 offset-xl-1">
                     <div class="artista-video__wrap">
                         <div class="artista-video__social-media">
-                            facebook
-                            twitter
-                            instagram
-                            youtube
+                            <div class="artista-video__social-media__wrap">
+                                <div class="artista-video__social-media__circle">
+                                    <i class="icon-facebook"></i>
+                                </div>
+                                <p>5kk</p>
+                            </div>
+                            <div class="artista-video__social-media__wrap">
+                                <div class="artista-video__social-media__circle">
+                                    <i class="icon-twitter"></i>
+                                </div>
+                                <p>5kk</p>
+                            </div>
+                            <div class="artista-video__social-media__wrap">
+                                <div class="artista-video__social-media__circle">
+                                    <i class="icon-instagram"></i>
+                                </div>
+                                <p>5kk</p>
+                            </div>
+                            <div class="artista-video__social-media__wrap">
+                                <div class="artista-video__social-media__circle">
+                                    <i class="icon-youtube-play"></i>
+                                </div>
+                                <p>5kk</p>
+                            </div>
                         </div>
                         <div class="artista-video__main-video">
                             <video src="" width="100%" height="56.56%" style="background: #000"></video>
@@ -50,8 +141,11 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="artistas-especifica__outras-opcoes">
-                        <h4>Veja outras opções que a Contrate Artistas selecionou para você!</h4>
-                        <p>
+                        <h4 class="artistas-especifica__outras-opcoes__title">
+                            Veja outras opções que a Contrate Artistas selecionou para você!
+
+                        </h4>
+                        <p class="artistas-especifica__outras-opcoes__text">
                             Consultoria, comodidade e segurança na Contratação de artistas. Tudo para seu evento ser um sucesso! Não arrisque ter imprevistos
                             com a atração principal do seu evento. Busque quem sabe e conhece. Busque Contrate Artistas. <a href="#">Saiba mais</a>
                         </p>

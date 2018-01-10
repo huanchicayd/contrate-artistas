@@ -1,12 +1,4 @@
 @charset "UTF-8";
-/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
-/* Document
-   ========================================================================== */
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in
- *    IE on Windows Phone and in iOS.
- */
 html {
   line-height: 1.15;
   /* 1 */
@@ -432,12 +424,6 @@ template {
   display: none;
 }
 
-/*!
- * Bootstrap Grid v4.0.0-beta.2 (https://getbootstrap.com)
- * Copyright 2011-2017 The Bootstrap Authors
- * Copyright 2011-2017 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
 @-ms-viewport {
   width: device-width;
 }
@@ -2121,8 +2107,10 @@ input:-ms-input-placeholder {
 }
 
 textarea {
+  display: block;
   width: 100%;
   resize: none;
+  border: 0;
 }
 
 /* Slider */

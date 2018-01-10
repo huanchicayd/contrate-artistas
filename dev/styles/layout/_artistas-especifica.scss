@@ -6,17 +6,64 @@
         text-transform: uppercase;
     }
 
+    &__formulario {
+        margin-top: 50px;
+    }
+
     &__artista {
         margin: 135px 0 25px 0;
     }
 
     &__outras-opcoes {
         margin-top: 50px;
+
+        &__title {
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            margin-bottom: 25px;
+        }
     }
 }
 
 .artista-video {
     &__wrap {
-        margin-top: 50px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    &__social-media {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+
+        &__wrap {
+            display: flex;
+            align-items: center;
+            margin-left: 15px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+
+        &__circle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-left: 15px;
+            background: #000;
+            @include font-size(22);
+            color: #fff;
+            margin-right: 10px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
     }
 }

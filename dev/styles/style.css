@@ -1369,6 +1369,85 @@
   content: '◀';
 }
 
+.form-box {
+  padding: 25px;
+  border: 2px solid #ffcc00;
+}
+
+.form-box > p {
+  margin-bottom: 20px;
+}
+
+.form-box__form {
+  padding: 5px;
+}
+
+.form-box__wrap {
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.form-box__input {
+  z-index: 2;
+  border-bottom: 2px solid #000;
+  font-size: 18px;
+  font-size: 1.8rem;
+  padding-top: 10px;
+}
+
+.form-box__input:valid {
+  border-bottom: 2px solid #ffcc00;
+  background: url(../images/check.svg) no-repeat right center;
+  background-size: 20px;
+}
+
+.form-box__input:focus ~ .form-box__label,
+.form-box__input.used ~ .form-box__label {
+  top: 0;
+  color: #ffcc00;
+  font-size: 10px;
+  font-size: 1rem;
+  transform: translateY(0);
+}
+
+.form-box__input:valid ~ .form-box__label,
+.form-box__input:valid.used ~ .form-box__label {
+  color: #ffcc00;
+}
+
+.form-box__input:focus ~ .form-box__bar:before {
+  width: 100%;
+  right: 0;
+}
+
+.form-box__label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  font-size: 1.8rem;
+  transition: .5s ease all;
+  pointer-events: none;
+}
+
+.form-box__bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.form-box__bar:before {
+  content: '';
+  height: 2px;
+  width: 0;
+  right: 100%;
+  bottom: 0;
+  position: absolute;
+  background: #ffcc00;
+  transition: .5s;
+}
+
 .home-content {
   margin-bottom: 50px;
 }
@@ -1699,6 +1778,10 @@
   text-transform: uppercase;
 }
 
+.artistas-especifica__formulario {
+  margin-top: 50px;
+}
+
 .artistas-especifica__artista {
   margin: 135px 0 25px 0;
 }
@@ -1707,8 +1790,52 @@
   margin-top: 50px;
 }
 
+.artistas-especifica__outras-opcoes__title {
+  margin-bottom: 20px;
+}
+
+.artistas-especifica__outras-opcoes__text {
+  margin-bottom: 25px;
+}
+
 .artista-video__wrap {
-  margin-top: 50px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.artista-video__social-media {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.artista-video__social-media__wrap {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.artista-video__social-media__wrap:first-child {
+  margin-left: 0;
+}
+
+.artista-video__social-media__circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 15px;
+  background: #000;
+  font-size: 22px;
+  font-size: 2.2rem;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.artista-video__social-media__circle:first-child {
+  margin-left: 0;
 }
 
 .contato__banner {

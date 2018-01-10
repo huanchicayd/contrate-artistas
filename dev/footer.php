@@ -128,6 +128,7 @@
 <script src="scripts/open-nav-menu.js"></script>
 <script src="scripts/filter-home-artists.js"></script>
 <script src="scripts/filter-sidebar-categories.js"></script>
+<script src="scripts/form.js"></script>
 
 </body>
 </html>

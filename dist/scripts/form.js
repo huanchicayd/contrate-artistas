@@ -1,0 +1,1 @@
+"use strict";!function(){for(var e=document.querySelectorAll(".form-box__input"),t=0;t<e.length;t++)!function(t){var n=e[t];n.addEventListener("blur",function(){n.value?n.classList.add("used"):n.classList.remove("used")})}(t)}();
