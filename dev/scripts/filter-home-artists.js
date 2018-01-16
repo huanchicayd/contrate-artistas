@@ -1,47 +1,56 @@
 (function(){
     'use strict';
 
-    let $gridBtn = document.querySelector('[data-js="view-grid-btn"]');
-    let $listBtn = document.querySelector('[data-js="view-list-btn"]');
+    var pageUrl = window.location.href;
+    var currentPage = pageUrl.substr(pageUrl.lastIndexOf('/') + 1);
+    //console.log(currentPage);
+    currentPage === 'index.php' || currentPage === '' ? initHomeFilters() : false;
+    //console.log();
 
-    let $gridPanel = document.querySelector('.home-content__artista-wrap');
-    let $artistaBox = document.querySelectorAll('.artista-box__link');
-    let $artistaProfile = document.querySelector('.artista-box__profile');
-    let $artistaProfileImage = document.querySelector('.artista-box__profile__image');
+    function initHomeFilters(){
+        let $gridBtn = document.querySelector('[data-js="view-grid-btn"]');
+        let $listBtn = document.querySelector('[data-js="view-list-btn"]');
 
-    function activeGridFilter() {
-        $gridBtn.addEventListener('click', gridFilterChangeStyle, false);
-    }
+        let $gridPanel = document.querySelector('.home-content__artista-wrap');
+        let $artistaBox = document.querySelectorAll('.artista-box__link');
+        let $artistaProfile = document.querySelector('.artista-box__profile');
+        let $artistaProfileImage = document.querySelector('.artista-box__profile__image');
 
-    function gridFilterChangeStyle() {
-        $gridBtn.classList.add('filter-btn-active');
-        $listBtn.classList.remove('filter-btn-active');
-        $gridPanel.classList.add('home-content__artista-wrap-vertical');
-        Array.prototype.forEach.call($artistaBox, function (artistaBox) {
-            artistaBox.classList.add('artista-box-vertical');
-        });
-        mobileScreenChanges.reloadForMobile();
-    }
+        function activeGridFilter() {
+            $gridBtn.addEventListener('click', gridFilterChangeStyle, false);
+        }
 
-    function activeListFilter() {
-        $listBtn.addEventListener('click', listFilterChangeStyle, false);
-    }
+        function gridFilterChangeStyle() {
+            $gridBtn.classList.add('filter-btn-active');
+            $listBtn.classList.remove('filter-btn-active');
+            $gridPanel.classList.add('home-content__artista-wrap-vertical');
+            Array.prototype.forEach.call($artistaBox, function (artistaBox) {
+                artistaBox.classList.add('artista-box-vertical');
+            });
+            mobileScreenChanges.reloadForMobile();
+        }
 
-    function listFilterChangeStyle() {
-        $listBtn.classList.add('filter-btn-active');
-        $gridBtn.classList.remove('filter-btn-active');
-        $gridPanel.classList.remove('home-content__artista-wrap-vertical');
-        Array.prototype.forEach.call($artistaBox, function (artistaBox) {
-            artistaBox.classList.remove('artista-box-vertical');
-        });
-    }
+        function activeListFilter() {
+            $listBtn.addEventListener('click', listFilterChangeStyle, false);
+        }
 
-    (function filtroArtistasBtnActive() {
-        if ($gridPanel)
+        function listFilterChangeStyle() {
             $listBtn.classList.add('filter-btn-active');
-    })();
+            $gridBtn.classList.remove('filter-btn-active');
+            $gridPanel.classList.remove('home-content__artista-wrap-vertical');
+            Array.prototype.forEach.call($artistaBox, function (artistaBox) {
+                artistaBox.classList.remove('artista-box-vertical');
+            });
+        }
 
-    activeGridFilter();
-    activeListFilter();
+        (function filtroArtistasBtnActive() {
+            if ($gridPanel)
+                $listBtn.classList.add('filter-btn-active');
+        })();
+
+        activeGridFilter();
+        activeListFilter();
+    }
+    
     
 })();

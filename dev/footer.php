@@ -124,11 +124,11 @@
 
 <script src="scripts/vendors/jquery.js"></script>
 <script src="scripts/vendors/slick.js"></script>
-<script src="scripts/init.js" async></script>
-<script src="scripts/open-nav-menu.js"></script>
-<script src="scripts/filter-home-artists.js"></script>
-<script src="scripts/filter-sidebar-categories.js"></script>
-<script src="scripts/form.js"></script>
+<script src="scripts/main.js" async></script>
+<script src="scripts/open-nav-menu.js" async></script>
+<script src="scripts/filter-home-artists.js" async></script>
+<script src="scripts/filter-sidebar-categories.js" async></script>
+<script src="scripts/form.js" async></script>
 
 </body>
 </html>

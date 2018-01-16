@@ -20,9 +20,22 @@
             </div>
             <div class="row">
                 <div class="col-xl-5">
-                     <div class="artistas-especifica__formulario">
-                        <div class="form-box">
-                            <p>Pedidos de orçamentos enviados até às 17 horas, poderão ser respondidos no mesmo dia.</p>
+                    <div>
+                        <button class="btn-primary artistas-especifica__header-btn">Contato</button>
+                    </div>
+                     <div class="artistas-especifica__form">
+                        <div class="form-box artistas-especifica__form-box">
+                            <div class="artistas-especifica__form__header">
+                                <div class="artistas-especifica__form__title">
+                                    <h3>Solicite um orçamento</h3>
+                                </div>
+                                <div class="artistas-especifica__form__info">
+                                    <p>
+                                        Atendimento <br>de excelência
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="artistas-especifica__form-box__text">Pedidos de orçamentos enviados até às 17 horas, poderão ser respondidos no mesmo dia.</p>
                             <form action="" class="form-box__form">
                                 <div class="form-box__wrap">
                                     <input type="text" id="nome" data-js="form-input" class="form-box__input" required autocomplete="off">
@@ -48,12 +61,21 @@
                                     <span class="form-box__bar " data-js="active"></span>
                                 </div>
 
-                                <div class="form-box__wrap" data-js="form-input-wrap">
-                                    <input type="text" id="tipo-evento" data-js="form-input" class="form-box__input" required autocomplete="off">
-                                    <label for="tipo-evento" data-js="form-label" class="form-box__label">
-                                        Tipo de evento
-                                    </label>
-                                    <span class="form-box__bar " data-js="active"></span>
+                                <div class="form-group__select-wrap">
+                                    <div class="form-box__wrap" data-js="form-input-wrap">
+                                        <input type="text" id="tipo-evento" data-js="form-input__select-tipo" class="form-box__input form-box__input--select" readonly required autocomplete="off">
+                                        <label for="tipo-evento" data-js="form-label" class="form-box__label">
+                                            Tipo de evento
+                                        </label>
+                                        <span class="form-box__bar " data-js="active"></span>
+                                    </div>
+                                    <div class="form-box__select-menu form-box__select-tipo">
+                                        <a href="#">Particular (Sou pessoa física)</a>
+                                        <a href="#">Corporativo (Sou pessoa jurídica)</a>
+                                        <a href="#">Bilheteria (Sou produtor)</a>
+                                        <a href="#">Não há evento (Sou fã)</a>
+                                        <a href="#">Não há evento (Sou da acessoria de imprensa)</a>
+                                    </div>
                                 </div>
 
                                 <div class="form-box__wrap" data-js="form-input-wrap">
@@ -64,20 +86,38 @@
                                     <span class="form-box__bar " data-js="active"></span>
                                 </div>
 
-                                <div class="form-box__wrap" data-js="form-input-wrap">
-                                    <input type="text" id="cidade" data-js="form-input" class="form-box__input" required autocomplete="off">
-                                    <label for="cidade" data-js="form-label" class="form-box__label">
-                                        Cidade
-                                    </label>
-                                    <span class="form-box__bar" data-js="active"></span>
+                                <div class="form-group__select-wrap">
+                                    <div class="form-box__wrap" data-js="form-input-wrap">
+                                        <input type="text" id="cidade" data-js="form-input__select-cidade" class="form-box__input form-box__input--select" readonly required autocomplete="off">
+                                        <label for="cidade" data-js="form-label" class="form-box__label">
+                                            Cidade
+                                        </label>
+                                        <span class="form-box__bar" data-js="active"></span>
+                                    </div>
+                                    <div class="form-box__select-menu form-box__select-cidade">
+                                        <a href="#">Rio de Janeiro</a>
+                                        <a href="#">São Paulo</a>
+                                        <a href="#">Bahia</a>
+                                        <a href="#">Santa Catarina</a>
+                                        <!-- Carregar dinamicamente os Estados -->
+                                    </div>
                                 </div>
 
-                                <div class="form-box__wrap" data-js="form-input-wrap">
-                                    <input type="text" id="estado" data-js="form-input" class="form-box__input" required autocomplete="off">
-                                    <label for="estado" data-js="form-label" class="form-box__label">
-                                        Estado
-                                    </label>
-                                    <span class="form-box__bar" data-js="active"></span>
+                                <div class="form-group__select-wrap">
+                                    <div class="form-box__wrap" data-js="form-input-wrap">
+                                        <input type="text" id="estado" data-js="form-input__select-estado" class="form-box__input form-box__input--select" readonly required autocomplete="off">
+                                        <label for="estado" data-js="form-label" class="form-box__label">
+                                            Estado
+                                        </label>
+                                        <span class="form-box__bar" data-js="active"></span>
+                                    </div>
+                                    <div class="form-box__select-menu form-box__select-estado">
+                                        <a href="#">RJ</a>
+                                        <a href="#">SP</a>
+                                        <a href="#">BA</a>
+                                        <a href="#">SC</a>
+                                        <!-- Carregar dinamicamente os Estados -->
+                                    </div>
                                 </div>
 
                                 <div class="form-box__wrap" data-js="form-input-wrap">
@@ -121,19 +161,21 @@
                                 <p>5kk</p>
                             </div>
                         </div>
-                        <div class="artista-video__main-video">
-                            <video src="" width="100%" height="56.56%" style="background: #000"></video>
+                        <div class="artista-video__video-wrap">
+                            <video src="" class="artista-video__video"></video>
+                            <div class="artista-video__video-play"></div>
                         </div>
                         <div class="artista-video__related-videos">
-                            <div></div>
-                            <div></div>
-                            <div></div>
+                            <div class="artista-video__related-videos__item">a</div>
+                            <div class="artista-video__related-videos__item">b</div>
+                            <div class="artista-video__related-videos__item">c</div>
+                            <div class="artista-video__related-videos__item">d</div>
                         </div>
                     </div>
                     <div class="artista-sobre__texto">
                          <h4>Sobre o artista</h4>
                          <p>
-                            Há seis anos surgia no mercado fonográfico uma dupla promissora com demonstração de irreverência logo de início, podemos ver isso na inusitada escolha de um posto de gasolina como cenário do primeiro DVD. Ali dava mostras de que George Henrique e Rodrigo marcariam presença. Mas não foi só esta a grande marca da dupla, desde então, emplacaram quatro sucessos em todo o Brasil... <a href="#">Ver mais</a>
+                            Há seis anos surgia no mercado fonográfico uma dupla promissora com demonstração de irreverência logo de início, podemos ver isso na inusitada escolha de um posto de gasolina como cenário do primeiro DVD. Ali dava mostras de que George Henrique e Rodrigo marcariam presença. Mas não foi só esta a grande marca da dupla, desde então, emplacaram quatro sucessos em todo o Brasil... <a href="#" class="content-link">Ver mais</a>
                          </p>
                     </div>
                 </div>
@@ -147,7 +189,7 @@
                         </h4>
                         <p class="artistas-especifica__outras-opcoes__text">
                             Consultoria, comodidade e segurança na Contratação de artistas. Tudo para seu evento ser um sucesso! Não arrisque ter imprevistos
-                            com a atração principal do seu evento. Busque quem sabe e conhece. Busque Contrate Artistas. <a href="#">Saiba mais</a>
+                            com a atração principal do seu evento. Busque quem sabe e conhece. Busque Contrate Artistas. <a href="#" class="content-link">Saiba mais</a>
                         </p>
                         <div class="artistas-especifica__outras__box-artistas home-content__artista-wrap-vertical">
                             <a href="artista_especifica.php" class="artista-box__link artista-box-vertical artista-box-vertical__five-blocks">

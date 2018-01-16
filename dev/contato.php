@@ -25,7 +25,7 @@
                             Estaremos prontos para atendê-lo e ajudá-lo a encontrar a atração perfeita para o seu evento.
                         </p>
                     </div>
-                    <div class="form-box">
+                    <div class="form-box contato__form-box">
                         <form action="" class="form-box__form">
                             <div class="form-box__wrap">
                                 <input type="text" id="name" data-js="form-input" class="form-box__input" required autocomplete="false" pattern="[A-z]{3,}" title="Você deve inserir letras. Deve ser mais de dois caracteres">
@@ -50,7 +50,7 @@
                             </div>
                             <div class="form-box__wrap">
                                 <textarea name="" id="desc_evento" data-js="form-input" class="form-box__input" required autocomplete="false"></textarea>
-                                <label for="desc_evento" class="form-box__label">
+                                <label for="desc_evento" class="form-box__label form-box__label-textarea">
                                     Descrição do evento
                                 </label>
                                 <span class="form-box__bar"></span>
@@ -75,17 +75,20 @@
                         </a>
                     </div>
                     <div class="contato__endereco">
-                        <img src="" alt="">
+                        <img src="images/pin.svg" alt="" class="contato__icons">
                         <h5 class="contato__endereco__title">Endereço</h5>
                         <address class="contato__endereco__texto">
-                             Av das Americas 3333, sl. 202. Barra da Tijuca - Rio de Janeiro, RJ CEP 22631-003
+                             Av das Americas 3333, sl. 202.<br>
+                             Barra da Tijuca - Rio de Janeiro, RJ<br> 
+                             CEP 22631-003
                         </address>
                     </div>
                     <div class="contato__telefone">
-                        <img src="" alt="">
-                        <h5 class="contato__telefone__title">Telefone</h5>
-                        <p>
-                            (21) 3185-8766<br>(21) 3049-4910
+                        <img src="images/phone.svg" alt="" class="contato__icons">
+                        <h5 class="contato__telefone__title">Telefones</h5>
+                        <p class="contato__telefone__texto">
+                            (21) 3185-8766<br>
+                            (21) 3049-4910
                         </p>
                     </div>
                 </div>
@@ -93,7 +96,7 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="contato__email-img">
-                        Mail
+                        <img src="images/email.svg" alt="" class="contato__icons">
                     </div>
                 </div>
             </div>
@@ -117,8 +120,8 @@
                     <div class="col-xl-3">
                         <h5 class="contato__email__title">Comercial</h5>
                         <p class="contato__email__text contato__email__text--break">
-                            Luciana Ramos<br>
-                            Sócia Diretora luciana@contrateartistas.com.br
+                            Luciana Ramos - Sócia Diretora<br>
+                            luciana@contrateartistas.com.br
                         </p>
                         <p class="contato__email__text">
                             Bia da Matta<br>

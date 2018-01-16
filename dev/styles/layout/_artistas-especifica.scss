@@ -1,13 +1,82 @@
 .artistas-especifica {
-
     h4 {
         @include font-size(22);
         font-family: $text-bold;
         text-transform: uppercase;
     }
 
-    &__formulario {
+    p {
+        line-height: 28px;
+    }
+
+    &__header-btn {
+        padding: 10px 50px;
+        margin: 40px 0 0 0;
+        @include font-size(14);
+    }
+
+    &__form-box {
+        padding-top: 0;
+
+        &__text {
+            font-family: $text-bold;
+            @include font-size(14);
+            
+        }
+
+        p {
+            line-height: inherit;
+        }
+    }
+
+    &__form {
         margin-top: 50px;
+
+        &__header {
+            display: flex;
+            background: $color-one;
+            margin-left: -25px;
+            margin-right: -25px;
+            padding: 10px 25px;
+            align-items: center;
+            position: relative;
+            margin-bottom: 20px;
+
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: -10px;
+                right: -21px;
+                width: 72px;
+                height: 72px;
+                background: url('../images/form-header_check.png') no-repeat;
+            }
+
+            h3 {
+                margin-bottom: 0;
+                text-transform: uppercase;
+                font-family: $text-special;
+                @include font-size(18);
+            }
+        }
+
+        &__title {
+            width: 70%;
+        }
+
+        &__info {
+            width: 30%;
+            font-family: $text-bold;
+            color: #946901;
+            margin-right: 25px;
+            
+            p {
+                @include font-size(14);
+                text-align: right;
+                line-height: inherit;
+            }
+        }
     }
 
     &__artista {
@@ -36,7 +105,7 @@
     &__social-media {
         display: flex;
         justify-content: flex-end;
-        margin-bottom: 10px;
+        margin: 40px 0;
 
         &__wrap {
             display: flex;
@@ -65,5 +134,145 @@
                 margin-left: 0;
             }
         }
+    }
+
+    &__video-wrap {
+        position: relative;
+    }
+
+    &__video {
+        width: 100%;
+        background: #000;
+    }
+
+    &__video-play {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        border: 5px solid $color-one;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+
+        &:after {
+            content: '▶';
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include font-size(24);
+            position: absolute;
+            top: 0;
+            left: 2px;
+            width: 40px;
+            height: 40px;
+            color: $color-one;
+        }
+    }
+
+    &__related-videos {
+
+        &.slick-slider {
+            margin: 10px 5px 0 5px;
+        }
+
+        &.slick-slider .slick-list {
+            margin: 0 -10px;
+        }
+
+        .slick-dots li {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        
+        .slick-dots li button {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 1px solid grey;
+
+            &:before {
+                display: none;
+            }
+        }
+
+        .slick-dots li.slick-active {
+            background: $color-one;
+        }
+
+        &__item {
+            height: 120px;
+            background: #000;
+            margin: 0 5px;
+        }
+    }
+}
+
+.artista-sobre {
+    &__texto {
+        h4 {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.form-group__select-wrap {
+    position: relative;
+}
+
+.form-box__select-menu {
+    a {
+        display: flex;
+        align-items: center;
+        background: #000;
+        color: #fff;
+        height: 40px;
+        padding: 0 15px;
+
+        &:hover {
+            background: $color-one;
+            color: #000;
+        }
+    }
+}
+
+.form-box__select-tipo {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+
+    &--active {
+        display: block;
+    }
+}
+
+.form-box__select-estado {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+
+    &--active {
+        display: block;
+    }
+}
+
+.form-box__select-cidade {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+
+    &--active {
+        display: block;
     }
 }

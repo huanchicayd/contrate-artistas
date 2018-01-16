@@ -7,7 +7,6 @@
     margin-bottom: 100px;
 }
 
-
 .quem-somos__servicos,
 .quem-somos__clientes {
     margin-bottom: 50px;
@@ -22,7 +21,8 @@
         overflow: hidden;
 
         &__link {
-            display: block;
+            display: flex;
+            align-items: center;
             position: absolute;
             bottom: 50px;
             left: 50%;
@@ -31,6 +31,11 @@
             transform: translatex(-50%);
             font-family: $text-bold;
             z-index: 10;
+
+            > img {
+                width: 17px;
+                margin-left: 15px;
+            }
         }
     }
 

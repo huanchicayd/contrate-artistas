@@ -144,6 +144,7 @@
       @include font-size(15);
       font-weight: 700;
       color: #1e1e1e;
+      background: #fff;
       @include placeholder {
         @include font-size(15);
         color: #1e1e1e;
@@ -151,6 +152,7 @@
 
       @media screen and (max-width: 1199px){
         height: 50px;
+        background: #fff;
       }
     }
 

@@ -41,8 +41,28 @@
         dots: true
     });
 
+    $('.artista-video__related-videos').slick({
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        dots: true,
+        arrows: false
+    });
+
+    //Quem somos scroll link
+    $('.quem-somos__banner__link').click(function (e) {
+        console.log('Clicado');
+        e.preventDefault();
+        var teste = $('#quem-somos__sobre').offset().top - 50;
+        console.log(teste);
+        $('html').animate({
+            scrollTop: teste + 'px'
+        }, 1000);
+    })
+
     window.checkWindowInnerWidth = checkWindowInnerWidth;
     window.mobileScreenChanges = mobileScreenChanges;
     window.init = init;
 
 })();
+
+

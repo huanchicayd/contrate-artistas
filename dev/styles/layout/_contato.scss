@@ -3,6 +3,10 @@
         margin-top: 25px;
     }
 
+    p {
+        line-height: 28px;
+    }
+
     h4 {
         @include font-size(20);
         font-family: $text-bold;
@@ -27,6 +31,10 @@
 
         a {
             color: #000;
+
+            &:hover {
+                color: $color-one;
+            }
         }
 
         i {
@@ -38,8 +46,9 @@
         margin-bottom: 50px;
 
         &__texto {
-            @include font-size(16);
+            @include font-size(14);
             font-style: inherit;
+            line-height: 28px;
         }
     }
 
@@ -47,14 +56,19 @@
     &__telefone__title {
         @include font-size(18);
         font-family: $text-bold;
+        margin-bottom: 10px;
+    }
+
+    &__telefone p {
+        @include font-size(14);
     }
 
     &__email-img {
         margin-top: 50px;
     }
 
-   &__email {
-       margin: 50px 0;
+    &__email {
+       margin-bottom: 50px ;
 
        &__box {
            margin-bottom: 50px;
@@ -78,5 +92,14 @@
 
    &__nossos-clientes {
        margin-bottom: 50px;
+   }
+
+   &__form-box {
+       max-width: 500px;
+   }
+
+   &__icons {
+       width: 52px;
+       margin-bottom: 15px;
    }
 }

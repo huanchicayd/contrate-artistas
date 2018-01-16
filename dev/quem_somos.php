@@ -3,10 +3,10 @@
 <main>
     <section class="banner-cortado quem-somos__banner">
         <div class="container">
-            <a href="#" class="quem-somos__banner__link">Saiba mais</a>
+            <a href="#" class="quem-somos__banner__link">Saiba mais <img src="images/about_arrow.svg" alt=""></a>
         </div>
     </section>
-    <section class="quem-somos__sobre">
+    <section class="quem-somos__sobre" id="quem-somos__sobre">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">

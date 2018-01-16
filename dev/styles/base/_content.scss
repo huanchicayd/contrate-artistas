@@ -14,6 +14,16 @@
     text-transform: uppercase;
 }
 
+.content-link {
+    font-family: $text-bold;
+    text-transform: uppercase;
+    @include font-size(14);
+}
+
+.disabled-link {
+    opacity: .3;
+}
+
 .ver-mais {
     text-align: center;
     font-weight: 700;

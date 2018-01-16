@@ -1,14 +1,13 @@
 .banner-cortado {
-
     &:after {
         content: '';
         display: block;
         position: absolute;
-        bottom: -15px;
-        left: 50%;
-        background:#f8f8f8;
-        width: 120%;
-        height: 30px;
-        transform: translateX(-50%) rotateZ(-1deg);
+        bottom: 0;
+        right: 0;
+        background: url(../images/banner-cut.svg) no-repeat bottom left;
+        background-size: 120%;
+        width: 100%;
+        height: 33px;
     }
 }

@@ -60,6 +60,7 @@
       outline: 0;
       display: block;
       border: 0;
+      background: #fff;
       @include font-size(18);
       @include placeholder {
         @include font-size(18);
