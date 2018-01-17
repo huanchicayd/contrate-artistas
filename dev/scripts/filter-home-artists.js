@@ -3,9 +3,7 @@
 
     var pageUrl = window.location.href;
     var currentPage = pageUrl.substr(pageUrl.lastIndexOf('/') + 1);
-    //console.log(currentPage);
     currentPage === 'index.php' || currentPage === '' ? initHomeFilters() : false;
-    //console.log();
 
     function initHomeFilters(){
         let $gridBtn = document.querySelector('[data-js="view-grid-btn"]');

@@ -26,7 +26,23 @@
     $('.nossos-clientes__slider').slick({
             slidesToShow: 5,
             slidesToScroll: 5,
-            dots: true
+            dots: true,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
         });
 
     $('.galeria-menor').slick({
@@ -58,6 +74,25 @@
             scrollTop: teste + 'px'
         }, 1000);
     })
+
+    function voltarAoTopo() {
+        $(document).on('scroll', function () {
+            var y = $(this).scrollTop();
+            if (y > 500) {
+                $('a.btn-back').fadeIn();
+            } else {
+                $('a.btn-back').fadeOut();
+            }
+        });
+
+        $('a.btn-back').click(function () {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 1000);
+            return false
+        });
+    }
+    voltarAoTopo();
 
     window.checkWindowInnerWidth = checkWindowInnerWidth;
     window.mobileScreenChanges = mobileScreenChanges;

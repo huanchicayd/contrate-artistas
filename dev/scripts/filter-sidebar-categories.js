@@ -1,26 +1,32 @@
 (function(){
     'use strict';
 
-    let $sidebarBtnFilter = document.querySelector('[data-js="sidebar-categorias-btn"]');
-    let $sidebarWrap = document.querySelector('[data-js="sidebar-wrap"]');
-    let $sidebar = document.querySelector('[data-js="sidebar"]');
-    let $sidebarOverlay = document.querySelector('#overlay');
+    var pageUrl = window.location.href;
+    var currentPage = pageUrl.substr(pageUrl.lastIndexOf('/') + 1);
+    currentPage === 'index.php' || currentPage === '' ? initHomeFilters() : false;
 
-    $sidebarBtnFilter.addEventListener('click', activeSidebarFilter, false);
-    function activeSidebarFilter() {
-        $sidebarBtnFilter.textContent === 'Filtrar' ?
-            $sidebarBtnFilter.textContent = 'Filtrar Categorias' :
-            $sidebarBtnFilter.textContent = 'Filtrar';
+    function initHomeFilters(){
+        let $sidebarBtnFilter = document.querySelector('[data-js="sidebar-categorias-btn"]');
+        let $sidebarWrap = document.querySelector('[data-js="sidebar-wrap"]');
+        let $sidebar = document.querySelector('[data-js="sidebar"]');
+        let $sidebarOverlay = document.querySelector('#overlay');
 
-        let sidebarParent = $sidebarWrap.parentElement;
-        sidebarParent.style.position = 'relative';
+        $sidebarBtnFilter.addEventListener('click', activeSidebarFilter, false);
+        function activeSidebarFilter() {
+            $sidebarBtnFilter.textContent === 'Filtrar' ?
+                $sidebarBtnFilter.textContent = 'Filtrar Categorias' :
+                $sidebarBtnFilter.textContent = 'Filtrar';
 
-        $sidebarWrap.classList.toggle('sidebar-wrap--isactive');
-        $sidebarBtnFilter.classList.toggle('sidebar-categorias__btn--isabove');
-        $sidebar.classList.toggle('sidebar--active');
-        $sidebarOverlay.classList.toggle('sidebar-overlay');
+            let sidebarParent = $sidebarWrap.parentElement;
+            sidebarParent.style.position = 'relative';
 
-        mobileScreenChanges.reloadForDesktop();
-    }
+            $sidebarWrap.classList.toggle('sidebar-wrap--isactive');
+            $sidebarBtnFilter.classList.toggle('sidebar-categorias__btn--isabove');
+            $sidebar.classList.toggle('sidebar--active');
+            $sidebarOverlay.classList.toggle('sidebar-overlay');
+
+            mobileScreenChanges.reloadForDesktop();
+        }
+    } 
     
 })();

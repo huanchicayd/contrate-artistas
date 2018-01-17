@@ -55,58 +55,72 @@
                     <div class="sidebar-categorias">
                         <h3>Todas as categorias</h3>
                         <form class="" action="index.html" method="post">
+
                             <div class="sidebar-categorias__checkbox">
                                 <input type="checkbox" name="" value="false" id="check-apresentador" class="styled-checkbox">
                                 <label for="check-apresentador">Apresentador</label>
                             </div>
+
                             <div class="sidebar-categorias__checkbox">
                                 <input type="checkbox" name="" value="false" id="check-apresentadora" class="styled-checkbox">
                                 <label for="check-apresentadora">Apresentadora</label>
                             </div>
+
                             <div class="sidebar-categorias__checkbox">
                                 <input type="checkbox" name="" value="false" id="check-ator" class="styled-checkbox">
                                 <label for="check-ator">Ator</label>
                             </div>
+                            
                             <div class="sidebar-categorias__checkbox">
                                 <input type="checkbox" name="" value="false" id="check-atriz" class="styled-checkbox">
                                 <label for="check-atriz">Atriz</label>
                             </div>
+
                             <div class="sidebar-categorias__checkbox">
                                 <input type="checkbox" name="" value="false" id="check-atleta" class="styled-checkbox">
                                 <label for="check-atleta">Atleta</label>
                             </div>
+
                             <div class="sidebar-categorias__checkbox">
                                 <input type="checkbox" name="" value="false" id="check-celebridade" class="styled-checkbox">
                                 <label for="check-celebridade">Celebridade</label>
                             </div>
+
                             <div class="sidebar-categorias__checkbox">
                                 <input type="checkbox" name="" value="false" id="check-comediante" class="styled-checkbox">
                                 <label for="check-comediante">Comediante</label>
                             </div>
+
                             <div class="sidebar-categorias__checkbox">
                                 <input type="checkbox" name="" value="false" id="check-dj" class="styled-checkbox">
                                 <label for="check-dj">DJ</label>
                             </div>
+
                             <div class="sidebar-categorias__checkbox">
                                 <input type="checkbox" name="" value="false" id="check-infantil" class="styled-checkbox">
                                 <label for="check-infantil">Infantil</label>
                             </div>
+
                             <div class="sidebar-categorias__checkbox">
                                 <input type="checkbox" name="" value="false" id="check-jornalista" class="styled-checkbox">
                                 <label for="check-jornalista">Jornalista</label>
                             </div>
+
                             <div class="sidebar-categorias__checkbox">
                                 <input type="checkbox" name="" value="false" id="check-palestrante" class="styled-checkbox">
                                 <label for="check-palestrante">Palestrante</label>
                             </div>
+
                             <div class="sidebar-categorias__checkbox">
                                 <input type="checkbox" name="" value="false" id="check-show" class="styled-checkbox">
                                 <label for="check-show">Show</label>
                             </div>
+
                             <div class="sidebar-categorias__checkbox">
                                 <input type="checkbox" name="" value="false" id="check-teatro" class="styled-checkbox">
                                 <label for="check-teatro">Teatro</label>
                             </div>
+                            
                             <div class="sidebar-categorias__checkbox">
                                 <input type="checkbox" name="" value="false" id="check-youtuber" class="styled-checkbox">
                                 <label for="check-youtuber">Youtuber</label>

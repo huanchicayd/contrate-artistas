@@ -20,6 +20,10 @@
         background-size: cover; 
         overflow: hidden;
 
+        @media screen and (max-width: 1199px){
+            display: none;
+        }
+
         &__link {
             display: flex;
             align-items: center;
@@ -37,6 +41,10 @@
                 margin-left: 15px;
             }
         }
+    }
+
+    &__section-title {
+        margin: 50px 0;
     }
 
     &__sobre {
@@ -60,6 +68,10 @@
 
     &__resultados {
         text-align: center;
+
+        @media screen and (max-width: 1199px) {
+            display: none;
+        }
     }
 
     &__numbers {
@@ -72,5 +84,11 @@
         @include font-size(18);
         font-family: $text-bold;
         font-style: oblique;
+    }
+
+    &__galeria {
+        @media screen and (max-width: 1199px) {
+            display: none;
+        }
     }
 }

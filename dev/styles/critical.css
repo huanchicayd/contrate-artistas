@@ -2124,6 +2124,43 @@ textarea:focus {
   height: 150px;
 }
 
+a.btn-back {
+  width: 45px;
+  height: 45px;
+  background: #ffcc00;
+  position: fixed;
+  z-index: 10;
+  bottom: 25px;
+  right: 25px;
+  display: none;
+  text-align: center;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+a.btn-back .arrow {
+  position: absolute;
+  top: 20px;
+}
+
+a.btn-back .arrow:before, a.btn-back .arrow:after {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+}
+
+a.btn-back .arrow:before {
+  transform: rotate(-45deg);
+  right: -3px;
+}
+
+a.btn-back .arrow:after {
+  transform: rotate(45deg);
+  left: -3px;
+}
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -2916,6 +2953,32 @@ textarea:focus {
   font-size: 1.8rem;
 }
 
+.home-banner__search-input:focus::-webkit-input-placeholder {
+  font-size: 14px;
+  font-size: 1.4rem;
+  opacity: .5;
+}
+
+.home-banner__search-input:focus:-moz-placeholder {
+  /* Firefox 18- */
+  font-size: 14px;
+  font-size: 1.4rem;
+  opacity: .5;
+}
+
+.home-banner__search-input:focus::-moz-placeholder {
+  /* Firefox 19+ */
+  font-size: 14px;
+  font-size: 1.4rem;
+  opacity: .5;
+}
+
+.home-banner__search-input:focus:-ms-input-placeholder {
+  font-size: 14px;
+  font-size: 1.4rem;
+  opacity: .5;
+}
+
 .home-banner__search-input::-webkit-input-placeholder {
   font-family: "OpenSans-Regular", sans-serif;
   font-weight: 400;
@@ -2924,6 +2987,7 @@ textarea:focus {
   font-size: 18px;
   font-size: 1.8rem;
   transform: translatey(-1px);
+  transition: .5s;
 }
 
 .home-banner__search-input:-moz-placeholder {
@@ -2935,6 +2999,7 @@ textarea:focus {
   font-size: 18px;
   font-size: 1.8rem;
   transform: translatey(-1px);
+  transition: .5s;
 }
 
 .home-banner__search-input::-moz-placeholder {
@@ -2946,6 +3011,7 @@ textarea:focus {
   font-size: 18px;
   font-size: 1.8rem;
   transform: translatey(-1px);
+  transition: .5s;
 }
 
 .home-banner__search-input:-ms-input-placeholder {
@@ -2956,6 +3022,7 @@ textarea:focus {
   font-size: 18px;
   font-size: 1.8rem;
   transform: translatey(-1px);
+  transition: .5s;
 }
 
 .home-banner__search-btn {

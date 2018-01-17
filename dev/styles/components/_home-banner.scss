@@ -47,6 +47,13 @@
     padding-right: 170px;
     @include font-size(18);
 
+    &:focus {
+      @include placeholder {
+        @include font-size(14);
+        opacity: .5;
+      }
+    }
+
     @include placeholder {
       font-family: $text-regular;
       font-weight: 400;
@@ -54,6 +61,7 @@
       opacity: 1;
       @include font-size(18);
       transform: translatey(-1px);
+      transition: .5s;
     }
   }
 

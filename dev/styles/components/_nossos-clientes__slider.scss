@@ -29,10 +29,16 @@
     &__item {
         text-align: center;
 
+        &:hover img {
+            opacity: 1;
+        }
+
         img {
             display: block;
             margin: auto;
             width: 150px;
+            opacity: .25;
+            transition: .5s;
         }
     }
 }

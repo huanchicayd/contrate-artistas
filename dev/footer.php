@@ -122,6 +122,10 @@
     </div>
 </footer>
 
+<a href="#" class="btn-back">
+    <span class="arrow"></span>
+</a>
+
 <script src="scripts/vendors/jquery.js"></script>
 <script src="scripts/vendors/slick.js"></script>
 <script src="scripts/main.js" async></script>

@@ -65,11 +65,15 @@
       display: none;
     }
 
+    &__more {
+      display: none;
+    }
+
     &__checkbox {
       display: flex;
       margin-bottom: 10px;
 
-      >input {
+      > input {
         width: 20px;
         height: 20px;
       }

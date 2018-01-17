@@ -387,6 +387,10 @@
   display: none;
 }
 
+.sidebar-categorias__more {
+  display: none;
+}
+
 .sidebar-categorias__checkbox {
   display: flex;
   margin-bottom: 10px;
@@ -951,10 +955,23 @@
   height: 370px;
 }
 
+@media screen and (max-width: 991px) {
+  .nossos-servicos__wrap {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
 .nossos-servicos__corporativo, .nossos-servicos__particular {
   width: 50%;
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 991px) {
+  .nossos-servicos__corporativo, .nossos-servicos__particular {
+    width: 100%;
+  }
 }
 
 .nossos-servicos__corporativo {
@@ -1004,6 +1021,12 @@
   padding: 0 100px;
 }
 
+@media screen and (max-width: 991px) {
+  .nossos-servicos__content-left, .nossos-servicos__content-right {
+    margin: 50px auto;
+  }
+}
+
 .nossos-servicos__content-left > h3, .nossos-servicos__content-right > h3 {
   text-transform: uppercase;
 }
@@ -1051,10 +1074,16 @@
   text-align: center;
 }
 
+.nossos-clientes__item:hover img {
+  opacity: 1;
+}
+
 .nossos-clientes__item img {
   display: block;
   margin: auto;
   width: 150px;
+  opacity: .25;
+  transition: .5s;
 }
 
 .nossos-clientes__depoimentos {
@@ -1087,8 +1116,20 @@
   padding: 0 50px;
 }
 
+@media screen and (max-width: 991px) {
+  .nossos-clientes__depoimentos__item {
+    flex-direction: column;
+  }
+}
+
 .nossos-clientes__depoimentos__user {
-  width: 25%;
+  width: 250px;
+}
+
+@media screen and (max-width: 991px) {
+  .nossos-clientes__depoimentos__user {
+    width: 100%;
+  }
 }
 
 .nossos-clientes__depoimentos__user > img {
@@ -1096,11 +1137,24 @@
   border-radius: 50%;
 }
 
+@media screen and (max-width: 991px) {
+  .nossos-clientes__depoimentos__user > img {
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+}
+
 .nossos-clientes__depoimentos__text {
   display: flex;
   align-items: center;
-  width: 75%;
+  width: calc(100% - 250px);
   padding-left: 50px;
+}
+
+@media screen and (max-width: 991px) {
+  .nossos-clientes__depoimentos__text {
+    width: 100%;
+  }
 }
 
 .nossos-clientes__depoimentos__quote > p {
@@ -1721,6 +1775,12 @@
   overflow: hidden;
 }
 
+@media screen and (max-width: 1199px) {
+  .quem-somos__banner {
+    display: none;
+  }
+}
+
 .quem-somos__banner__link {
   display: flex;
   align-items: center;
@@ -1737,6 +1797,10 @@
 .quem-somos__banner__link > img {
   width: 17px;
   margin-left: 15px;
+}
+
+.quem-somos__section-title {
+  margin: 50px 0;
 }
 
 .quem-somos__sobre {
@@ -1762,6 +1826,12 @@
   text-align: center;
 }
 
+@media screen and (max-width: 1199px) {
+  .quem-somos__resultados {
+    display: none;
+  }
+}
+
 .quem-somos__numbers {
   font-size: 48px;
   font-size: 4.8rem;
@@ -1774,6 +1844,12 @@
   font-size: 1.8rem;
   font-family: "OpenSans-Bold", sans-serif;
   font-style: oblique;
+}
+
+@media screen and (max-width: 1199px) {
+  .quem-somos__galeria {
+    display: none;
+  }
 }
 
 /*

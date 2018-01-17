@@ -3,6 +3,11 @@
     &__wrap {
         display: flex;
         height: 370px;
+
+        @media screen and (max-width: 991px) {
+            flex-direction: column;
+            height: auto;
+        }
     }
 
     &__corporativo,
@@ -10,6 +15,10 @@
         width: 50%;
         display: flex;
         align-items: center;
+
+        @media screen and (max-width: 991px) {
+            width: 100%;
+        }
     }
 
     &__corporativo {
@@ -58,6 +67,10 @@
         position: relative;
         z-index: 2;
         padding: 0 100px;
+
+        @media screen and (max-width: 991px){
+            margin: 50px auto;
+        }
 
         > h3 {
             text-transform: uppercase;

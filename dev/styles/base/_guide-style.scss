@@ -102,3 +102,41 @@ textarea {
 textarea:focus {
   height: 150px;
 }
+
+a.btn-back {
+  width: 45px;
+  height: 45px;
+  background: $color-one;
+  position: fixed;
+  z-index: 10;
+  bottom: 25px;
+  right: 25px;
+  display: none;
+  text-align: center;
+  box-shadow: 2px 2px 12px rgba(0, 0 ,0, .15);
+
+  .arrow {
+    position: absolute;
+    top: 20px;
+
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      width: 15px;
+      height: 3px;
+      background: #fff;
+      position: absolute;
+    }
+
+    &:before {
+      transform: rotate(-45deg);
+      right: -3px;
+    }
+
+    &:after {
+      transform: rotate(45deg);
+      left: -3px;
+    }
+  }
+}

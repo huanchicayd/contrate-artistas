@@ -10,6 +10,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
+                    <div class="section-title__primary quem-somos__section-title">
+                        <h2 class="section-title__title">Quem somos</h2>
+                    </div>
                     <h2 class="quem-somos__sobre__title">
                         A Contrate Artistas é a escolha <mark class="highlight">mais confiável</mark> para aqueles que visam qualidade, segurança e diversas opções na hora de contratar atrações artísticas para seus eventos especiais, sem pagar nada a mais por isso.
                     </h2>
