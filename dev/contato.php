@@ -1,10 +1,9 @@
 <?php include('header.php') ?>
 
 <main class="contato">
-    <section class="contato__banner">
-        
+    <section class="contato__banner">     
     </section>
-    <section>
+    <section class="contato__content">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
@@ -12,13 +11,13 @@
                         Você está em: Home >
                         <span class="breadcrumb__actual-page breadcrumb__active02">Contato</span>
                     </div>
-                    <div class="section-title__primary">
+                    <div class="section-title__primary contato__section-title">
                         <h2 class="section-title__title">Solta a voz!</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-7">
+                <div class="col-xl-7 col-md-7 col-sm-12">
                     <div class="contato__text">
                         <h4>Sinta-se livre para conectar-se conosco!</h4>
                         <p>
@@ -59,7 +58,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-xl-3 offset-xl-2">
+                <div class="col-xl-3 offset-xl-2 col-md-4 offset-md-1 col-sm-12">
                     <div class="contato__social">
                         <a href="#">
                             <i class="icon-facebook"></i>
@@ -189,7 +188,7 @@
             </div>
         </div>
     </section>
-    <section class="nossos-servicos">
+    <section class="nossos-servicos contato__nossos-servicos">
         <div class="section-title__primary section-title--center">
             <h2 class="section-title__title">Nossos serviços</h2>
         </div>

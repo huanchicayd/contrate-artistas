@@ -1,6 +1,14 @@
 .contato {
     &__breadcrumb {
         margin-top: 25px;
+
+        @media screen and (max-width: 1199px){
+            display: none;
+        }
+    }
+
+    &__section-title {
+        margin-top: 50px;
     }
 
     p {
@@ -15,7 +23,17 @@
     &__banner {
         height: 450px;
         background: url('../images/contato_banner.jpg') no-repeat center center;
-        background-size: cover; 
+        background-size: cover;
+
+        @media screen and (max-width: 1199px){
+            display: none;
+        }
+    }
+
+    &__content {
+        @media screen and (max-width: 1199px) {
+            margin-bottom: 50px;
+        }
     }
 
     &__text {
@@ -45,6 +63,10 @@
     &__endereco {
         margin-bottom: 50px;
 
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
+
         &__texto {
             @include font-size(14);
             font-style: inherit;
@@ -59,16 +81,30 @@
         margin-bottom: 10px;
     }
 
+    &__telefone {
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
+    }
+
     &__telefone p {
         @include font-size(14);
     }
 
     &__email-img {
         margin-top: 50px;
+
+        @media screen and (max-width: 1199px) {
+            display: none;
+        }
     }
 
     &__email {
-       margin-bottom: 50px ;
+       margin-bottom: 50px;
+
+       @media screen and (max-width: 1199px){
+           display: none;
+       }
 
        &__box {
            margin-bottom: 50px;
@@ -92,10 +128,24 @@
 
    &__nossos-clientes {
        margin-bottom: 50px;
+
+       @media screen and (max-width: 1199px){
+           display: none;
+       }
+   }
+
+   &__nossos-servicos {
+       @media screen and (max-width: 1199px) {
+            display: none;
+        }
    }
 
    &__form-box {
        max-width: 500px;
+
+       @media screen and (max-width: 767px) {
+            padding: 15px; 
+        }
    }
 
    &__icons {

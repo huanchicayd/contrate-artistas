@@ -1027,6 +1027,12 @@
   }
 }
 
+@media screen and (max-width: 480px) {
+  .nossos-servicos__content-left, .nossos-servicos__content-right {
+    padding: 0 15px;
+  }
+}
+
 .nossos-servicos__content-left > h3, .nossos-servicos__content-right > h3 {
   text-transform: uppercase;
 }
@@ -1119,6 +1125,7 @@
 @media screen and (max-width: 991px) {
   .nossos-clientes__depoimentos__item {
     flex-direction: column;
+    padding: 0;
   }
 }
 
@@ -1154,6 +1161,7 @@
 @media screen and (max-width: 991px) {
   .nossos-clientes__depoimentos__text {
     width: 100%;
+    padding-left: 0;
   }
 }
 
@@ -2350,6 +2358,16 @@
   margin-top: 25px;
 }
 
+@media screen and (max-width: 1199px) {
+  .contato__breadcrumb {
+    display: none;
+  }
+}
+
+.contato__section-title {
+  margin-top: 50px;
+}
+
 .contato p {
   line-height: 28px;
 }
@@ -2364,6 +2382,18 @@
   height: 450px;
   background: url("../images/contato_banner.jpg") no-repeat center center;
   background-size: cover;
+}
+
+@media screen and (max-width: 1199px) {
+  .contato__banner {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .contato__content {
+    margin-bottom: 50px;
+  }
 }
 
 .contato__text {
@@ -2394,6 +2424,12 @@
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 767px) {
+  .contato__endereco {
+    text-align: center;
+  }
+}
+
 .contato__endereco__texto {
   font-size: 14px;
   font-size: 1.4rem;
@@ -2408,6 +2444,12 @@
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .contato__telefone {
+    text-align: center;
+  }
+}
+
 .contato__telefone p {
   font-size: 14px;
   font-size: 1.4rem;
@@ -2417,8 +2459,20 @@
   margin-top: 50px;
 }
 
+@media screen and (max-width: 1199px) {
+  .contato__email-img {
+    display: none;
+  }
+}
+
 .contato__email {
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1199px) {
+  .contato__email {
+    display: none;
+  }
 }
 
 .contato__email__box {
@@ -2446,8 +2500,26 @@
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 1199px) {
+  .contato__nossos-clientes {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .contato__nossos-servicos {
+    display: none;
+  }
+}
+
 .contato__form-box {
   max-width: 500px;
+}
+
+@media screen and (max-width: 767px) {
+  .contato__form-box {
+    padding: 15px;
+  }
 }
 
 .contato__icons {
