@@ -10,7 +10,7 @@
 @import 'components/_artista-box';
 @import 'components/_home-filtros';
 @import 'components/_banners';
-@import 'components/_chamada-destaque.scss';
+@import 'components/_chamada-destaque';
 @import 'components/_nossos-servicos';
 @import 'components/_nossos-clientes__slider';
 @import 'components/_nossos-clientes__depoimentos';
@@ -18,10 +18,11 @@
 @import 'components/_galeria-menor';
 @import 'components/_formulario-box.scss';
 
-@import 'layout/_home';
-@import 'layout/_quem-somos';
-@import 'layout/_particular';
-@import 'layout/_galeria-fotos.scss';
-@import 'layout/_artistas-especifica';
-@import 'layout/_contato';
+@import 'pages/_home';
+@import 'pages/_quem-somos';
+@import 'pages/_particular';
+@import 'pages/_galeria-fotos.scss';
+@import 'pages/_artistas-especifica';
+@import 'pages/_contato';
+
 @import 'layout/_footer';

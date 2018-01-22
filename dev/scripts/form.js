@@ -1,98 +1,60 @@
-(function(){
-    'use strict';
+(function algumaCoisa() {
+	'use strict';
 
-    console.log('Carregado...');
+	const pageUrl = window.location.href;
+	const currentPage = pageUrl.substr(pageUrl.lastIndexOf('/') + 1);
+	currentPage === 'artista_especifica.php' || currentPage === 'contato.php' ? initForm() : false;
 
-    let pageUrl = window.location.href;
-    let currentPage = pageUrl.substr(pageUrl.lastIndexOf('/') + 1);
-    if(currentPage === 'artista_especifica.php' || currentPage === 'contato.php'){
-        initForm();
-    }
+	function initForm() {
 
-    function initForm(){
+		function activeBarWhenValidate() {
+			const input = document.querySelectorAll('.form-box__input');
+			const inputLength = input.length;
+			for (let i = 0; i < inputLength; i++) {
+				const element = input[i];
+				element.addEventListener('blur', isInputValidated);
 
-        let input = document.querySelectorAll('.form-box__input');
-        for (let i = 0; i < input.length; i++) {
-            const element = input[i];
+				function isInputValidated() {
+					element.value ? element.classList.add('used') : element.classList.remove('used');
+				}
+			}
+		}
+		activeBarWhenValidate();
 
-            element.addEventListener('blur', function () {
-                if (element.value) 
-                    element.classList.add('used');
-                else
-                    element.classList.remove('used');
-            })
-        }
+		function colocaSelectNoElemento(elemento, formMenu, selectMenuItens) {
+			const $inputSelect = document.querySelector(elemento);
+			const $formboxSelect = document.querySelector(formMenu);
+			const $itens = document.querySelectorAll(selectMenuItens);
 
-        function activeSelectTipoEvento() {
-            var $inputSelectTipo = document.querySelector('[data-js="form-input__select-tipo"]');
-            var $formboxSelectTipo = document.querySelector('.form-box__select-tipo');
+			$inputSelect.addEventListener('click', openSelect, false);
 
-            $inputSelectTipo.addEventListener('click', openSelectTipoEvento, false);
+			function openSelect() {
+				$formboxSelect.classList.toggle('form-box__select--active');
 
-            function openSelectTipoEvento() {
-                $formboxSelectTipo.classList.toggle('form-box__select-tipo--active');
-                var $itens = document.querySelectorAll('.form-box__select-tipo a');
-                for (var i = 0; i < $itens.length; i++) {
-                    $itens[i].addEventListener('click', function (e) {
-                        e.preventDefault();
-                        $inputSelectTipo.value = this.textContent;
-                        $inputSelectTipo.classList.add('used');
-                        $inputSelectTipo.classList.add('form-box__input--isvalid');
-                        $formboxSelectTipo.classList.remove('form-box__select-tipo--active');
-                    })
-                }
-            }
-        }
+				(function iterateSelectItens() {
+					const $itensLength = $itens.length;
+					for (let i = 0; i < $itensLength; i++) {
+						$itens[i].addEventListener('click', doWhenClickSelectItem, false);
+					}
+				}());
 
-        activeSelectTipoEvento();
+				function doWhenClickSelectItem(e) {
+					e.preventDefault();
+					$inputSelect.value = this.textContent;
+					changeStylesAfterClick();
+				}
 
-        function activeSelectEstado(){
-            var $inputSelectEstado = document.querySelector('[data-js="form-input__select-estado"]');
-            var $formboxSelectEstado = document.querySelector('.form-box__select-estado');
-            
-            $inputSelectEstado.addEventListener('click', openSelectEstado, false);
+				function changeStylesAfterClick() {
+					$inputSelect.classList.add('used');
+					$inputSelect.classList.add('form-box__input--isvalid');
+					$formboxSelect.classList.remove('form-box__select--active');
+				}
+			}
+		}
 
-            function openSelectEstado(){
-                $formboxSelectEstado.classList.toggle('form-box__select-estado--active');
-                var $itens = document.querySelectorAll('.form-box__select-estado a');
-                for (var i = 0; i < $itens.length; i++) {
-                    $itens[i].addEventListener('click', function (e) {
-                        e.preventDefault();
-                        $inputSelectEstado.value = this.textContent;
-                        $inputSelectEstado.classList.add('used');
-                        $inputSelectEstado.classList.add('form-box__input--isvalid');
-                        $formboxSelectEstado.classList.remove('form-box__select-estado--active');
-                    })
-                }
-            }
-        }
+		colocaSelectNoElemento('.form-box__input-tipo', '.form-box__select-tipo', '.form-box__select-tipo a');
+		colocaSelectNoElemento('.form-box__input-cidade', '.form-box__select-cidade', '.form-box__select-cidade a');
+		colocaSelectNoElemento('.form-box__input-estado', '.form-box__select-estado', '.form-box__select-estado a');
+	}
 
-        activeSelectEstado();
-
-        function activeSelectCidade() {
-            var $inputSelectCidade = document.querySelector('[data-js="form-input__select-cidade"]');
-            var $formboxSelectCidade = document.querySelector('.form-box__select-cidade');
-
-            $inputSelectCidade.addEventListener('click', openSelectEstado, false);
-
-            function openSelectEstado() {
-                $formboxSelectCidade.classList.toggle('form-box__select-cidade--active');
-                var $itens = document.querySelectorAll('.form-box__select-cidade a');
-                for (var i = 0; i < $itens.length; i++) {
-                    $itens[i].addEventListener('click', function (e) {
-                        e.preventDefault();
-                        $inputSelectCidade.value = this.textContent;
-                        $inputSelectCidade.classList.add('used');
-                        $inputSelectCidade.classList.add('form-box__input--isvalid');
-                        $formboxSelectCidade.classList.remove('form-box__select-cidade--active');
-                    })
-                }
-            }
-        }
-
-        activeSelectCidade();
-    }
-
-})();
-
-
+}());

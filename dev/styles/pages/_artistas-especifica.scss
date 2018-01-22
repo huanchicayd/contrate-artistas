@@ -238,41 +238,15 @@
     }
 }
 
-.form-box__select-tipo {
+.form-box__select {
     display: none;
     position: absolute;
     top: 40px;
     left: 0;
     width: 100%;
     z-index: 2;
-
-    &--active {
-        display: block;
-    }
 }
 
-.form-box__select-estado {
-    display: none;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    width: 100%;
-    z-index: 2;
-
-    &--active {
-        display: block;
-    }
-}
-
-.form-box__select-cidade {
-    display: none;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    width: 100%;
-    z-index: 2;
-
-    &--active {
-        display: block;
-    }
+.form-box__select--active {
+    display: block;
 }

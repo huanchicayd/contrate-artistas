@@ -63,13 +63,13 @@
 
                                 <div class="form-group__select-wrap">
                                     <div class="form-box__wrap" data-js="form-input-wrap">
-                                        <input type="text" id="tipo-evento" data-js="form-input__select-tipo" class="form-box__input form-box__input--select" readonly required autocomplete="off">
+                                        <input type="text" id="tipo-evento" data-js="form-input__select-tipo" class="form-box__input-tipo form-box__input form-box__input--select" readonly required autocomplete="off">
                                         <label for="tipo-evento" data-js="form-label" class="form-box__label">
                                             Tipo de evento
                                         </label>
                                         <span class="form-box__bar " data-js="active"></span>
                                     </div>
-                                    <div class="form-box__select-menu form-box__select-tipo">
+                                    <div class="form-box__select-menu form-box__select form-box__select-tipo">
                                         <a href="#">Particular (Sou pessoa física)</a>
                                         <a href="#">Corporativo (Sou pessoa jurídica)</a>
                                         <a href="#">Bilheteria (Sou produtor)</a>
@@ -88,13 +88,13 @@
 
                                 <div class="form-group__select-wrap">
                                     <div class="form-box__wrap" data-js="form-input-wrap">
-                                        <input type="text" id="cidade" data-js="form-input__select-cidade" class="form-box__input form-box__input--select" readonly required autocomplete="off">
+                                        <input type="text" id="cidade" data-js="form-input__select-cidade" class="form-box__input-cidade form-box__input form-box__input--select" readonly required autocomplete="off">
                                         <label for="cidade" data-js="form-label" class="form-box__label">
                                             Cidade
                                         </label>
                                         <span class="form-box__bar" data-js="active"></span>
                                     </div>
-                                    <div class="form-box__select-menu form-box__select-cidade">
+                                    <div class="form-box__select-menu form-box__select form-box__select-cidade">
                                         <a href="#">Rio de Janeiro</a>
                                         <a href="#">São Paulo</a>
                                         <a href="#">Bahia</a>
@@ -105,13 +105,13 @@
 
                                 <div class="form-group__select-wrap">
                                     <div class="form-box__wrap" data-js="form-input-wrap">
-                                        <input type="text" id="estado" data-js="form-input__select-estado" class="form-box__input form-box__input--select" readonly required autocomplete="off">
+                                        <input type="text" id="estado" data-js="form-input__select-estado" class="form-box__input-estado form-box__input form-box__input--select" readonly required autocomplete="off">
                                         <label for="estado" data-js="form-label" class="form-box__label">
                                             Estado
                                         </label>
                                         <span class="form-box__bar" data-js="active"></span>
                                     </div>
-                                    <div class="form-box__select-menu form-box__select-estado">
+                                    <div class="form-box__select-menu form-box__select form-box__select-estado">
                                         <a href="#">RJ</a>
                                         <a href="#">SP</a>
                                         <a href="#">BA</a>

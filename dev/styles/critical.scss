@@ -3,12 +3,13 @@
 @import 'helpers/_mixins';
 
 @import 'base/_normalize';
-@import 'base/_grid';
-
-@import 'base/_guide-style';
+@import 'base/_style-guide';
 
 @import 'vendors/_slick';
 
+@import 'components/_nav';
 @import 'components/_buttons';
-@import 'components/_header';
 @import 'components/_home-banner';
+
+@import 'layout/_grid';
+@import 'layout/_header';

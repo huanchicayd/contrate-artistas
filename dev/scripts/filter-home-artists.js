@@ -14,11 +14,11 @@
         let $artistaProfile = document.querySelector('.artista-box__profile');
         let $artistaProfileImage = document.querySelector('.artista-box__profile__image');
 
-        function activeGridFilter() {
+        function activeGridFilter(){
             $gridBtn.addEventListener('click', gridFilterChangeStyle, false);
         }
 
-        function gridFilterChangeStyle() {
+        function gridFilterChangeStyle(){
             $gridBtn.classList.add('filter-btn-active');
             $listBtn.classList.remove('filter-btn-active');
             $gridPanel.classList.add('home-content__artista-wrap-vertical');
@@ -28,11 +28,11 @@
             mobileScreenChanges.reloadForMobile();
         }
 
-        function activeListFilter() {
+        function activeListFilter(){
             $listBtn.addEventListener('click', listFilterChangeStyle, false);
         }
 
-        function listFilterChangeStyle() {
+        function listFilterChangeStyle(){
             $listBtn.classList.add('filter-btn-active');
             $gridBtn.classList.remove('filter-btn-active');
             $gridPanel.classList.remove('home-content__artista-wrap-vertical');
@@ -41,14 +41,13 @@
             });
         }
 
-        (function filtroArtistasBtnActive() {
-            if ($gridPanel)
+        (function filtroArtistasBtnActive(){
+            if($gridPanel)
                 $listBtn.classList.add('filter-btn-active');
         })();
 
         activeGridFilter();
         activeListFilter();
     }
-    
     
 })();

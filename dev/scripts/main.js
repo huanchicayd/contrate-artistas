@@ -1,14 +1,14 @@
-(function init(){
+(function init() {
     'use strict';
 
-    function checkWindowInnerWidth(value){
+    function checkWindowInnerWidth(value) {
         return window.innerWidth <= value;
     }
 
     let mobileScreenChanges = {
         reloadForMobile: () => {
             var reload = window.addEventListener('resize', () => {
-                if(window.innerWidth <= 1199){
+                if (window.innerWidth <= 1199) {
                     location.reload();
                 }
             });
@@ -16,7 +16,7 @@
         },
         reloadForDesktop: () => {
             var reload = window.addEventListener('resize', () => {
-                if(window.innerWidth > 1199)
+                if (window.innerWidth > 1199)
                     location.reload();
             });
             return reload;
@@ -24,26 +24,26 @@
     };
 
     $('.nossos-clientes__slider').slick({
-            slidesToShow: 5,
-            slidesToScroll: 5,
-            dots: true,
-            responsive: [
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3
-                    }
-                },
-                {
-                    breakpoint: 576,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        dots: true,
+        arrows: false,
+        responsive: [{
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
                 }
-            ]
-        });
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
 
     $('.galeria-menor').slick({
         slidesToShow: 1,
@@ -94,10 +94,9 @@
     }
     voltarAoTopo();
 
+    //Export functions to global scope
     window.checkWindowInnerWidth = checkWindowInnerWidth;
     window.mobileScreenChanges = mobileScreenChanges;
     window.init = init;
 
 })();
-
-

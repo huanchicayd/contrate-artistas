@@ -1,15 +1,15 @@
-(function(){
+(function () {
     'use strict';
 
-    let $navBtn = document.querySelector('[data-js="nav-btn"]');
-    let $navWrap = document.querySelector('[data-js="nav-menu-wrap"]');
-    let $navMenu = document.querySelector('[data-js="nav-menu"]');
-    let $headerInfo = document.querySelector('[data-js="header-info"]');
-    let $headerSearch = document.querySelector('[data-js="header-search"]');
-    let $headerSearchForm = document.querySelector('[data-js="header-search-form"]');
-    let $footer = document.querySelector('[data-js="footer"]');
-    let $footerInfo = document.querySelector('.footer-info');
-    let $footerBrandWrap = document.querySelector('.footer-brand-wrap');
+    const $navBtn = document.querySelector('[data-js="nav-btn"]');
+    const $navWrap = document.querySelector('[data-js="nav-menu-wrap"]');
+    const $navMenu = document.querySelector('[data-js="nav-menu"]');
+    const $headerInfo = document.querySelector('[data-js="header-info"]');
+    const $headerSearch = document.querySelector('[data-js="header-search"]');
+    const $headerSearchForm = document.querySelector('[data-js="header-search-form"]');
+    const $footer = document.querySelector('[data-js="footer"]');
+    const $footerInfo = document.querySelector('.footer-info');
+    const $footerBrandWrap = document.querySelector('.footer-brand-wrap');
 
     $navBtn.addEventListener('click', navMenuOpen, false);
 
@@ -29,7 +29,7 @@
     }
 
     function animateNavBtnWhenOpenClose() {
-        let $navBtnSpan = document.querySelector('.header-menu-btn__bar');
+        const $navBtnSpan = document.querySelector('.header-menu-btn__bar');
         $navBtnSpan.classList.toggle('header-menu-btn__bar--on');
     }
 
@@ -46,13 +46,13 @@
     }
 
     function changeHeaderSeachBtnColor() {
-        let $headerSearchBtn = document.querySelector('[data-js="header-search-btn"]');
+        const $headerSearchBtn = document.querySelector('[data-js="header-search-btn"]');
         $headerSearchBtn.classList.toggle('header-search__btn--on');
     }
 
     function manipulateHeaderInfo() {
         $headerInfo.style.display = 'block';
-        let headerInfoText = $headerInfo.firstElementChild.nextElementSibling;
+        const headerInfoText = $headerInfo.firstElementChild.nextElementSibling;
         if (checkWindowInnerWidth(575))
             headerInfoText.textContent = headerInfoText.textContent.replace('/', '');
     }
