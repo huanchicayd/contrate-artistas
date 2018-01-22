@@ -114,6 +114,14 @@
     font-family: $text-bold;
 }
 
+.section-title__search-status {
+    @include font-size(18);
+
+    strong {
+        font-family: $text-bold;
+    }
+}
+
 .tags {
     display: flex;
     align-items: center;

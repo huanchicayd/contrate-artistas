@@ -78,17 +78,30 @@
 
         > h3 {
             text-transform: uppercase;
+
+            @media screen and (max-width: 991px) {
+                text-align: center;
+            }
         }
 
         > p {
             @include font-size(14);
             line-height: 18pt;
             margin-bottom: 25px;
+
+            @media screen and (max-width: 991px) {
+                text-align: center;
+            }
         }
     }
 
     &__btn {
         @include font-size(16);
         width: 150px;
+
+         @media screen and (max-width: 991px) {
+             display: block;
+             margin: 0 auto;
+         }
     }
 }

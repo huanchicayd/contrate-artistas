@@ -212,6 +212,15 @@
   font-family: "OpenSans-Bold", sans-serif;
 }
 
+.section-title__search-status {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+.section-title__search-status strong {
+  font-family: "OpenSans-Bold", sans-serif;
+}
+
 .tags {
   display: flex;
   align-items: center;
@@ -343,7 +352,7 @@
   width: 260px;
   height: 42px;
   padding: 0 30px 0 10px;
-  background: #fff url("../images/search-icon.svg") no-repeat 95% center;
+  background: url("../images/search-icon.svg") no-repeat 95% center;
   background-size: 14px;
   font-size: 16px;
   font-size: 1.6rem;
@@ -414,7 +423,13 @@
 }
 
 .sidebar-categorias h3 {
-  display: none;
+  display: block;
+}
+
+@media screen and (max-width: 1199px) {
+  .sidebar-categorias h3 {
+    display: none;
+  }
 }
 
 .sidebar-categorias__more {
@@ -452,7 +467,6 @@
   vertical-align: text-top;
   width: 20px;
   height: 20px;
-  background: white;
   border: 1px solid #000;
   transition: .5s;
 }
@@ -1087,6 +1101,12 @@
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 991px) {
+  .nossos-servicos__content-left > h3, .nossos-servicos__content-right > h3 {
+    text-align: center;
+  }
+}
+
 .nossos-servicos__content-left > p, .nossos-servicos__content-right > p {
   font-size: 14px;
   font-size: 1.4rem;
@@ -1094,10 +1114,23 @@
   margin-bottom: 25px;
 }
 
+@media screen and (max-width: 991px) {
+  .nossos-servicos__content-left > p, .nossos-servicos__content-right > p {
+    text-align: center;
+  }
+}
+
 .nossos-servicos__btn {
   font-size: 16px;
   font-size: 1.6rem;
   width: 150px;
+}
+
+@media screen and (max-width: 991px) {
+  .nossos-servicos__btn {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .nossos-clientes__slider {
@@ -1212,6 +1245,7 @@
   .nossos-clientes__depoimentos__text {
     width: 100%;
     padding-left: 0;
+    text-align: center;
   }
 }
 
@@ -2391,6 +2425,14 @@
   visibility: visible;
   opacity: 1;
   transform: translatey(0);
+}
+
+.resultado-busca {
+  margin-top: 100px;
+}
+
+.resultado-busca__title {
+  margin-bottom: 50px;
 }
 
 .contato__breadcrumb {

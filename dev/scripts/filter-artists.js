@@ -3,7 +3,7 @@
 
     var pageUrl = window.location.href;
     var currentPage = pageUrl.substr(pageUrl.lastIndexOf('/') + 1);
-    currentPage === 'index.php' || currentPage === '' ? initHomeFilters() : false;
+    currentPage === 'index.php' || currentPage === '' || currentPage === 'resultado_busca.php' ? initHomeFilters() : false;
 
     function initHomeFilters(){
         const $gridBtn = document.querySelector('[data-js="view-grid-btn"]');
