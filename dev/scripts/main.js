@@ -6,18 +6,23 @@
     }
 
     let mobileScreenChanges = {
-        reloadForMobile: () => {
-            var reload = window.addEventListener('resize', () => {
+        reloadForMobile: function() {
+            let reload = window.addEventListener('resize', function() {
                 if (window.innerWidth <= 1199) {
-                    location.reload();
+                    setTimeout(function(){
+                        window.location.reload();
+                    });
                 }
             });
             return reload;
         },
-        reloadForDesktop: () => {
-            var reload = window.addEventListener('resize', () => {
-                if (window.innerWidth > 1199)
-                    location.reload();
+        reloadForDesktop: function() {
+            let reload = window.addEventListener('resize', function() {
+                if (window.innerWidth > 1199){
+                    setTimeout(function(){
+                        window.location.reload();
+                    });
+                }
             });
             return reload;
         }

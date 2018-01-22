@@ -47,15 +47,25 @@
       border: 1px solid #acacac;
       width: 260px;
       height: 42px;
-      padding: 0 10px;
-      background: url('../images/search-icon.svg') no-repeat 95% center;
+      padding: 0 30px 0 10px;
+      background: $color-two url('../images/search-icon.svg') no-repeat 95% center;
       background-size: 14px;
       @include font-size(16);
+      
+
+      &:focus {
+        border: 1px solid $color-one;
+        @include placeholder {
+          @include font-size(14);
+        }
+      }
+
       @include placeholder {
         font-family: $text-regular;
         font-weight: 400;
         @include font-size(16);
         color: #b6b6b6;
+        transition: .5s;
       }
     }
   }
@@ -87,6 +97,7 @@
           cursor: pointer;
           padding: 0;
           @include font-size(16);
+          transition: .5s;
         }
 
         & + label:before {
@@ -103,6 +114,14 @@
 
         &:hover + label:before {
           border: 1px solid $color-one;
+        }
+
+        &:hover ~ label {
+          color: $color-one;
+        }
+
+        &:checked ~ label {
+          color: $color-one;
         }
 
         &:checked + label:before {
@@ -141,5 +160,14 @@
     bottom: 0;
     background: rgba(0,0,0,.5);
     z-index: 5;
+  }
+}
+
+.sidebar-subcategorias {
+  margin-left: 30px;
+  display: none;
+
+  &--active {
+    display: block;
   }
 }

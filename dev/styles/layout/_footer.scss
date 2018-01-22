@@ -68,6 +68,13 @@
         color: #000;
         font-family: $text-regular;
         font-weight: 400;
+        transition: .5s;
+      }
+
+      &:focus {
+        @include placeholder {
+          @include font-size(14);
+        }
       }
 
       @media screen and (max-width: 1199px){

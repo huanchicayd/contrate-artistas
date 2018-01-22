@@ -24,6 +24,7 @@
   box-shadow: 1px 1px 5px rgba(0, 0, 0, .25);
   transition: box-shadow .25s;
   position: relative;
+  background: $color-two;
 
   @media screen and (max-width: 1199px){
     width: 100%;

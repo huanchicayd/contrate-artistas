@@ -18,11 +18,15 @@
                             <a href="#">Institucional</a>
                             <a href="#">Todos</a>
                         </div>
-                        <div class="galeria-fotos__filtros__especifico">
+
+                        <!-- Esse pedaço só aparece depois do usuário escolher uma das opções acima -->
+                        <!-- <div class="galeria-fotos__filtros__especifico">
                             <a href="#">Shows</a>
                             <a href="#">Presenças VIPS</a>
                             <a href="#">Eventos corporativos</a>
-                        </div>
+                        </div> -->
+                        <!--  -->
+                        
                     </div>
                     <div class="galeria-fotos__masonry-wrap">
                         <div class="galeria-fotos__masonry">

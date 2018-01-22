@@ -44,7 +44,12 @@
     }
 
     &__section-title {
+        display: none;
         margin: 50px 0;
+
+        @media screen and (max-width: 1199px) {
+            display: block;
+        }
     }
 
     &__sobre {

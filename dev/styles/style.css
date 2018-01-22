@@ -342,11 +342,37 @@
   border: 1px solid #acacac;
   width: 260px;
   height: 42px;
-  padding: 0 10px;
-  background: url("../images/search-icon.svg") no-repeat 95% center;
+  padding: 0 30px 0 10px;
+  background: #fff url("../images/search-icon.svg") no-repeat 95% center;
   background-size: 14px;
   font-size: 16px;
   font-size: 1.6rem;
+}
+
+.sidebar-search__input:focus {
+  border: 1px solid #ffcc00;
+}
+
+.sidebar-search__input:focus::-webkit-input-placeholder {
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+.sidebar-search__input:focus:-moz-placeholder {
+  /* Firefox 18- */
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+.sidebar-search__input:focus::-moz-placeholder {
+  /* Firefox 19+ */
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+.sidebar-search__input:focus:-ms-input-placeholder {
+  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .sidebar-search__input::-webkit-input-placeholder {
@@ -355,6 +381,7 @@
   font-size: 16px;
   font-size: 1.6rem;
   color: #b6b6b6;
+  transition: .5s;
 }
 
 .sidebar-search__input:-moz-placeholder {
@@ -364,6 +391,7 @@
   font-size: 16px;
   font-size: 1.6rem;
   color: #b6b6b6;
+  transition: .5s;
 }
 
 .sidebar-search__input::-moz-placeholder {
@@ -373,6 +401,7 @@
   font-size: 16px;
   font-size: 1.6rem;
   color: #b6b6b6;
+  transition: .5s;
 }
 
 .sidebar-search__input:-ms-input-placeholder {
@@ -381,6 +410,7 @@
   font-size: 16px;
   font-size: 1.6rem;
   color: #b6b6b6;
+  transition: .5s;
 }
 
 .sidebar-categorias h3 {
@@ -412,6 +442,7 @@
   padding: 0;
   font-size: 16px;
   font-size: 1.6rem;
+  transition: .5s;
 }
 
 .sidebar-categorias__checkbox .styled-checkbox + label:before {
@@ -428,6 +459,14 @@
 
 .sidebar-categorias__checkbox .styled-checkbox:hover + label:before {
   border: 1px solid #ffcc00;
+}
+
+.sidebar-categorias__checkbox .styled-checkbox:hover ~ label {
+  color: #ffcc00;
+}
+
+.sidebar-categorias__checkbox .styled-checkbox:checked ~ label {
+  color: #ffcc00;
 }
 
 .sidebar-categorias__checkbox .styled-checkbox:checked + label:before {
@@ -459,6 +498,15 @@
   }
 }
 
+.sidebar-subcategorias {
+  margin-left: 30px;
+  display: none;
+}
+
+.sidebar-subcategorias--active {
+  display: block;
+}
+
 .artista-box__link {
   display: flex;
 }
@@ -485,6 +533,7 @@
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
   transition: box-shadow .25s;
   position: relative;
+  background: #fff;
 }
 
 @media screen and (max-width: 1199px) {
@@ -914,6 +963,7 @@
   background-size: 120%;
   width: 100%;
   height: 33px;
+  transform: translatey(1px);
 }
 
 .chamada-destaque__wrap {
@@ -1620,6 +1670,7 @@
   padding: 25px;
   border: 2px solid #ffcc00;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+  background: #fff;
 }
 
 .form-box > p {
@@ -1808,7 +1859,14 @@
 }
 
 .quem-somos__section-title {
+  display: none;
   margin: 50px 0;
+}
+
+@media screen and (max-width: 1199px) {
+  .quem-somos__section-title {
+    display: block;
+  }
 }
 
 .quem-somos__sobre {
@@ -2316,16 +2374,23 @@
 }
 
 .form-box__select {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
   position: absolute;
   top: 40px;
   left: 0;
   width: 100%;
   z-index: 2;
+  height: 0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  transform: translatey(-10%);
+  transition: .25s;
 }
 
 .form-box__select--active {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+  transform: translatey(0);
 }
 
 .contato__breadcrumb {
@@ -2589,6 +2654,7 @@
   color: #000;
   font-family: "OpenSans-Regular", sans-serif;
   font-weight: 400;
+  transition: .5s;
 }
 
 .footer-newsletter__form-email:-moz-placeholder {
@@ -2599,6 +2665,7 @@
   color: #000;
   font-family: "OpenSans-Regular", sans-serif;
   font-weight: 400;
+  transition: .5s;
 }
 
 .footer-newsletter__form-email::-moz-placeholder {
@@ -2609,6 +2676,7 @@
   color: #000;
   font-family: "OpenSans-Regular", sans-serif;
   font-weight: 400;
+  transition: .5s;
 }
 
 .footer-newsletter__form-email:-ms-input-placeholder {
@@ -2618,6 +2686,29 @@
   color: #000;
   font-family: "OpenSans-Regular", sans-serif;
   font-weight: 400;
+  transition: .5s;
+}
+
+.footer-newsletter__form-email:focus::-webkit-input-placeholder {
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+.footer-newsletter__form-email:focus:-moz-placeholder {
+  /* Firefox 18- */
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+.footer-newsletter__form-email:focus::-moz-placeholder {
+  /* Firefox 19+ */
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+.footer-newsletter__form-email:focus:-ms-input-placeholder {
+  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 @media screen and (max-width: 1199px) {
