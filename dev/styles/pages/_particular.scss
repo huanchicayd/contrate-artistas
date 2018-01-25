@@ -6,6 +6,12 @@
 
 */
 
+main.servicos {
+    @media screen and (max-width: 1199px){
+        margin-top: 0;
+    }
+}
+
 .particular {
     &__sobre {
         background: url('../images/particular_banner.jpg') no-repeat;
@@ -13,8 +19,20 @@
         height: 970px;
         color: #fff;
 
+        @media screen and (max-width: 991px){
+            height: auto;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
         &__content {
             margin-top: 135px;
+        }
+
+        .breadcrumb {
+            @media screen and (max-width: 991px){
+                display: none;
+            }
         }
     }
 
@@ -51,6 +69,12 @@
         &__btn-fotos {
             background: #000;
             color: #fff;
+        }
+    }
+
+    &__galeria {
+        @media screen and (max-width: 991px){
+            display: none;            
         }
     }
 }

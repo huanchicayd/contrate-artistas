@@ -74,14 +74,18 @@
     }
 
     &__image {
-      width: 138px;
-      height: 100%;
+      width: 142px;
+      //height: 100%;
       @media screen and (max-width: 991px){
         width: 120px;
       }
 
       img {
-        height: 100%;
+        width: 142px;
+
+        @media screen and (max-width: 991px) {
+          width: 120px;
+        }
       }
     }
 

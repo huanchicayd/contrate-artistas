@@ -6,6 +6,27 @@
     <meta name="theme-color" content="#000000">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="robots" content="nofollow">
+    <!-- SEO Meta tags -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="web_author" content="Natio Criativo">
+    <!--Social: Facebook-->
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="/imagem.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="600">
+    <meta property="og:type" content="website">
+    <!-- Social: Google+ / Schema.org  -->
+    <meta itemprop="name" content="">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="">
+    <!--  -->
     <title>Contrate Artistas, A Maior Agência Online de Artistas do Brasil</title>
     <link rel="icon" href="images/favicon.png" />
 

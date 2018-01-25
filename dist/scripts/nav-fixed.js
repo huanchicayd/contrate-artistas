@@ -1,0 +1,1 @@
+"use strict";!function(){var e=document.querySelector(".header-wrap");window.pageY;window.addEventListener("scroll",function(){scrollY>500&&window.innerWidth>1199?e.style.position="fixed":scrollY<500&&(e.style.position="absolute")},!1)}();

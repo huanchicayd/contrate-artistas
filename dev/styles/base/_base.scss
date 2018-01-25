@@ -78,6 +78,9 @@ input {
   outline: 0;
   font-family: $text-regular;
   background: transparent;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
 
   @include placeholder {
     font-family: $text-regular;

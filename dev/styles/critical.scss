@@ -1,9 +1,10 @@
+@charset "UTF-8";
 //Above the fold
 @import 'helpers/_variables';
 @import 'helpers/_mixins';
 
 @import 'base/_normalize';
-@import 'base/_style-guide';
+@import 'base/_base';
 
 @import 'vendors/_slick';
 

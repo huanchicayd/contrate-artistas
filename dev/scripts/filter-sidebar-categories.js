@@ -3,7 +3,7 @@
 
     var pageUrl = window.location.href;
     var currentPage = pageUrl.substr(pageUrl.lastIndexOf('/') + 1);
-    currentPage === 'index.php' || currentPage === '' ? initSidebarFilters() : false;
+    currentPage === 'index.php' || currentPage === '' || currentPage === 'resultado_busca.php' ? initSidebarFilters() : false;
 
     function initSidebarFilters(){
         const $sidebarBtnFilter = document.querySelector('[data-js="sidebar-categorias-btn"]');

@@ -11,7 +11,6 @@
                         </div>
                         <div class="section-title__secondary">
                             <h2 class="section-title__title">Corporativo</h2>
-                            <a href="particular.php" class="section-title__link">ir para <span class="uppercase">particular</span></a>
                         </div>
                         <div class="infografico__wrap">
                             <div class="infografico__texto infografico__texto--toleftside">
@@ -32,73 +31,90 @@
                                 </div>
                             
                                 <div class="infografico__estrela__inner-wrap">
-                                    <a href="#" id="btn01" class="infografico__estrela__button infografico__estrela__button-01">
-                                        <div>1</div>
-                                        <p class="estrela__button-01__text">Briefing</p>
-                                    </a>
-                                    <div class="infografico__estrela__box infografico__estrela__box01">
-                                        <p>
-                                            No primento contato com o cliente, buscaremos entender qual é a demanda do evento, seu público-alvo,budget disponível, suas
-                                            expectativas e quaisquer outras observações e considerações especiais, além é claro de verificar disponibilidade de datas.
-                                        </p>
+                                    <div class="accordion-item close">
+                                        <a href="#" id="btn01" class="infografico__estrela__button infografico__estrela__button-01">
+                                            <div>1</div>
+                                            <p class="estrela__button-01__text">Briefing</p>
+                                            <span class="infografico__estrela__button__arrow"></span>
+                                        </a>
+                                        <div class="infografico__estrela__box infografico__estrela__box01">
+                                            <p>
+                                                No primento contato com o cliente, buscaremos entender qual é a demanda do evento, seu público-alvo,budget disponível, suas
+                                                expectativas e quaisquer outras observações e considerações especiais, além é claro de verificar disponibilidade de datas.
+                                            </p>
+                                        </div>
                                     </div>
                             
-                                    <a href="#" class="infografico__estrela__button infografico__estrela__button-02">
-                                        <div>2</div>
-                                        <p>Consultoria</p>
-                                    </a>
-                                    <div class="infografico__estrela__box infografico__estrela__box02">
-                                        <p>
-                                            No primento contato com o cliente, buscaremos entender qual é a demanda do evento, seu público-alvo,budget disponível, suas
-                                            expectativas e quaisquer outras observações e considerações especiais, além é claro de verificar disponibilidade de datas.
-                                        </p>
+                                    <div class="accordion-item close">
+                                        <a href="#" class="infografico__estrela__button infografico__estrela__button-02">
+                                            <div>2</div>
+                                            <p>Consultoria</p>
+                                            <span class="infografico__estrela__button__arrow"></span>
+                                        </a>
+                                        <div class="infografico__estrela__box infografico__estrela__box02">
+                                            <p>
+                                                No primento contato com o cliente, buscaremos entender qual é a demanda do evento, seu público-alvo,budget disponível, suas
+                                                expectativas e quaisquer outras observações e considerações especiais, além é claro de verificar disponibilidade de datas.
+                                            </p>
+                                        </div>
                                     </div>
                             
-                                    <a href="#" class="infografico__estrela__button infografico__estrela__button-03">
-                                        <div>3</div>
-                                        <p>Contrato e Pagamentos</p>
-                                    </a>
-                                    <div class="infografico__estrela__box infografico__estrela__box03">
-                                        <p>
-                                            No primento contato com o cliente, buscaremos entender qual é a demanda do evento, seu público-alvo,budget disponível, suas
-                                            expectativas e quaisquer outras observações e considerações especiais, além é claro de verificar disponibilidade
-                                            de datas.
-                                        </p>
+                                    <div class="accordion-item close">
+                                        <a href="#" class="infografico__estrela__button infografico__estrela__button-03">
+                                            <div>3</div>
+                                            <p>Contrato e Pagamentos</p>
+                                            <span class="infografico__estrela__button__arrow"></span>
+                                        </a>
+                                        <div class="infografico__estrela__box infografico__estrela__box03">
+                                            <p>
+                                                No primento contato com o cliente, buscaremos entender qual é a demanda do evento, seu público-alvo,budget disponível, suas
+                                                expectativas e quaisquer outras observações e considerações especiais, além é claro de verificar disponibilidade
+                                                de datas.
+                                            </p>
+                                        </div>
                                     </div>
                             
-                                    <a href="#" class="infografico__estrela__button infografico__estrela__button-04">
-                                        <div>4</div>
-                                        <p>Logística e demais
-                                            <br> aspectos técnicos</p>
-                                    </a>
-                                    <div class="infografico__estrela__box infografico__estrela__box04">
-                                        <p>
-                                            No primento contato com o cliente, buscaremos entender qual é a demanda do evento, seu público-alvo,budget disponível, suas
-                                            expectativas e quaisquer outras observações e considerações especiais, além é claro de verificar disponibilidade
-                                            de datas.
-                                        </p>
+                                    <div class="accordion-item close">
+                                        <a href="#" class="infografico__estrela__button infografico__estrela__button-04">
+                                            <div>4</div>
+                                            <p>Logística e demais
+                                                <br> aspectos técnicos</p>
+                                            <span class="infografico__estrela__button__arrow"></span>
+                                        </a>
+                                        <div class="infografico__estrela__box infografico__estrela__box04">
+                                            <p>
+                                                No primento contato com o cliente, buscaremos entender qual é a demanda do evento, seu público-alvo,budget disponível, suas
+                                                expectativas e quaisquer outras observações e considerações especiais, além é claro de verificar disponibilidade
+                                                de datas.
+                                            </p>
+                                        </div>
                                     </div>
                             
-                                    <a href="#" class="infografico__estrela__button infografico__estrela__button-05">
-                                        <div>5</div>
-                                        <p class="infografico__estrela__button-05__text">Pré-produção</p>
-                                    </a>
-                                    <div class="infografico__estrela__box infografico__estrela__box05">
-                                        <p>
-                                            No primento contato com o cliente, buscaremos entender qual é a demanda do evento, seu público-alvo,budget disponível, suas
-                                            expectativas e quaisquer outras observações e considerações especiais, além é claro de verificar disponibilidade de datas.
-                                        </p>
+                                    <div class="accordion-item close">
+                                        <a href="#" class="infografico__estrela__button infografico__estrela__button-05">
+                                            <div>5</div>
+                                            <p class="infografico__estrela__button-05__text">Pré-produção</p>
+                                            <span class="infografico__estrela__button__arrow"></span>
+                                        </a>
+                                        <div class="infografico__estrela__box infografico__estrela__box05">
+                                            <p>
+                                                No primento contato com o cliente, buscaremos entender qual é a demanda do evento, seu público-alvo,budget disponível, suas
+                                                expectativas e quaisquer outras observações e considerações especiais, além é claro de verificar disponibilidade de datas.
+                                            </p>
+                                        </div>
                                     </div>
                             
-                                    <a href="#" class="infografico__estrela__button infografico__estrela__button-06">
-                                        <div>6</div>
-                                        <p class="infografico__estrela__button-06__text">Produção</p>
-                                    </a>
-                                    <div class="infografico__estrela__box infografico__estrela__box06">
-                                        <p>
-                                            No primento contato com o cliente, buscaremos entender qual é a demanda do evento, seu público-alvo,budget disponível, suas
-                                            expectativas e quaisquer outras observações e considerações especiais, além é claro de verificar disponibilidade de datas.
-                                        </p>
+                                    <div>
+                                        <a href="#" class="infografico__estrela__button infografico__estrela__button-06">
+                                            <div>6</div>
+                                            <p class="infografico__estrela__button-06__text">Produção</p>
+                                        </a>
+                                        <div class="infografico__estrela__box infografico__estrela__box06">
+                                            <p>
+                                                No primento contato com o cliente, buscaremos entender qual é a demanda do evento, seu público-alvo,budget disponível, suas
+                                                expectativas e quaisquer outras observações e considerações especiais, além é claro de verificar disponibilidade de datas.
+                                            </p>
+                                        </div>
                                     </div>
                             
                                     <img src="images/estrela.svg" alt="">

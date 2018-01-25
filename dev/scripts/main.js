@@ -71,33 +71,32 @@
 
     //Quem somos scroll link
     $('.quem-somos__banner__link').click(function (e) {
-        console.log('Clicado');
         e.preventDefault();
-        var teste = $('#quem-somos__sobre').offset().top - 50;
-        console.log(teste);
+        const $quemSomosSaibaMais = $('#quem-somos__sobre').offset().top - 50;
         $('html').animate({
-            scrollTop: teste + 'px'
+            scrollTop: $quemSomosSaibaMais + 'px'
         }, 1000);
     })
 
-    function voltarAoTopo() {
-        $(document).on('scroll', function () {
-            var y = $(this).scrollTop();
-            if (y > 500) {
-                $('a.btn-back').fadeIn();
-            } else {
-                $('a.btn-back').fadeOut();
-            }
-        });
+    function backToTop() {
+        
+        const $btnBackLink = $('a.btn-back');
+        
+        $(document).on('scroll', showHideBtnScroll);
+        function showHideBtnScroll(){
+            const $screenY = $(this).scrollTop();
+            $screenY > 500 ? $btnBackLink.fadeIn() : $btnBackLink.fadeOut();
+        }
 
-        $('a.btn-back').click(function () {
+        $($btnBackLink).click(scrollBackWhenClick);
+        function scrollBackWhenClick(){
             $('html, body').animate({
                 scrollTop: 0
             }, 1000);
-            return false
-        });
+            return false;
+        }
     }
-    voltarAoTopo();
+    backToTop();
 
     //Export functions to global scope
     window.checkWindowInnerWidth = checkWindowInnerWidth;
