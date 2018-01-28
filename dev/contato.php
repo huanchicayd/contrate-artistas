@@ -8,7 +8,7 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="breadcrumb contato__breadcrumb">
-                        Você está em: Home >
+                        Você está em: <a href="#">Home</a> >
                         <span class="breadcrumb__actual-page breadcrumb__active02">Contato</span>
                     </div>
                     <div class="section-title__primary contato__section-title">

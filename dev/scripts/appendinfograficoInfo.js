@@ -30,6 +30,6 @@
         }
     }
 
-    changeInfograficoPosition();
+    //changeInfograficoPosition();
 
 })();

@@ -1,7 +1,7 @@
 .chamada-destaque {
     &__wrap {
         position: relative;
-        height: 240px;
+        min-height: 240px;
     }
 
     &__rotated {
@@ -11,7 +11,7 @@
         position: absolute;
         left: 50%;
         transform: translatex(-50%) rotatez(-1deg);
-        height: 240px;
+        min-height: 240px;
         display: flex;
         align-items: center;
     }
@@ -24,11 +24,23 @@
         transform: rotateZ(1deg);
         max-width: 760px;
         margin: auto;
-        padding: 0 30px;
+        padding: 20px 0;
+        width: 80%;
     }
 
     &__text-menor {
         @include font-size(26);
         font-style: inherit;
+
+        > a {
+            @include font-size(26);
+            color: #fff;
+
+            &:hover {
+                color: #000;
+            }
+        }
     }
+
+    
 }

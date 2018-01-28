@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="breadcrumb">
-                        Você está em: Home > <span class="breadcrumb__actual-page breadcrumb__active02">Galeria</span>
+                        Você está em: <a href="index.php">Home</a> > <span class="breadcrumb__actual-page breadcrumb__active02">Galeria</span>
                     </div>
                     <div class="section-title__primary">
                         <h2 class="section-title__title">Galeria de fotos</h2>
@@ -30,9 +30,9 @@
                     </div>
                     <div class="galeria-fotos__masonry-wrap">
                         <div class="galeria-fotos__masonry">
-                            <a href="#" class="galeria-fotos__small-block">
+                            <a href="images/galeria-fotos_img01.jpg" data-fancybox="corporativo" data-src="#hidden-content" href="javascript:;" class="galeria-fotos__small-block">
                                 <img src="images/galeria-fotos_img01.jpg" alt="">
-                                <div class="galeria-fotos__overlay">
+                                <div class="galeria-fotos__overlay overlay-particular">
                                     <div class="galeria-fotos__overlay__content">
                                         <h4>
                                             Título do evento
@@ -41,9 +41,9 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#" class="galeria-fotos__small-block">
+                            <a href="images/galeria-fotos_img01.jpg" data-fancybox="corporativo" data-src="#hidden-content" href="javascript:;" class="galeria-fotos__small-block">
                                 <img src="images/galeria-fotos_img01.jpg" alt="">
-                                <div class="galeria-fotos__overlay">
+                                <div class="galeria-fotos__overlay overlay-institucional">
                                     <div class="galeria-fotos__overlay__content">
                                         <h4>
                                             Título do evento
@@ -102,6 +102,49 @@
                     </div>
                     <div class="ver-mais">
                         <a href="#">[+] Veja mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="galeria__image-wrap" style="display: none;" id="hidden-content">
+            <div class="container">
+                <div class="galeria__image-box">
+                    <div class="galeria__image-imagem">
+                        <img src="images/galeria__image01.jpg" alt="">
+                    </div>
+                    <div class="galeria__image-caption">
+                        <div class="galeria__image-header">
+                            <h4>Corporativo</h4>
+                            <h5>Evento XPTO</h5>
+                            <p>15 de maio de 2017</p>
+                        </div>
+                        <div class="galeria__image-description">
+                            <p>
+                                Descrição curta do evento. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos perferendis laboriosam soluta dolorum, et porro commodi consequuntur modi officiis obcaecati ipsam, dolor error sed quidem optio quibusdam? Amet, eveniet accusamus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="galeria__image-wrap" style="display: none;" id="hidden-content">
+            <div class="container">
+                <div class="galeria__image-box">
+                    <div class="galeria__image-imagem">
+                        <img src="images/galeria__image01.jpg" alt="">
+                    </div>
+                    <div class="galeria__image-caption">
+                        <div class="galeria__image-header">
+                            <h4>Corporativo</h4>
+                            <h5>Evento XPTO</h5>
+                            <p>Data do evento</p>
+                        </div>
+                        <div class="galeria__image-description">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos perferendis laboriosam soluta dolorum, et porro commodi consequuntur
+                                modi officiis obcaecati ipsam, dolor error sed quidem optio quibusdam? Amet, eveniet accusamus.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

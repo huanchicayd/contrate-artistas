@@ -9,10 +9,37 @@
         line-height: 28px;
     }
 
+    &__section-title {
+        @media screen and (max-width: 991px){
+            background: transparent;
+            color: #000;
+            padding: 0;
+        }
+
+        h2 {
+            @media screen and (max-width: 991px){
+                margin-bottom: 10px;
+            }
+        }
+
+        span {
+            @media screen and (max-width: 991px){
+                position: relative;
+                margin-bottom: 0;
+                margin-left: 11px;
+            }
+        }
+    }
+
     &__header-btn {
         padding: 10px 50px;
         margin: 40px 0 0 0;
         @include font-size(14);
+        z-index: 0;
+
+        @media screen and (max-width: 767px){
+            display: none;
+        }
     }
 
     &__form-box {
@@ -30,7 +57,10 @@
     }
 
     &__form {
-        margin-top: 50px;
+        display: block;
+        @media screen and (max-width: 991px){
+            display: none;
+        }
 
         &__header {
             display: flex;
@@ -51,6 +81,10 @@
                 width: 72px;
                 height: 72px;
                 background: url('../images/form-header_check.png') no-repeat;
+
+                @media screen and (max-width: 991px){
+                    display: none;
+                }
             }
 
             h3 {
@@ -70,6 +104,9 @@
             font-family: $text-bold;
             color: #946901;
             margin-right: 25px;
+            @media screen and (max-width: 991px){
+                margin-right: 0;
+            }
             
             p {
                 @include font-size(14);
@@ -81,6 +118,9 @@
 
     &__artista {
         margin: 135px 0 25px 0;
+        @media screen and (max-width: 991px){
+            margin-top: 170px;
+        }
     }
 
     &__outras-opcoes {
@@ -94,11 +134,19 @@
             margin-bottom: 25px;
         }
     }
+
+    &__nossos-servicos,
+    &__galeria-fotos {
+        @media screen and (max-width: 1199px){
+            display: none;
+        }
+    }
+
 }
 
 .artista-video {
     &__wrap {
-        margin-top: 10px;
+        //margin-top: 10px;
         margin-bottom: 50px;
     }
 
@@ -106,11 +154,27 @@
         display: flex;
         justify-content: flex-end;
         margin: 40px 0;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 767px){
+            justify-content: flex-start;
+        }
+
+        @media screen and (max-width: 400px){
+            margin-bottom: 10px;
+        }
 
         &__wrap {
             display: flex;
             align-items: center;
             margin-left: 15px;
+
+            @media screen and (max-width: 400px) {
+                width: 50%;
+                margin-left: 0;
+                margin-bottom: 10px;
+                //border: 1px solid red;
+            }
 
             &:first-child {
                 margin-left: 0;
@@ -138,6 +202,11 @@
 
     &__video-wrap {
         position: relative;
+        line-height: 0;
+
+        @media screen and (max-width: 575px){
+            display: none;
+        }
     }
 
     &__video {
@@ -178,7 +247,7 @@
         }
 
         &.slick-slider .slick-list {
-            margin: 0 -10px;
+            margin: 0 -10px 0 -10px;
         }
 
         .slick-dots li {
@@ -206,6 +275,11 @@
             height: 120px;
             background: #000;
             margin: 0 5px;
+
+            @media screen and (max-width: 575px) {
+                height: 0;
+                padding-top: 6%;
+            }
         }
     }
 }
@@ -215,6 +289,20 @@
         h4 {
             margin-bottom: 15px;
         }
+    }
+
+    &__orcamento {
+        display: none;
+        @media screen and (max-width: 991px){
+            display: block;
+        }
+    }
+
+    &__orcamento-button {
+        display: block;
+        padding: 10px 50px;
+        margin: 25px auto;
+        @include font-size(14);
     }
 }
 
@@ -228,8 +316,8 @@
         align-items: center;
         background: #000;
         color: #fff;
-        height: 40px;
-        padding: 0 15px;
+        min-height: 40px;
+        padding: 15px;
 
         &:hover {
             background: $color-one;
@@ -256,4 +344,20 @@
     visibility: visible;
     opacity: 1;
     transform: translatey(0);
+}
+
+.overlay-artista {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    background: rgba(0,0,0, .5);
+    z-index: 9999;
+}
+
+.overlay-artista .container {
+    position: absolute;
 }

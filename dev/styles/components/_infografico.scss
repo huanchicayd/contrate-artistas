@@ -16,7 +16,6 @@
 
         @media screen and (max-width: 991px) {
             width: 100%;
-            background: $color-three;
             padding-top: 50px;
             padding-bottom: 100px;
             margin-top: 0;
@@ -66,7 +65,6 @@
                 opacity: 0;
                 color: $color-two;
                 visibility: hidden;
-                //border: 1px solid red;
                 padding: 0;
                 padding-left: 50px;
                 margin-bottom: 0;
@@ -451,7 +449,6 @@
         @media screen and (max-width: 991px) {
             width: 100%;
             padding-left: 0;
-            //margin-bottom: 50px; 
         }
 
         > h4 {
@@ -483,13 +480,13 @@
     }
 }
 
-#teste {
-    width: 300px;
-    height: 150px;
-    border: 2px solid red;
-    opacity: 0;
-    display: none;
-}
+// #teste {
+//     width: 300px;
+//     height: 150px;
+//     border: 2px solid red;
+//     opacity: 0;
+//     display: none;
+// }
 
 
 @media screen and (max-width: 991px){
@@ -497,7 +494,8 @@
         visibility: hidden;
         opacity: 0;
         height: 0;
-        transform: scaley(0);
+        //transform: scaley(0);
+        //transform-origin: top center;
         transition: .5s;
     }
     
@@ -506,7 +504,8 @@
         opacity: 1;
         height: auto;
         margin-bottom: 50px;
-        transform: scaley(1);
+        //transform: scaley(1);
+        //transform-origin: top center;
         transition: .5s;
     }
 
@@ -520,11 +519,13 @@
     
         &:before {
             content: '▶';
-            display: block;
-            width: 10px;
-            height: 10px;
+            display: flex;
+            width: 15px;
+            height: 15px;
             color: $color-one;
-            transform-origin: top center;
+            text-align: center;
+            align-items: center;
+            transform-origin: center center;
             transition: .5s;
         }
     }
@@ -539,11 +540,14 @@
     
         &:before {
             content: '▶';
-            display: block;
-            width: 10px;
-            height: 10px;
+            display: flex;
+            width: 15px;
+            height: 15px;
+            color: $color-one;
+            text-align: center;
+            transform-origin: center center;
             transform: rotatez(90deg);
-            transform-origin: top center;
+            align-items: center;
             transition: .5s;
         }
     }

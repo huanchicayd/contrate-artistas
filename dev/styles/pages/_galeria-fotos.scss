@@ -2,6 +2,10 @@
     margin-top: 135px;
     margin-bottom: 100px;
 
+    @media screen and (max-width: 1199px){
+        margin-top: 150px;
+    }
+
     &__filtros {
         color: #000;
         margin: 30px 0;
@@ -80,6 +84,10 @@
         flex-wrap: wrap;
         justify-content: space-between;
 
+        @media screen and (max-width: 767px){
+            flex-direction: column;
+        }
+
         a {
             display: block;
             line-height: 0;
@@ -97,6 +105,10 @@
         width: 33.333333%;
         position: relative;
 
+        @media screen and (max-width: 767px){
+            width: 100%;
+        }
+
         img {
             width: 100%;
         }
@@ -106,6 +118,10 @@
         width: 66.66667%;
         position: relative;
 
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+
         img {
             width: 100%;
         }
@@ -113,6 +129,10 @@
 
     &__col {
         width: 33.333333%;
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
 
         a {
             width: 100%;
@@ -151,5 +171,92 @@
 
     &__nossos-clientes {
         margin-bottom: 50px;
+    }
+}
+
+
+/*
+    Usar pra filtrar por categorias,
+    colocar em todos os blocos referentes à categoria
+    e nos blocos de imagem específicas da categoria
+
+    A categoria corporativo é preto e já é o default
+*/
+
+.overlay-particular {
+    background: rgba(255, 204, 0, .85);
+}
+
+.overlay-institucional {
+    background: rgba(137, 137, 137, .85);
+}
+
+//Estilos para a galeria aberta
+
+.galeria__image {
+    &-wrap {
+        width: 100%;
+        //border: 1px solid red;
+    }
+
+    &-imagem {
+        img {
+            display: block;
+            margin: auto;
+            //width: 100%;
+            height: 100%;
+
+            @media screen and (max-width: 991px){
+                width: 100%;
+            }
+        }
+    }
+
+    &-caption {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        //border: 1px solid red;
+        display: flex;
+        color: #fff;
+        background: rgba(0, 0, 0, .85);
+        padding: 15px 0;
+
+        @media screen and (max-width: 575px){
+            flex-direction: column;
+        }
+    }
+
+    &-header {
+        width: 30%;
+
+        @media screen and (max-width: 575px) {
+            width: 100%;
+        }
+
+        > h4 {
+            font-family: $text-bold;
+            @include font-size(18);
+            text-transform: uppercase;
+        }
+
+        > h5 {
+            color: $color-one;
+            @include font-size(25);
+            font-family: $text-bold;
+            margin-bottom: 10px;
+        }
+
+        >p {
+            @include font-size(14);
+        }
+    }
+
+    &-description {
+        width: 70%;
+
+        @media screen and (max-width: 575px) {
+            width: 100%;
+        }
     }
 }

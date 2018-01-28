@@ -97,6 +97,8 @@
     &--isabove {
       z-index: 20;
       width: 95%;
+      background: #000 url(../images/filter_arrow.svg) no-repeat 95% center;
+      background-size: 25px;
     }
   }
 }

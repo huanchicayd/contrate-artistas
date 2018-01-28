@@ -28,58 +28,7 @@
         }
     };
 
-    $('.nossos-clientes__slider').slick({
-        slidesToShow: 5,
-        slidesToScroll: 5,
-        dots: true,
-        arrows: false,
-        responsive: [{
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3
-                }
-            },
-            {
-                breakpoint: 576,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    });
-
-    $('.galeria-menor').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true
-    });
-
-    $('.nossos-clientes__depoimentos').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: true
-    });
-
-    $('.artista-video__related-videos').slick({
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        dots: true,
-        arrows: false
-    });
-
-    //Quem somos scroll link
-    $('.quem-somos__banner__link').click(function (e) {
-        e.preventDefault();
-        const $quemSomosSaibaMais = $('#quem-somos__sobre').offset().top - 50;
-        $('html').animate({
-            scrollTop: $quemSomosSaibaMais + 'px'
-        }, 1000);
-    })
-
     function backToTop() {
-        
         const $btnBackLink = $('a.btn-back');
         
         $(document).on('scroll', showHideBtnScroll);
@@ -98,9 +47,31 @@
     }
     backToTop();
 
+
     //Export functions to global scope
     window.checkWindowInnerWidth = checkWindowInnerWidth;
     window.mobileScreenChanges = mobileScreenChanges;
     window.init = init;
 
 })();
+
+function manipulateArtistaForm(){
+    const $artistaFormWrap = $('[data-js="artista-especifica-form-wrap"]');
+    const $artistaOrcamentoWrap = $('.artista-sobre__orcamento');
+    const $formOrcamento = $('.artistas-especifica__form');
+    const $btnOrcamento = $('[data-js="btn-orcamento"]');
+    
+    $btnOrcamento.click(function(){
+        $artistaOrcamentoWrap.append($formOrcamento);
+        $formOrcamento.css('display', 'block');
+    
+        $(window).resize(function(){
+            if($(window).width() > 991){
+                $artistaFormWrap.append($formOrcamento);
+                $formOrcamento.css('display', 'block');
+                window.location.reload();
+            }
+        })
+    });
+}
+manipulateArtistaForm();

@@ -7,10 +7,11 @@
                 <div class="col-xl-12">
                     <div class="particular__sobre__content">
                         <div class="breadcrumb">
-                            Você está em: Home > Serviços > <span class="breadcrumb__actual-page breadcrumb__active01">Particular</span>
+                            Você está em: <a href="index.php">Home</a> > <span class="breadcrumb__actual-page breadcrumb__active01">Particular</span>
                         </div>
                         <div class="section-title__secondary">
                             <h2 class="section-title__title">Particular</h2>
+                            <a href="corporativo.php">Ir para Corporativo</a>
                         </div>
                         <div class="infografico__wrap">
                             <div class="infografico__texto infografico__texto--toright">
@@ -131,7 +132,7 @@
                         <div class="row">
                             <div class="col-xl-12">
                                 <h2 class="chamada-destaque__text chamada-destaque__text-menor">
-                                    Baixe aqui <span class="highlight-text__one">nossa Cartilha</span> e saiba porque você deve escolher a Contrate Artistas como parceira para seu evento!
+                                    Baixe aqui <a href="#">nossa cartilha</a> e saiba porque você deve escolher a Contrate Artistas como parceira para seu evento!
                                 </h2>
                             </div>
                         </div>
@@ -209,12 +210,13 @@
                     <div class="particular__outros__btn">
                         <div class="particular__outros__btn-cases">
                             <p>
-                                Confira <span class="highlight-text__one">nossos <br>cases</span> de sucesso
+                                Confira <a href="#">nossos
+                                <br>cases</a> de sucesso
                             </p>
                         </div>
                         <div class="particular__outros__btn-fotos">
                             <p>
-                                Acesse nossa <br><span class="highlight-text__two">galeria de fotos</span>
+                                Acesse nossa <br><a href="#">galeria de fotos</a>
                             </p>
                             
                         </div>

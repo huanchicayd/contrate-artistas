@@ -13,6 +13,7 @@ html {
   font-family: $text-regular;
   overflow-x: hidden;
   font-size: 10px;
+  min-height: 100%;
 
   @media screen and (max-width: 1199px){
     height: 100%;

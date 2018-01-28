@@ -28,9 +28,9 @@
             <div class="chamada-destaque__rotated">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-12 col-12">
+                        <div class="col-xl-12 col-md-12 col-12">
                             <h2 class="chamada-destaque__text">
-                                Frase de impacto que resume a missão <br>da Contrate para os públicos!
+                                Frase de impacto que resume a missão da Contrate para os públicos!
                             </h2>
                         </div>
                     </div>

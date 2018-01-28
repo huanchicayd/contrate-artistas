@@ -26,7 +26,7 @@
 
 .ver-mais {
     text-align: center;
-    font-weight: 700;
+    font-family: $text-bold;
 
     @media screen and (max-width: 1199px) {
         display: none;
@@ -47,6 +47,10 @@
     text-align: right;
     color: #b1b3b6;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 991px){
+        display: none;
+    }
 
     &__actual-page {
         text-transform: uppercase;
@@ -80,6 +84,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: 991px){
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .section-title--center {
@@ -100,6 +109,10 @@
 
     > a {
         color: #000;
+
+        @media screen and (max-width: 991px){
+            display: none;
+        }
 
         &:hover {
             color: #fff;

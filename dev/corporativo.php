@@ -7,10 +7,11 @@
                 <div class="col-xl-12">
                     <div class="particular__sobre__content">
                         <div class="breadcrumb">
-                            Você está em: Home > Serviços > <span class="breadcrumb__actual-page breadcrumb__active01">Corporativo</span>
+                            Você está em: <a href="index.php">Home</a> > <span class="breadcrumb__actual-page breadcrumb__active01">Corporativo</span>
                         </div>
                         <div class="section-title__secondary">
                             <h2 class="section-title__title">Corporativo</h2>
+                            <a href="particular.php">Ir para Particular</a>
                         </div>
                         <div class="infografico__wrap">
                             <div class="infografico__texto infografico__texto--toleftside">
@@ -53,8 +54,7 @@
                                         </a>
                                         <div class="infografico__estrela__box infografico__estrela__box02">
                                             <p>
-                                                No primento contato com o cliente, buscaremos entender qual é a demanda do evento, seu público-alvo,budget disponível, suas
-                                                expectativas e quaisquer outras observações e considerações especiais, além é claro de verificar disponibilidade de datas.
+                                                No primento contato com o cliente, buscaremos entender qual é a demanda do evento, seu público-alvo,budget disponível, suas expectativas e quaisquer outras observações e considerações especiais, além é claro de verificar disponibilidade de datas.
                                             </p>
                                         </div>
                                     </div>
@@ -67,9 +67,7 @@
                                         </a>
                                         <div class="infografico__estrela__box infografico__estrela__box03">
                                             <p>
-                                                No primento contato com o cliente, buscaremos entender qual é a demanda do evento, seu público-alvo,budget disponível, suas
-                                                expectativas e quaisquer outras observações e considerações especiais, além é claro de verificar disponibilidade
-                                                de datas.
+                                                No primento contato com o cliente, buscaremos entender qual é a demanda do evento, seu público-alvo,budget disponível, suas expectativas e quaisquer outras observações e considerações especiais, além é claro de verificar disponibilidade de datas.
                                             </p>
                                         </div>
                                     </div>
@@ -83,9 +81,7 @@
                                         </a>
                                         <div class="infografico__estrela__box infografico__estrela__box04">
                                             <p>
-                                                No primento contato com o cliente, buscaremos entender qual é a demanda do evento, seu público-alvo,budget disponível, suas
-                                                expectativas e quaisquer outras observações e considerações especiais, além é claro de verificar disponibilidade
-                                                de datas.
+                                                No primento contato com o cliente, buscaremos entender qual é a demanda do evento, seu público-alvo,budget disponível, suas expectativas e quaisquer outras observações e considerações especiais, além é claro de verificar disponibilidade de datas.
                                             </p>
                                         </div>
                                     </div>
@@ -104,10 +100,11 @@
                                         </div>
                                     </div>
                             
-                                    <div>
+                                    <div class="accordion-item close">
                                         <a href="#" class="infografico__estrela__button infografico__estrela__button-06">
                                             <div>6</div>
                                             <p class="infografico__estrela__button-06__text">Produção</p>
+                                            <span class="infografico__estrela__button__arrow"></span>
                                         </a>
                                         <div class="infografico__estrela__box infografico__estrela__box06">
                                             <p>
@@ -133,7 +130,7 @@
                         <div class="row">
                             <div class="col-xl-12">
                                 <h2 class="chamada-destaque__text chamada-destaque__text-menor">
-                                    Baixe aqui <span class="highlight-text__one">nossa Cartilha</span> e saiba porque você deve escolher a Contrate Artistas como parceira para seu evento!
+                                    Baixe aqui <a href="#">nossa cartilha</a> e saiba porque você deve escolher a Contrate Artistas como parceira para seu evento!
                                 </h2>
                             </div>
                         </div>
@@ -211,12 +208,13 @@
                     <div class="particular__outros__btn">
                         <div class="particular__outros__btn-cases">
                             <p>
-                                Confira <span class="highlight-text__one">nossos <br>cases</span> de sucesso
+                                Confira <a href="#">nossos
+                                <br>cases</a> de sucesso
                             </p>
                         </div>
                         <div class="particular__outros__btn-fotos">
                             <p>
-                                Acesse nossa <br><span class="highlight-text__two">galeria de fotos</span>
+                                Acesse nossa <br><a href="#">galeria de fotos</a>
                             </p>
                             
                         </div>

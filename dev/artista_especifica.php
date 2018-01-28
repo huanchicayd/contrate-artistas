@@ -6,10 +6,10 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="breadcrumb">
-                        Você está em: Home >
+                        Você está em: <a href="index.php">Home</a> >
                         <span class="breadcrumb__actual-page breadcrumb__active02">George Henrique e Rodrigo</span>
                     </div>
-                    <div class="section-title__primary section-title__primary--flex">
+                    <div class="section-title__primary section-title__primary--flex artistas-especifica__section-title">
                         <h2 class="section-title__title">George Henrique e Rodrigo</h2>
                         <span class="tags">
                             <a href="#">Show</a>
@@ -19,10 +19,40 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-5">
-                    <div>
-                        <button class="btn-primary artistas-especifica__header-btn">Contato</button>
+                <div class="col-xl-6 col-lg-6 col-md-4">
+                    <button class="btn-primary artistas-especifica__header-btn">Contato</button>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-8">
+                    <div class="artista-video__social-media">
+                        <div class="artista-video__social-media__wrap">
+                            <div class="artista-video__social-media__circle">
+                                <i class="icon-facebook"></i>
+                            </div>
+                            <p>5kk</p>
+                        </div>
+                        <div class="artista-video__social-media__wrap">
+                            <div class="artista-video__social-media__circle">
+                                <i class="icon-twitter"></i>
+                            </div>
+                            <p>5kk</p>
+                        </div>
+                        <div class="artista-video__social-media__wrap">
+                            <div class="artista-video__social-media__circle">
+                                <i class="icon-instagram"></i>
+                            </div>
+                            <p>5kk</p>
+                        </div>
+                        <div class="artista-video__social-media__wrap">
+                            <div class="artista-video__social-media__circle">
+                                <i class="icon-youtube-play"></i>
+                            </div>
+                            <p>5kk</p>
+                        </div>
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-5 col-lg-6 col-md-12" data-js="artista-especifica-form-wrap">
                      <div class="artistas-especifica__form">
                         <div class="form-box artistas-especifica__form-box">
                             <div class="artistas-especifica__form__header">
@@ -133,34 +163,8 @@
                         </div>
                      </div>
                 </div>
-                <div class="col-xl-6 offset-xl-1">
+                <div class="col-xl-6 offset-xl-1 col-lg-6 col-md-12">
                     <div class="artista-video__wrap">
-                        <div class="artista-video__social-media">
-                            <div class="artista-video__social-media__wrap">
-                                <div class="artista-video__social-media__circle">
-                                    <i class="icon-facebook"></i>
-                                </div>
-                                <p>5kk</p>
-                            </div>
-                            <div class="artista-video__social-media__wrap">
-                                <div class="artista-video__social-media__circle">
-                                    <i class="icon-twitter"></i>
-                                </div>
-                                <p>5kk</p>
-                            </div>
-                            <div class="artista-video__social-media__wrap">
-                                <div class="artista-video__social-media__circle">
-                                    <i class="icon-instagram"></i>
-                                </div>
-                                <p>5kk</p>
-                            </div>
-                            <div class="artista-video__social-media__wrap">
-                                <div class="artista-video__social-media__circle">
-                                    <i class="icon-youtube-play"></i>
-                                </div>
-                                <p>5kk</p>
-                            </div>
-                        </div>
                         <div class="artista-video__video-wrap">
                             <video src="" class="artista-video__video"></video>
                             <div class="artista-video__video-play"></div>
@@ -178,6 +182,9 @@
                             Há seis anos surgia no mercado fonográfico uma dupla promissora com demonstração de irreverência logo de início, podemos ver isso na inusitada escolha de um posto de gasolina como cenário do primeiro DVD. Ali dava mostras de que George Henrique e Rodrigo marcariam presença. Mas não foi só esta a grande marca da dupla, desde então, emplacaram quatro sucessos em todo o Brasil... <a href="#" class="content-link">Ver mais</a>
                          </p>
                     </div>
+                    <div class="artista-sobre__orcamento">
+                        <button class="btn-primary artista-sobre__orcamento-button" data-js="btn-orcamento">Solicitar Orçamento</button>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -185,14 +192,13 @@
                     <div class="artistas-especifica__outras-opcoes">
                         <h4 class="artistas-especifica__outras-opcoes__title">
                             Veja outras opções que a Contrate Artistas selecionou para você!
-
                         </h4>
                         <p class="artistas-especifica__outras-opcoes__text">
                             Consultoria, comodidade e segurança na Contratação de artistas. Tudo para seu evento ser um sucesso! Não arrisque ter imprevistos
                             com a atração principal do seu evento. Busque quem sabe e conhece. Busque Contrate Artistas. <a href="#" class="content-link">Saiba mais</a>
                         </p>
                         <div class="artistas-especifica__outras__box-artistas home-content__artista-wrap-vertical">
-                            <a href="artista_especifica.php" class="artista-box__link artista-box-vertical artista-box-vertical__five-blocks">
+                            <a href="artista_especifica.php" class="artista-box__link artista-box-vertical artista-box-vertical__five-blocks artista-box-vertical__dupla">
                                 <div class="artista-box">
                                     <div class="artista-box__profile">
                                         <div class="artista-box__profile__image">
@@ -235,7 +241,7 @@
                                     <button type="button" name="button" class="btn-primary artista-box__button">Orçamento</button>
                                 </div>
                             </a>
-                            <a href="artista_especifica.php" class="artista-box__link artista-box-vertical artista-box-vertical__five-blocks">
+                            <a href="artista_especifica.php" class="artista-box__link artista-box-vertical artista-box-vertical__five-blocks artista-box-vertical__dupla">
                                 <div class="artista-box">
                                     <div class="artista-box__profile">
                                         <div class="artista-box__profile__image">
@@ -278,7 +284,7 @@
                                     <button type="button" name="button" class="btn-primary artista-box__button">Orçamento</button>
                                 </div>
                             </a>
-                            <a href="artista_especifica.php" class="artista-box__link artista-box-vertical artista-box-vertical__five-blocks">
+                            <a href="artista_especifica.php" class="artista-box__link artista-box-vertical artista-box-vertical__five-blocks artista-box-vertical__dupla">
                                 <div class="artista-box">
                                     <div class="artista-box__profile">
                                         <div class="artista-box__profile__image">
@@ -321,7 +327,7 @@
                                     <button type="button" name="button" class="btn-primary artista-box__button">Orçamento</button>
                                 </div>
                             </a>
-                            <a href="artista_especifica.php" class="artista-box__link artista-box-vertical artista-box-vertical__five-blocks">
+                            <a href="artista_especifica.php" class="artista-box__link artista-box-vertical artista-box-vertical__five-blocks artista-box-vertical__dupla">
                                 <div class="artista-box">
                                     <div class="artista-box__profile">
                                         <div class="artista-box__profile__image">
@@ -364,7 +370,7 @@
                                     <button type="button" name="button" class="btn-primary artista-box__button">Orçamento</button>
                                 </div>
                             </a>
-                            <a href="artista_especifica.php" class="artista-box__link artista-box-vertical artista-box-vertical__five-blocks">
+                            <!-- <a href="artista_especifica.php" class="artista-box__link artista-box-vertical artista-box-vertical__five-blocks">
                                 <div class="artista-box">
                                     <div class="artista-box__profile">
                                         <div class="artista-box__profile__image">
@@ -406,14 +412,14 @@
                                     </div>
                                     <button type="button" name="button" class="btn-primary artista-box__button">Orçamento</button>
                                 </div>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="galeria-fotos__nossos-clientes">
+    <section class="galeria-fotos__nossos-clientes artistas-especifica__galeria-fotos">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
@@ -444,7 +450,7 @@
             </div>
         </div>
     </section>
-    <section class="nossos-servicos">
+    <section class="nossos-servicos artistas-especifica__nossos-servicos">
         <div class="section-title__primary section-title--center">
             <h2 class="section-title__title">Nossos serviços</h2>
         </div>

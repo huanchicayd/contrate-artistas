@@ -6,9 +6,9 @@
 @import 'base/_icons';
 @import 'base/_content';
 
-@import 'components/_sidebar';
-@import 'components/_artista-box';
-@import 'components/_home-filtros';
+@import 'vendors/_slick';
+@import 'vendors/_fancybox';
+
 @import 'components/_banners';
 @import 'components/_chamada-destaque';
 @import 'components/_nossos-servicos';

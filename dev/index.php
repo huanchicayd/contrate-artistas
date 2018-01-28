@@ -162,7 +162,7 @@
                                     <div class="artista-box__profile-info">
                                         <h2 class="artista-box__profile-title">George Henrique e Rodrigo</h2>
                                         <div class="artista-box__profile-tag">
-                                            <span>Show</span>
+                                            <span class="tag-mobile">Show</span>
                                             <span>Comediante</span>
                                         </div>
                                     </div>

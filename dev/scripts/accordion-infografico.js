@@ -10,14 +10,13 @@
 
     function toggleItem(e){
         e.preventDefault();
-        const itemClass = this.parentNode.className;
-        const testandoA = document.querySelectorAll('.infografico__estrela__button__arrow');
+        const $accordionItemClass = this.parentNode.className;
 
         for(let i = 0; i < $accordionItem.length; i++){
             $accordionItem[i].className = 'accordion-item close';
         }
 
-        if(itemClass === 'accordion-item close'){
+        if ($accordionItemClass === 'accordion-item close'){
             this.parentNode.className = 'accordion-item open';
         }
     }

@@ -47,7 +47,8 @@
 
     function changeHeaderSeachBtnColor() {
         const $headerSearchBtn = document.querySelector('[data-js="header-search-btn"]');
-        $headerSearchBtn.classList.toggle('header-search__btn--on');
+        if(checkWindowInnerWidth(1199))
+            $headerSearchBtn.classList.toggle('header-search__btn--on');
     }
 
     function manipulateHeaderInfo() {
