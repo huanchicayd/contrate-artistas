@@ -1,13 +1,13 @@
 <?php include('header.php') ?>
 
 <div id="overlay"></div>
-<main class="home-content">
+<main class="home-content resultado-busca__main">
     <section class="resultado-busca">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
                     <div class="breadcrumb contato__breadcrumb">
-                        Você está em: Home > Categorias >
+                        Você está em: <a href="index.php">Home</a> <span class="breadcrumb__arrow"></span>   
                         <span class="breadcrumb__actual-page breadcrumb__active02">Show</span>
                     </div>
                     <div class="section-title__primary section-title__primary--flex resultado-busca__title">
@@ -122,13 +122,45 @@
                 <div class="col-lg-8 offset-lg-1 col-12">
                     <section class="home-content__wrap">
                         <div class="home-content__filtros">
-                            <button class="view-grid-btn" data-js="view-grid-btn">
-                                <i class="icon-view-grid"></i>
-                            </button>
-                            <button class="view-list-btn" data-js="view-list-btn">
-                                <i class="icon-view-list"></i>
-                            </button>
-                            <button class="sidebar-categorias__btn" data-js="sidebar-categorias-btn">Filtrar</button>
+                            <div class="home-content__letter-filter">
+                                <ul>
+                                    <li><a href="#">a</a></li>
+                                    <li><a href="#">b</a></li>
+                                    <li><a href="#">c</a></li>
+                                    <li><a href="#">d</a></li>
+                                    <li><a href="#">e</a></li>
+                                    <li><a href="#">f</a></li>
+                                    <li><a href="#">g</a></li>
+                                    <li><a href="#">h</a></li>
+                                    <li><a href="#">i</a></li>
+                                    <li><a href="#">j</a></li>
+                                    <li><a href="#">k</a></li>
+                                    <li><a href="#">l</a></li>
+                                    <li><a href="#">m</a></li>
+                                    <li><a href="#">n</a></li>
+                                    <li><a href="#">o</a></li>
+                                    <li><a href="#">p</a></li>
+                                    <li><a href="#">q</a></li>
+                                    <li><a href="#">r</a></li>
+                                    <li><a href="#">s</a></li>
+                                    <li><a href="#">t</a></li>
+                                    <li><a href="#">u</a></li>
+                                    <li><a href="#">v</a></li>
+                                    <li><a href="#">w</a></li>
+                                    <li><a href="#">x</a></li>
+                                    <li><a href="#">y</a></li>
+                                    <li><a href="#">z</a></li>
+                                </ul>
+                            </div>
+                            <div class="home-content__filtros-view">
+                                <button class="btn-filter-view view-grid-btn" data-js="view-grid-btn">
+                                    <i class="icon-view-grid"></i>
+                                </button>
+                                <button class="btn-filter-view view-list-btn" data-js="view-list-btn">
+                                    <i class="icon-view-list"></i>
+                                </button>
+                                <button class="sidebar-categorias__btn" data-js="sidebar-categorias-btn">Filtrar</button>
+                            </div>
                         </div>
                         <div class="home-content__artista-wrap">
                             <a href="artista_especifica.php" class="artista-box__link">

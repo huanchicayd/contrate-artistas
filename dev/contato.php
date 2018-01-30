@@ -8,7 +8,7 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="breadcrumb contato__breadcrumb">
-                        Você está em: <a href="#">Home</a> >
+                        Você está em: <a href="#">Home</a> <span class="breadcrumb__arrow"></span>
                         <span class="breadcrumb__actual-page breadcrumb__active02">Contato</span>
                     </div>
                     <div class="section-title__primary contato__section-title">
@@ -150,7 +150,7 @@
                             </p>
                         </div>
                         <div>
-                            <h5 class="contato__email__title">Acessoria de imprensa</h5>
+                            <h5 class="contato__email__title">Assessoria de imprensa</h5>
                             <p class="contato__email__text">
                                 assessoria@contrateartistas.com.br
                             </p>

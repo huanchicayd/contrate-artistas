@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="breadcrumb">
-                        Você está em: <a href="index.php">Home</a> >
+                        Você está em: <a href="index.php">Home</a> <span class="breadcrumb__arrow"></span>
                         <span class="breadcrumb__actual-page breadcrumb__active02">George Henrique e Rodrigo</span>
                     </div>
                     <div class="section-title__primary section-title__primary--flex artistas-especifica__section-title">

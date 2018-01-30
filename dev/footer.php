@@ -128,16 +128,15 @@
 
 <script src="scripts/vendors/jquery.js"></script>
 <script src="scripts/vendors/slick.js"></script>
-<script src="scripts/fancybox.js"></script>
+<script src="scripts/vendors/fancybox.js"></script>
 <script src="scripts/main.js" async></script>
 <script src="scripts/open-nav-menu.js" async></script>
 <script src="scripts/filter-artists.js" async></script>
 <script src="scripts/filter-sidebar-categories.js" async></script>
 <script src="scripts/form.js" async></script>
 <script src="scripts/nav-fixed.js" async></script>
-<script src="scripts/appendinfograficoInfo.js"></script>
-<script src="scripts/accordion-infografico.js"></script>
-<script src="scripts/all-sliders.js"></script>
+<script src="scripts/accordion-infografico.js" async></script>
+<script src="scripts/all-sliders.js" async></script>
 
 </body>
 </html>

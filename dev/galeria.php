@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="breadcrumb">
-                        Você está em: <a href="index.php">Home</a> > <span class="breadcrumb__actual-page breadcrumb__active02">Galeria</span>
+                        Você está em: <a href="index.php">Home</a> <span class="breadcrumb__arrow"></span> <span class="breadcrumb__actual-page breadcrumb__active02">Galeria</span>
                     </div>
                     <div class="section-title__primary">
                         <h2 class="section-title__title">Galeria de fotos</h2>
@@ -107,44 +107,43 @@
             </div>
         </div>
         <div class="galeria__image-wrap" style="display: none;" id="hidden-content">
-            <div class="container">
-                <div class="galeria__image-box">
-                    <div class="galeria__image-imagem">
-                        <img src="images/galeria__image01.jpg" alt="">
+            <div class="galeria__image-container">
+                <div class="galeria__image__photo">
+                    <img src="images/galeria-fotos_img01.jpg" alt="">
+                </div>
+                <div class="galeria__image__caption">
+                    <div class="galeria__image__caption-header">
+                        <h4>Corporativo</h4>
+                        <h5>Evento XPTO</h5>
+                        <p>15 de maio de 2017</p>
                     </div>
-                    <div class="galeria__image-caption">
-                        <div class="galeria__image-header">
-                            <h4>Corporativo</h4>
-                            <h5>Evento XPTO</h5>
-                            <p>15 de maio de 2017</p>
-                        </div>
-                        <div class="galeria__image-description">
-                            <p>
-                                Descrição curta do evento. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos perferendis laboriosam soluta dolorum, et porro commodi consequuntur modi officiis obcaecati ipsam, dolor error sed quidem optio quibusdam? Amet, eveniet accusamus.
-                            </p>
-                        </div>
+                    <div class="galeria__image__caption-description">
+                        <p>
+                            [Descrição curta] Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora provident quidem atque obcaecati odit delectus excepturi, impedit officiis incidunt perferendis velit quos fugiat doloremque itaque consequuntur praesentium veniam, corrupti dolor.
+                        </p>
+
                     </div>
                 </div>
             </div>
         </div>
         <div class="galeria__image-wrap" style="display: none;" id="hidden-content">
-            <div class="container">
-                <div class="galeria__image-box">
-                    <div class="galeria__image-imagem">
-                        <img src="images/galeria__image01.jpg" alt="">
+            <div class="galeria__image-container">
+                <div class="galeria__image__photo">
+                    <img src="images/galeria-fotos_img01.jpg" alt="">
+                </div>
+                <div class="galeria__image__caption">
+                    <div class="galeria__image__caption-header">
+                        <h4>Corporativo</h4>
+                        <h5>Evento XPTO</h5>
+                        <p>15 de mais de 2018</p>
                     </div>
-                    <div class="galeria__image-caption">
-                        <div class="galeria__image-header">
-                            <h4>Corporativo</h4>
-                            <h5>Evento XPTO</h5>
-                            <p>Data do evento</p>
-                        </div>
-                        <div class="galeria__image-description">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos perferendis laboriosam soluta dolorum, et porro commodi consequuntur
-                                modi officiis obcaecati ipsam, dolor error sed quidem optio quibusdam? Amet, eveniet accusamus.
-                            </p>
-                        </div>
+                    <div class="galeria__image__caption-description">
+                        <p>
+                            [Descrição curta] Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora provident quidem atque obcaecati odit delectus excepturi,
+                            impedit officiis incidunt perferendis velit quos fugiat doloremque itaque consequuntur praesentium veniam,
+                            corrupti dolor.
+                        </p>
+        
                     </div>
                 </div>
             </div>

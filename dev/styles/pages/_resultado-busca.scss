@@ -1,6 +1,12 @@
 .resultado-busca {
     margin-top: 100px;
 
+    &__main {
+        @media screen and (max-width: 1199px){
+            margin-top: 150px;
+        }
+    }
+
     &__title {
         margin-bottom: 50px;
     }

@@ -52,6 +52,36 @@
         display: none;
     }
 
+    a {
+        @include font-size(14);
+    }
+
+    &__arrow {
+        position: relative;
+        margin: 0 10px;
+
+        &:before,
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 2px;
+            height: 5px;
+            background: #b1b3b6;
+            transform: translateY(-50%);
+        }
+
+        &:before {
+            transform: translateY(-3px) rotatez(-45deg);
+        }
+
+        &:after {
+            transform: rotatez(45deg);
+        }
+    }
+
     &__actual-page {
         text-transform: uppercase;
         font-family: $text-bold;
