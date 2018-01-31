@@ -46,7 +46,7 @@ main.servicos {
                     @include font-size(30);
                     font-family: $text-special;
                     text-transform: uppercase;
-                    margin: 0;
+                    margin-bottom: 10px;
                     letter-spacing: .1pt;
                 }
 
@@ -62,10 +62,16 @@ main.servicos {
                     letter-spacing: 1pt;
                 }
 
+                &__header-big-variation {
+                    @include font-size(42);
+                    letter-spacing: 1.1pt;
+                }
+
                 &__text {
                     text-align: center;
                     @include font-size(18);
                     padding-right: 13px;
+                    margin-top: 50px;
                 }
 
                 &__dot {
@@ -222,7 +228,7 @@ main.servicos {
 }
 
 .corporativo {
-    &__sobre {
+    &__banner {
         background: url('../images/corporativo_banner.jpg') no-repeat center center;
         background-size: cover;
     }

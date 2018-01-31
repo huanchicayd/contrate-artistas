@@ -3751,7 +3751,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   font-size: 3rem;
   font-family: "HurmeGeometricSans1-Bold", sans-serif;
   text-transform: uppercase;
-  margin: 0;
+  margin-bottom: 10px;
   letter-spacing: .1pt;
 }
 
@@ -3768,11 +3768,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   letter-spacing: 1pt;
 }
 
+.particular__banner__content__chamada__header-big-variation {
+  font-size: 42px;
+  font-size: 4.2rem;
+  letter-spacing: 1.1pt;
+}
+
 .particular__banner__content__chamada__text {
   text-align: center;
   font-size: 18px;
   font-size: 1.8rem;
   padding-right: 13px;
+  margin-top: 50px;
 }
 
 .particular__banner__content__chamada__dot {
@@ -3936,7 +3943,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   }
 }
 
-.corporativo__sobre {
+.corporativo__banner {
   background: url("../images/corporativo_banner.jpg") no-repeat center center;
   background-size: cover;
 }
