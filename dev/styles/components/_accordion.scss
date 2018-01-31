@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+.accordion {
+
+    &__button {
+        position: relative;
+        //border: 1px solid red;
+        display: flex;
+        align-items: center;
+        color: #000;
+        margin-bottom: 15px;
+
+        &__number {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 35px;
+            height: 35px;
+            background: $color-one;
+            color: #fff;
+            font-family: $text-bold;
+            border-radius: 50%;
+            margin-right: 15px;
+            transition: .25s;
+            @media screen and (max-width: 991px) {
+                background: $color-one;
+                margin: 0;
+                margin-right: 15px;
+            }
+        }
+
+        > p {
+            @include font-size(20);
+        }
+    }
+
+    &__box {
+        position: relative;
+        opacity: 0;
+        visibility: hidden;
+        color: #000;
+        //border: 1px solid red;
+        padding-left: 50px;
+
+        > p {
+            @include font-size(14);
+            color: #000;
+        }
+    }
+}
+
+.close .accordion__box {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: .5s;
+}
+
+.open .accordion__box {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    margin-bottom: 50px;
+    transition: .5s;
+}
+
+.close .accordion__button__arrow {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%);
+    //border: 1px solid red;
+
+    &:before {
+        content: '';
+        display: flex;
+        width: 30px;
+        height: 30px;
+        color: $color-one;
+        background: url('../images/arrow.svg') no-repeat center center;
+        background-size: contain;
+        text-align: center;
+        align-items: center;
+        transform-origin: center center;
+        transition: .5s;
+        //border: 1px solid red;
+    }
+}
+
+.open .accordion__button__arrow {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%);
+
+    &:before {
+        content: '';
+        display: flex;
+        width: 30px;
+        height: 30px;
+        color: $color-one;
+        background: url('../images/arrow.svg') no-repeat center center;
+        background-size: contain;
+        text-align: center;
+        transform-origin: center center;
+        transform: rotatez(90deg);
+        align-items: center;
+        transition: .5s;
+    }
+}

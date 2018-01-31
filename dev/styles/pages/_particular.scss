@@ -3,7 +3,6 @@
     as páginas particular.php
     e corporativo.php já que são
     quase idênticas
-
 */
 
 main.servicos {
@@ -13,11 +12,13 @@ main.servicos {
 }
 
 .particular {
-    &__sobre {
+    &__banner {
         background: url('../images/particular_banner.jpg') no-repeat center center;
         background-size: cover;
-        height: 970px;
+        min-height: 600px;
         color: $color-two;
+        overflow: hidden;
+        position: relative;
 
         @media screen and (max-width: 991px){
             height: auto;
@@ -25,19 +26,134 @@ main.servicos {
             padding-bottom: 50px;
         }
 
-        &__content {
-            margin-top: 135px;
+        > .container {
+            min-height: 600px;
         }
 
-        .breadcrumb {
-            @media screen and (max-width: 991px){
-                display: none;
+        &__content {
+            min-height: 600px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            //border: 1px solid red;
+
+            &__chamada{
+                position: absolute;
+                right: 0;
+                //border: 1px solid red;
+
+                &__header {
+                    @include font-size(30);
+                    font-family: $text-special;
+                    text-transform: uppercase;
+                    margin: 0;
+                    letter-spacing: .1pt;
+                }
+
+                &__header--kerning {
+                    letter-spacing: .5pt;
+                }
+
+                &__header-big {
+                    @include font-size(50);
+                    font-family: $text-special;
+                    text-transform: uppercase;
+                    color: $color-one;
+                    letter-spacing: 1pt;
+                }
+
+                &__text {
+                    text-align: center;
+                    @include font-size(18);
+                    padding-right: 13px;
+                }
+
+                &__dot {
+                    display: inline-block;
+                    width: 4px;
+                    height: 4px;
+                    margin: 0 8px; 
+                    background: $color-one;
+                    border-radius: 50%;
+                    transform: translateY(-2px);
+                }
+            }
+
+            &__link {
+                position: absolute;
+                bottom: 50px;
+                left: 50%;
+                transform: translateX(-50%);
+
+                > a {
+                    display: flex;
+                    align-items: center;
+                    text-transform: uppercase;
+                    font-family: $text-bold;
+                    color: #fff;
+
+                    &:hover {
+                        color: $color-one;
+                    }
+
+                    > img {
+                        width: 17px;
+                        margin-left: 15px;
+                    }
+                }
             }
         }
     }
 
-    &__destaque {
-        transform: translateY(-60px);
+    &__sobre {
+        margin: 130px 0;
+
+        &__texto {
+            &__header {
+                @include font-size(22);
+                font-family: $text-bold;
+                line-height: 30px;
+                margin-bottom: 25px;
+            }
+
+            &__paragraph {
+                @include font-size(18);
+                line-height: 30px;
+            }
+        }
+
+        &__accordion__info {
+            &__text {
+                font-family: $text-bold;
+                font-style: italic;
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    &__video {
+        margin: 150px 0;
+
+        &__wrap {
+            position: relative;
+            height: 0;
+            padding-top: 56.25%;
+            background: #dfdfdf;
+            //border: 1px solid red;
+
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 50px;
+                height: 50px;
+                background: url('../images/arrow.svg') no-repeat center center;
+                background-size: contain;
+                transform: translate(-50%, -50%);
+            }
+        }
     }
 
     &__outros {

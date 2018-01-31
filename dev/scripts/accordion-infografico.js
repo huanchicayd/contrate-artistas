@@ -2,7 +2,7 @@
     'use strict';
 
     const $accordionItem = document.querySelectorAll('.accordion-item');
-    const $accordionHeader = document.querySelectorAll('.infografico__estrela__button');
+    const $accordionHeader = document.querySelectorAll('.accordion__button');
 
     for(let i = 0; i < $accordionHeader.length; i++){
         $accordionHeader[i].addEventListener('click', toggleItem, false);

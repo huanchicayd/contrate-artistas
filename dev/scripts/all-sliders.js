@@ -63,4 +63,12 @@
         }, 1000);
     })
 
+    $('.particular__banner__content__link').click(function (e) {
+        e.preventDefault();
+        const $quemSomosSaibaMais = $('.particular__sobre').offset().top - 50;
+        $('html').animate({
+            scrollTop: $quemSomosSaibaMais + 'px'
+        }, 1000);
+    })
+
 })();

@@ -45,7 +45,7 @@
                     });
                     // also enable media after 3 seconds,
                     // which will catch very old browsers (android 2.x, old firefox) that don't support onload on link
-                    setTimeout(enableStylesheet, 3);
+                    setTimeout(enableStylesheet, 1);
                 };
 
                 // loop through link elements in DOM
@@ -86,7 +86,6 @@
                         });
                     }
                 }
-
 
                 // commonjs
                 if (typeof exports !== "undefined") {
