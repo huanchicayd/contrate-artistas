@@ -1,0 +1,11 @@
+.cases {
+    &__head {
+        margin-top: 135px;
+    }
+
+    &__content__head {
+        font-family: $text-bold;
+        @include font-size(20);
+        margin: 20px 0 50px 0;
+    }
+}

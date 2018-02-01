@@ -3739,11 +3739,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   position: relative;
   display: flex;
   align-items: center;
-}
-
-.particular__banner__content__chamada {
-  position: absolute;
-  right: 0;
+  justify-content: flex-end;
 }
 
 .particular__banner__content__chamada__header {
@@ -4630,6 +4626,53 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .resultado-busca__title {
   margin-bottom: 50px;
+}
+
+.cases__head {
+  margin-top: 135px;
+}
+
+.cases__content__head {
+  font-family: "OpenSans-Bold", sans-serif;
+  font-size: 20px;
+  font-size: 2rem;
+  margin: 20px 0 50px 0;
+}
+
+.cases-especifica__banner {
+  height: 450px;
+  background: url("../images/cases-especifica_banner.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1199px) {
+  .cases-especifica__banner {
+    display: none;
+  }
+}
+
+.cases-especifica__section-title {
+  margin-bottom: 50px;
+}
+
+.cases-especifica__head {
+  margin-top: 50px;
+}
+
+.cases-especifica__content__cases-texto {
+  margin-bottom: 50px;
+}
+
+.cases-especifica__content__cases-texto__title {
+  text-transform: uppercase;
+}
+
+.cases-especifica__content__cases-texto__text {
+  line-height: 26px;
+}
+
+.cases-especifica__depoimentos, .cases-especifica__destaque {
+  margin-bottom: 150px;
 }
 
 .contato__breadcrumb {

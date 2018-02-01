@@ -121,20 +121,20 @@
         </div>
     </section>
     <section class="particular__destaque">
-            <div class="chamada-destaque__wrap">
-                <div class="chamada-destaque__rotated">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-12">
-                                <h2 class="chamada-destaque__text chamada-destaque__text-menor">
-                                    Baixe aqui <a href="#">nossa cartilha</a> e saiba porque você deve escolher a Contrate Artistas como parceira para seu evento!
-                                </h2>
-                            </div>
+        <div class="chamada-destaque__wrap">
+            <div class="chamada-destaque__rotated">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <h2 class="chamada-destaque__text chamada-destaque__text-menor">
+                                Baixe aqui <a href="#">nossa cartilha</a> e saiba porque você deve escolher a Contrate Artistas como parceira para seu evento!
+                            </h2>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
     <section class="particular__video">
         <div class="container">
             <div class="particular__video__wrap">

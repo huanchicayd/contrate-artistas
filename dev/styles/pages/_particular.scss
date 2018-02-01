@@ -35,11 +35,10 @@ main.servicos {
             position: relative;
             display: flex;
             align-items: center;
+            justify-content: flex-end;
             //border: 1px solid red;
 
             &__chamada{
-                position: absolute;
-                right: 0;
                 //border: 1px solid red;
 
                 &__header {

@@ -37,7 +37,8 @@
     <!-- Fallback for css loading on old browsers -->
     <noscript><link rel="stylesheet" href="styles/style.css"></noscript>
     <!-- CSS loader preload for old borwsers -->
-    <script>
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- <script>
         (function (w) {
                 "use strict";
                 // rel=preload support test
@@ -135,7 +136,7 @@
                     w.loadCSS = loadCSS;
                 }
             }(typeof global !== "undefined" ? global : this));
-    </script>
+    </script> -->
 </head>
 <body>
     <header class="header-wrap" data-js="navbar">
@@ -170,7 +171,7 @@
                         <li><a href="quem_somos.php" class="nav-menu__links">Quem somos</a></li>
                         <li><a href="corporativo.php" class="nav-menu__links">Corporativo</a></li>
                         <li><a href="particular.php" class="nav-menu__links">Particular</a></li>
-                        <li><a href="#" class="nav-menu__links disabled-link">Cases selecionados</a></li>
+                        <li><a href="cases.php" class="nav-menu__links">Cases selecionados</a></li>
                         <li><a href="galeria.php" class="nav-menu__links">Galeria de fotos</a></li>
                         <li><a href="contato.php" class="nav-menu__links">Contato</a></li>
                     </ul>

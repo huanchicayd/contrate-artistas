@@ -1,0 +1,37 @@
+.cases-especifica {
+    &__banner {
+        height: 450px;
+        background: url('../images/cases-especifica_banner.jpg') no-repeat center center;
+        background-size: cover;
+        @media screen and (max-width: 1199px) {
+            display: none;
+        }
+    }
+
+    &__section-title {
+        margin-bottom: 50px;
+    }
+
+    &__head {
+        margin-top: 50px;
+    }
+
+    &__content {
+        &__cases-texto {
+            margin-bottom: 50px;
+
+            &__title {
+                text-transform: uppercase;
+            }
+
+            &__text {
+                line-height: 26px;
+            }
+        }
+    }
+
+    &__depoimentos,
+    &__destaque {
+        margin-bottom: 150px;
+    }
+}
