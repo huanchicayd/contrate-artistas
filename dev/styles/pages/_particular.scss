@@ -15,38 +15,35 @@ main.servicos {
     &__banner {
         background: url('../images/particular_banner.jpg') no-repeat center center;
         background-size: cover;
-        min-height: 600px;
+        height: 600px;
         color: $color-two;
         overflow: hidden;
         position: relative;
 
-        @media screen and (max-width: 991px){
-            height: auto;
-            padding-top: 50px;
-            padding-bottom: 50px;
-        }
-
         > .container {
-            min-height: 600px;
+            height: 600px;
         }
 
         &__content {
-            min-height: 600px;
+            height: 600px;
             position: relative;
             display: flex;
             align-items: center;
             justify-content: flex-end;
-            //border: 1px solid red;
+            @media screen and (max-width: 991px){
+                justify-content: center;
+            }
 
             &__chamada{
-                //border: 1px solid red;
-
                 &__header {
                     @include font-size(30);
                     font-family: $text-special;
                     text-transform: uppercase;
                     margin-bottom: 10px;
                     letter-spacing: .1pt;
+                    @media screen and (max-width: 400px){
+                        @include font-size(26);
+                    }
                 }
 
                 &__header--kerning {
@@ -59,11 +56,17 @@ main.servicos {
                     text-transform: uppercase;
                     color: $color-one;
                     letter-spacing: 1pt;
+                    @media screen and (max-width: 400px){
+                        @include font-size(43);
+                    }
                 }
 
                 &__header-big-variation {
                     @include font-size(42);
                     letter-spacing: 1.1pt;
+                    @media screen and (max-width: 400px){
+                        @include font-size(36);
+                    }
                 }
 
                 &__text {
@@ -71,6 +74,9 @@ main.servicos {
                     @include font-size(18);
                     padding-right: 13px;
                     margin-top: 50px;
+                    @media screen and (max-width: 400px){
+                        @include font-size(15);
+                    }
                 }
 
                 &__dot {
@@ -114,6 +120,10 @@ main.servicos {
         margin: 130px 0;
 
         &__texto {
+            @media screen and (max-width: 991px) {
+                margin-bottom: 50px;
+            }
+
             &__header {
                 @include font-size(22);
                 font-family: $text-bold;
@@ -144,7 +154,6 @@ main.servicos {
             height: 0;
             padding-top: 56.25%;
             background: #dfdfdf;
-            //border: 1px solid red;
 
             &:after {
                 content: '';

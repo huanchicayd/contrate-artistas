@@ -239,15 +239,13 @@
   }
 }
 
-.header-fixed-appear {
-  transform: translatey(-65px);
-}
-
 .header-fixed {
   position: fixed;
-  width: 100%;
-  transform: translatey(0);
-  transition: 0.5s;
+  z-index: 9997;
+
+  .header-search {
+    visibility: visible;
+  }
 }
 
 .header-search--on {

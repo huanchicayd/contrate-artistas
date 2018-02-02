@@ -32,7 +32,7 @@
     <section class="particular__sobre">
         <div class="container">
             <div class="row">
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-lg-6">
                     <div class="particular__sobre__texto">
                         <h4 class="particular__sobre__texto__header">
                             Procurando artistas para realização de shows, campanhas ou ações publicitárias, presenças vips, apresentações e demais eventos para <mark class="highlight">alavancar</mark> sua empresa?
@@ -42,7 +42,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-xl-5 offset-xl-1">
+                <div class="col-xl-5 offset-xl-1 col-lg-6">
                     <div class="particular__sobre__accordion__info">
                         <p class="particular__sobre__accordion__info__text">
                             Clique nos números para saber mais sobre nosso processo!

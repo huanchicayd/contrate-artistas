@@ -28,7 +28,7 @@
     <section class="particular__sobre">
         <div class="container">
             <div class="row">
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-lg-6">
                     <div class="particular__sobre__texto">
                         <h4 class="particular__sobre__texto__header">
                             Procurando a atração perfeita para seu casamento, 15 anos e demais eventos particulares? A Contrate Artistas é a <mark class="highlight">solução ideal</mark> para você!
@@ -38,7 +38,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-xl-5 offset-xl-1">
+                <div class="col-xl-5 offset-xl-1 col-lg-6">
                     <div class="particular__sobre__accordion__info">
                         <p class="particular__sobre__accordion__info__text">
                             Clique nos números para saber mais sobre nosso processo!

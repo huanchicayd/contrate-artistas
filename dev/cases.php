@@ -9,7 +9,7 @@
                 <span class="breadcrumb__arrow"></span>
                 <span class="breadcrumb__actual-page breadcrumb__active02">Cases</span>
             </div>
-            <div class="section-title__primary contato__section-title">
+            <div class="section-title__primary">
                 <h2 class="section-title__title">Cases</h2>
             </div>
         </div>
@@ -23,7 +23,7 @@
             </div>
             <div class="row">
                 <div class="col-xl-12">
-                    <div class="card-box vertical">
+                    <div class="card-box">
                         <div class="card-box__wrap">
                             <a href="cases_especifica.php" class="card-box__item">
                                 <div class="card-box__image">
@@ -84,7 +84,68 @@
                                     <button class="btn-primary card-box__button__button">Saiba mais</button>
                                 </div>
                             </a>
-                            
+                        </div>
+                        <div class="card-box__wrap">
+                            <a href="cases_especifica.php" class="card-box__item">
+                                <div class="card-box__image">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="card-box__text">
+                                    <p>
+                                        Há seis anos surgia no mercado fonográfico uma dupla promissora com demonstração de irreverência logo de início, .. Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit. Quas, illum a. Sunt eius repellendus quae commodi quia
+                                        expedita, sed, totam officiis, recusandae quaerat odit error aliquam repudiandae aut deserunt blanditiis.
+                                    </p>
+                                </div>
+                                <div class="card-box__button">
+                                    <button class="btn-primary card-box__button__button">Saiba mais</button>
+                                </div>
+                            </a>
+                            <a href="cases_especifica.php" class="card-box__item">
+                                <div class="card-box__image">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="card-box__text">
+                                    <p>
+                                        Há seis anos surgia no mercado fonográfico uma dupla promissora com demonstração de irreverência logo de início, .. Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit. Quas, illum a. Sunt eius repellendus quae commodi quia
+                                        expedita, sed, totam officiis, recusandae quaerat odit error aliquam repudiandae aut deserunt blanditiis.
+                                    </p>
+                                </div>
+                                <div class="card-box__button">
+                                    <button class="btn-primary card-box__button__button">Saiba mais</button>
+                                </div>
+                            </a>
+                            <a href="cases_especifica.php" class="card-box__item">
+                                <div class="card-box__image">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="card-box__text">
+                                    <p>
+                                        Há seis anos surgia no mercado fonográfico uma dupla promissora com demonstração de irreverência logo de início, .. Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit. Quas, illum a. Sunt eius repellendus quae commodi quia
+                                        expedita, sed, totam officiis, recusandae quaerat odit error aliquam repudiandae aut deserunt blanditiis.
+                                    </p>
+                                </div>
+                                <div class="card-box__button">
+                                    <button class="btn-primary card-box__button__button">Saiba mais</button>
+                                </div>
+                            </a>
+                            <a href="cases_especifica.php" class="card-box__item">
+                                <div class="card-box__image">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="card-box__text">
+                                    <p>
+                                        Há seis anos surgia no mercado fonográfico uma dupla promissora com demonstração de irreverência logo de início, .. Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit. Quas, illum a. Sunt eius repellendus quae commodi quia
+                                        expedita, sed, totam officiis, recusandae quaerat odit error aliquam repudiandae aut deserunt blanditiis.
+                                    </p>
+                                </div>
+                                <div class="card-box__button">
+                                    <button class="btn-primary card-box__button__button">Saiba mais</button>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -92,7 +153,7 @@
         </div>
     </section>
     
-    <section class="nossos-servicos contato__nossos-servicos">
+    <section class="nossos-servicos cases__nossos-servicos">
         <div class="section-title__primary section-title--center">
             <h2 class="section-title__title">Nossos serviços</h2>
         </div>

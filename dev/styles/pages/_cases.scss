@@ -1,4 +1,8 @@
 .cases {
+    @media screen and (max-width: 1199px){
+        margin-top: 150px;
+    }
+
     &__head {
         margin-top: 135px;
     }

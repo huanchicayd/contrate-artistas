@@ -1,6 +1,6 @@
 <?php include('header.php') ?>
 
-<main>
+<main class="cases">
     <section class="cases-especifica__banner">
     </section>
     <section class="cases-especifica__head">
@@ -21,7 +21,7 @@
     <section class="cases-especifica__content">
         <div class="container">
             <div class="row">
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-lg-6 col-md-12">
                     <div class="cases-especifica__content__cases-texto">
                         <h3 class="cases-especifica__content__cases-texto__title">Sobre o case</h3>
                         <p class="cases-especifica__content__cases-texto__text">
@@ -41,7 +41,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-lg-6 col-md-12">
                     <div class="artista-video__wrap">
                         <div class="artista-video__video-wrap">
                             <video src="" class="artista-video__video"></video>

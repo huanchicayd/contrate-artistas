@@ -139,6 +139,14 @@
     </script> -->
 </head>
 <body>
+    <div class="filter-pai">
+        <div class="filter">
+            <a href="#" class="filter-fechar"></a>
+            <div class="filter-categories">
+                <button>Filtrar Artista</button>
+            </div>
+        </div>
+    </div>
     <header class="header-wrap" data-js="navbar">
         <div class="header">
             <div class="container">

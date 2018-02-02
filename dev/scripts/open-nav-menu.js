@@ -10,6 +10,7 @@
     const $footer = document.querySelector('[data-js="footer"]');
     const $footerInfo = document.querySelector('.footer-info');
     const $footerBrandWrap = document.querySelector('.footer-brand-wrap');
+    const $main = document.querySelector('main');
 
     $navBtn.addEventListener('click', navMenuOpen, false);
 
@@ -22,6 +23,7 @@
     function execOnNavOpen() {
         animateNavBtnWhenOpenClose();
         toggleNavDisplay();
+        toggleFixedOnMainTag();
         appendHeaderSearchInNav();
         appendElementsInNav();
         changeHeaderSeachBtnColor();
@@ -68,6 +70,14 @@
             $navWrap.style.display = 'block';
         else if (checkWindowInnerWidth(1199))
             $navWrap.style.display = 'none';
+    }
+
+    function toggleFixedOnMainTag(){
+        if ($navWrap.classList.contains('nav-menu--on') && checkWindowInnerWidth(1199)){
+            $main.style.position = 'fixed';
+        } else {
+            $main.style.position = 'static';
+        }
     }
 
     function navMenuAppendedElements() {

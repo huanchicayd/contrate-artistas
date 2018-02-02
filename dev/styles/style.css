@@ -2679,6 +2679,19 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   transition: left 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
 }
 
+@media screen and (max-width: 991px) {
+  .banner-cortado:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+
 .banner-cortado:after {
   content: '';
   display: block;
@@ -2699,21 +2712,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 @media screen and (max-width: 991px) {
   .sidebar {
-    position: absolute;
-    opacity: 0;
-    right: -82%;
-    z-index: 10;
+    display: none;
     background: #fff;
-    padding: 20px;
-    width: 82%;
-    padding-top: 85px;
-    transition: transform .5s, opacity .5s;
+    padding: 20px 20px 0 20px;
     height: 100%;
-    transform: translatex(0) translateY(-3px);
+    overflow-y: auto;
   }
   .sidebar--active {
-    transform: translateX(-100%);
-    opacity: 1;
+    display: block;
   }
 }
 
@@ -2825,7 +2831,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 @media screen and (max-width: 1199px) {
   .sidebar-categorias h3 {
-    display: none;
+    margin-bottom: 40px;
   }
 }
 
@@ -2836,6 +2842,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .sidebar-categorias__checkbox {
   display: flex;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 991px) {
+  .sidebar-categorias__checkbox {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .sidebar-categorias__checkbox:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .sidebar-categorias__checkbox > input {
@@ -2916,6 +2934,97 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .sidebar-subcategorias--active {
   display: block;
+}
+
+.filter-categories {
+  display: none;
+  color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  .filter-categories {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    z-index: 9999;
+    background: #000;
+  }
+  .filter-categories button {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    border: none;
+    color: #fff;
+    font-family: "OpenSans-Bold", sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+}
+
+.filter-pai {
+  display: none;
+}
+
+.filter-pai--on {
+  display: block;
+}
+
+@media screen and (max-width: 991px) {
+  .filter {
+    position: absolute;
+    z-index: 9998;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    transform: translateX(100%);
+    transition: .5s;
+    background: #fff;
+    padding-bottom: 70px;
+  }
+  .filter--on {
+    transform: translateX(0);
+  }
+}
+
+.filter-fechar {
+  display: block;
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  z-index: 9999;
+  width: 20px;
+  height: 20px;
+}
+
+.filter-fechar:before, .filter-fechar:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 3px;
+  height: 20px;
+  background: #000;
+}
+
+.filter-fechar:before {
+  transform: translate(-50%, -50%) rotatez(-45deg);
+}
+
+.filter-fechar:after {
+  transform: translate(-50%, -50%) rotatez(45deg);
+}
+
+.filter-body--on {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .chamada-destaque__wrap {
@@ -3115,6 +3224,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .nossos-clientes__item:hover img {
   opacity: 1;
+  filter: grayscale(0);
 }
 
 .nossos-clientes__item img {
@@ -3123,6 +3233,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   width: 150px;
   opacity: .25;
   transition: .5s;
+  filter: grayscale(1);
 }
 
 .nossos-clientes__depoimentos {
@@ -3253,6 +3364,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   visibility: hidden;
   color: #000;
   padding-left: 50px;
+  line-height: 26px;
 }
 
 .accordion__box > p {
@@ -3405,13 +3517,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .galeria-menor .slick-prev:before,
 .galeria-menor .slick-next:before {
-  font-family: 'slick';
-  font-size: 60px;
+  display: block;
   line-height: 1;
   opacity: .75;
   color: #ffcc00;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
 }
 
 .galeria-menor .slick-prev {
@@ -3425,11 +3536,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .galeria-menor .slick-prev:before {
-  content: '◀';
+  content: '';
+  background: url("../images/arrow.svg") no-repeat center center;
+  transform: rotatez(-180deg);
 }
 
 .galeria-menor [dir='rtl'] .slick-prev:before {
-  content: '▶';
+  content: '';
+  background: url("../images/arrow.svg") no-repeat center center;
 }
 
 .galeria-menor .slick-next {
@@ -3442,11 +3556,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .galeria-menor .slick-next:before {
-  content: '▶';
+  content: '';
+  background: url("../images/arrow.svg") no-repeat center center;
 }
 
 .galeria-menor [dir='rtl'] .slick-next:before {
-  content: '◀';
+  content: '';
+  background: url("../images/arrow.svg") no-repeat center center;
+  transform: rotatez(-180deg);
 }
 
 .form-box {
@@ -3716,30 +3833,28 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .particular__banner {
   background: url("../images/particular_banner.jpg") no-repeat center center;
   background-size: cover;
-  min-height: 600px;
+  height: 600px;
   color: #fff;
   overflow: hidden;
   position: relative;
 }
 
-@media screen and (max-width: 991px) {
-  .particular__banner {
-    height: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-}
-
 .particular__banner > .container {
-  min-height: 600px;
+  height: 600px;
 }
 
 .particular__banner__content {
-  min-height: 600px;
+  height: 600px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+
+@media screen and (max-width: 991px) {
+  .particular__banner__content {
+    justify-content: center;
+  }
 }
 
 .particular__banner__content__chamada__header {
@@ -3749,6 +3864,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   text-transform: uppercase;
   margin-bottom: 10px;
   letter-spacing: .1pt;
+}
+
+@media screen and (max-width: 400px) {
+  .particular__banner__content__chamada__header {
+    font-size: 26px;
+    font-size: 2.6rem;
+  }
 }
 
 .particular__banner__content__chamada__header--kerning {
@@ -3764,10 +3886,24 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   letter-spacing: 1pt;
 }
 
+@media screen and (max-width: 400px) {
+  .particular__banner__content__chamada__header-big {
+    font-size: 43px;
+    font-size: 4.3rem;
+  }
+}
+
 .particular__banner__content__chamada__header-big-variation {
   font-size: 42px;
   font-size: 4.2rem;
   letter-spacing: 1.1pt;
+}
+
+@media screen and (max-width: 400px) {
+  .particular__banner__content__chamada__header-big-variation {
+    font-size: 36px;
+    font-size: 3.6rem;
+  }
 }
 
 .particular__banner__content__chamada__text {
@@ -3776,6 +3912,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   font-size: 1.8rem;
   padding-right: 13px;
   margin-top: 50px;
+}
+
+@media screen and (max-width: 400px) {
+  .particular__banner__content__chamada__text {
+    font-size: 15px;
+    font-size: 1.5rem;
+  }
 }
 
 .particular__banner__content__chamada__dot {
@@ -3814,6 +3957,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .particular__sobre {
   margin: 130px 0;
+}
+
+@media screen and (max-width: 991px) {
+  .particular__sobre__texto {
+    margin-bottom: 50px;
+  }
 }
 
 .particular__sobre__texto__header {
@@ -4626,6 +4775,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .resultado-busca__title {
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1199px) {
+  .cases {
+    margin-top: 150px;
+  }
 }
 
 .cases__head {

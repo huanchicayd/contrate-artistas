@@ -86,6 +86,7 @@
                         <img src="images/phone.svg" alt="" class="contato__icons">
                         <h5 class="contato__telefone__title">Telefones</h5>
                         <p class="contato__telefone__texto">
+                            Horário de atendimento: 8h às 17h<br>
                             (21) 3185-8766<br>
                             (21) 3049-4910
                         </p>
