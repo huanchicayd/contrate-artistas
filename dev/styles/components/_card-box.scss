@@ -1,5 +1,4 @@
 .card-box {
-    //border: 1px solid red;
     margin-bottom: 100px;
 
     &__wrap {
@@ -90,7 +89,6 @@
         display: flex;
         justify-content: center;
         @media screen and (max-width: 575px){
-            //border: 1px solid red;
             width: 20px;
             transform: rotatez(-90deg);
 
@@ -125,24 +123,3 @@
         }
     }
 }
-
-
-// .vertical .card-box {
-//     &__wrap {
-//         //flex-direction: column;
-//     }
-
-//     &__item {
-//         width: 23%;
-//         height: auto;
-//         border-right: 0;
-//         border-bottom: 2px solid $color-one;
-//         padding: 35px;
-//     }
-
-//     &__image {
-//         width: 100%;
-//         //border: 1px solid red;
-//         margin-bottom: 20px;
-//     }
-// }

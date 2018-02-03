@@ -2966,11 +2966,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   }
 }
 
-.filter-pai {
+.filter-wrap {
   display: none;
 }
 
-.filter-pai--on {
+.filter-wrap--on {
   display: block;
 }
 
@@ -4494,6 +4494,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   width: 70%;
 }
 
+@media screen and (max-width: 575px) {
+  .artistas-especifica__form__title {
+    width: 50%;
+  }
+}
+
 .artistas-especifica__form__info {
   width: 30%;
   font-family: "OpenSans-Bold", sans-serif;
@@ -4504,6 +4510,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 @media screen and (max-width: 991px) {
   .artistas-especifica__form__info {
     margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .artistas-especifica__form__info {
+    width: 50%;
   }
 }
 
@@ -4573,9 +4585,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 @media screen and (max-width: 400px) {
   .artista-video__social-media__wrap {
-    width: 50%;
+    width: 25%;
     margin-left: 0;
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
@@ -4596,6 +4611,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   font-size: 2.2rem;
   color: #fff;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .artista-video__social-media__circle {
+    margin: 0;
+  }
 }
 
 .artista-video__social-media__circle:first-child {
@@ -4631,7 +4652,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .artista-video__video-play:after {
-  content: '▶';
+  content: '';
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4639,10 +4660,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   font-size: 2.4rem;
   position: absolute;
   top: 0;
-  left: 2px;
+  left: 0;
   width: 40px;
   height: 40px;
   color: #ffcc00;
+  background: url("../images/arrow.svg") no-repeat center center;
+  background-size: contain;
 }
 
 .artista-video__related-videos.slick-slider {
@@ -4683,7 +4706,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 @media screen and (max-width: 575px) {
   .artista-video__related-videos__item {
     height: 0;
-    padding-top: 6%;
+    padding-top: 7%;
   }
 }
 

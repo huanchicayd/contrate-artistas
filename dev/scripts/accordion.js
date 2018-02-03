@@ -11,14 +11,14 @@
     function toggleItem(e){
         e.preventDefault();
         const $accordionItemClass = this.parentNode.className;
+        const $accordionItemLenght = $accordionItem.length;
 
-        for(let i = 0; i < $accordionItem.length; i++){
+        for (let i = 0; i < $accordionItemLenght; i++){
             $accordionItem[i].className = 'accordion-item close';
         }
 
-        if ($accordionItemClass === 'accordion-item close'){
+        if ($accordionItemClass === 'accordion-item close')
             this.parentNode.className = 'accordion-item open';
-        }
     }
 
 })();

@@ -61,7 +61,7 @@
                                 </div>
                                 <div class="artistas-especifica__form__info">
                                     <p>
-                                        Atendimento <br>de excelência
+                                        Atendimento<br>de excelência
                                     </p>
                                 </div>
                             </div>

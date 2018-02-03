@@ -2,7 +2,7 @@
 @mixin font-size($sizeValue: 1.6){
   font-size: ($sizeValue) + px;
   font-size: ($sizeValue/10) + rem;
-  }
+}
 
 //Form placeholder prefixer
 @mixin placeholder {
@@ -69,4 +69,15 @@
   background: -ms-radial-gradient(center, ellipse cover, rgba(50,50,50,0.6) 0%, rgba(0,0,0,0.6) 70%, rgba(0,0,0,0.6) 100%);
   background: radial-gradient(ellipse at center, rgba(50,50,50,0.6) 0%, rgba(0,0,0,0.6) 70%, rgba(0,0,0,0.6) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#323232', endColorstr='#000000', GradientType=1 );
+}
+
+@mixin nav-background {
+  background: rgba(255, 208, 65, 1);
+  background: -moz-linear-gradient(left, rgba(255, 208, 65, 1) 0%, rgba(255, 204, 0, 1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 208, 65, 1)), color-stop(100%, rgba(255, 204, 0, 1)));
+  background: -webkit-linear-gradient(left, rgba(255, 208, 65, 1) 0%, rgba(255, 204, 0, 1) 100%);
+  background: -o-linear-gradient(left, rgba(255, 208, 65, 1) 0%, rgba(255, 204, 0, 1) 100%);
+  background: -ms-linear-gradient(left, rgba(255, 208, 65, 1) 0%, rgba(255, 204, 0, 1) 100%);
+  background: linear-gradient(to right, rgba(255, 208, 65, 1) 0%, rgba(255, 204, 0, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd041', endColorstr='#ffcc00', GradientType=1);
 }

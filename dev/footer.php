@@ -130,13 +130,15 @@
 <script src="scripts/vendors/slick.js"></script>
 <script src="scripts/vendors/fancybox.js"></script>
 <script src="scripts/main.js" async></script>
-<script src="scripts/open-nav-menu.js" async></script>
-<script src="scripts/filter-artists.js" async></script>
-<script src="scripts/filter-sidebar-categories.js" async></script>
+<script src="scripts/open_nav_menu.js" async></script>
+<script src="scripts/filter_artists.js" async></script>
+<script src="scripts/filter_categories.js" async></script>
 <script src="scripts/form.js" async></script>
-<script src="scripts/nav-fixed.js" async></script>
-<script src="scripts/accordion-infografico.js" async></script>
-<script src="scripts/all-sliders.js" async></script>
+<script src="scripts/header_scroll_fixed.js" async></script>
+<script src="scripts/accordion.js" async></script>
+<script src="scripts/open_artist_form.js" async></script>
+<script src="scripts/all_sliders.js" async></script>
+<script src="scripts/scroll_links.js" async></script>
 
 </body>
 </html>

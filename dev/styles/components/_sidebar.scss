@@ -67,7 +67,6 @@
       display: block;
 
       @media screen and (max-width: 1199px){
-        //display: none;
         margin-bottom: 40px;
       }
     }
@@ -177,6 +176,9 @@
   }
 }
 
+
+//Sidebar filter when mobile
+
 .filter-categories {
   display: none;
   color: #fff;
@@ -205,7 +207,7 @@
   }
 }
 
-.filter-pai {
+.filter-wrap {
   display: none;
 
   &--on {

@@ -54,21 +54,4 @@
         ]
     });
 
-    //Quem somos scroll link
-    $('.quem-somos__banner__link').click(function (e) {
-        e.preventDefault();
-        const $quemSomosSaibaMais = $('#quem-somos__sobre').offset().top - 50;
-        $('html').animate({
-            scrollTop: $quemSomosSaibaMais + 'px'
-        }, 1000);
-    })
-
-    $('.particular__banner__content__link').click(function (e) {
-        e.preventDefault();
-        const $quemSomosSaibaMais = $('.particular__sobre').offset().top - 100;
-        $('html').animate({
-            scrollTop: $quemSomosSaibaMais + 'px'
-        }, 1000);
-    })
-
 })();

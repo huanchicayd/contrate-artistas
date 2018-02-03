@@ -1,0 +1,1 @@
+"use strict";!function(){var a=$('[data-js="artista-especifica-form-wrap"]'),i=$(".artista-sobre__orcamento"),o=$(".artistas-especifica__form");$('[data-js="btn-orcamento"]').click(function(){i.append(o),o.css("display","block"),$(window).resize(function(){$(window).width()>991&&(a.append(o),o.css("display","block"),window.location.reload())})})}();

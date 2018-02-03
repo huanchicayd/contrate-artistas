@@ -17,7 +17,7 @@
 
     > .container {
       @media screen and (max-width: 1199px){
-        max-width: 100%;
+        //max-width: 100%;
         position: relative;
       }
     }
@@ -28,15 +28,8 @@
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     padding: 9px 50px;
-    background: rgba(255, 208, 65, 1);
-    background: -moz-linear-gradient(left, rgba(255, 208, 65, 1) 0%, rgba(255, 204, 0, 1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 208, 65, 1)), color-stop(100%, rgba(255, 204, 0, 1)));
-    background: -webkit-linear-gradient(left, rgba(255, 208, 65, 1) 0%, rgba(255, 204, 0, 1) 100%);
-    background: -o-linear-gradient(left, rgba(255, 208, 65, 1) 0%, rgba(255, 204, 0, 1) 100%);
-    background: -ms-linear-gradient(left, rgba(255, 208, 65, 1) 0%, rgba(255, 204, 0, 1) 100%);
-    background: linear-gradient(to right, rgba(255, 208, 65, 1) 0%, rgba(255, 204, 0, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd041', endColorstr='#ffcc00', GradientType=1);
     box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.25);
+    @include nav-background;
 
     @media screen and (max-width:1199px){
       height: auto;

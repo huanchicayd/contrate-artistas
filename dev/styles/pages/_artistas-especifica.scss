@@ -97,6 +97,9 @@
 
         &__title {
             width: 70%;
+            @media screen and (max-width: 575px){
+                width: 50%;
+            }
         }
 
         &__info {
@@ -106,6 +109,10 @@
             margin-right: 25px;
             @media screen and (max-width: 991px){
                 margin-right: 0;
+            }
+
+            @media screen and (max-width: 575px){
+                width: 50%;
             }
             
             p {
@@ -141,12 +148,10 @@
             display: none;
         }
     }
-
 }
 
 .artista-video {
     &__wrap {
-        //margin-top: 10px;
         margin-bottom: 50px;
     }
 
@@ -170,10 +175,12 @@
             margin-left: 15px;
 
             @media screen and (max-width: 400px) {
-                width: 50%;
+                width: 25%;
                 margin-left: 0;
                 margin-bottom: 10px;
-                //border: 1px solid red;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
             }
 
             &:first-child {
@@ -193,6 +200,9 @@
             @include font-size(22);
             color: #fff;
             margin-right: 10px;
+            @media screen and (max-width: 400px) {
+                margin: 0;
+            }
 
             &:first-child {
                 margin-left: 0;
@@ -226,17 +236,19 @@
         cursor: pointer;
 
         &:after {
-            content: '▶';
+            content: '';
             display: flex;
             align-items: center;
             justify-content: center;
             @include font-size(24);
             position: absolute;
             top: 0;
-            left: 2px;
+            left: 0;
             width: 40px;
             height: 40px;
             color: $color-one;
+            background: url('../images/arrow.svg') no-repeat center center;
+            background-size: contain;
         }
     }
 
@@ -278,7 +290,7 @@
 
             @media screen and (max-width: 575px) {
                 height: 0;
-                padding-top: 6%;
+                padding-top: 7%;
             }
         }
     }
