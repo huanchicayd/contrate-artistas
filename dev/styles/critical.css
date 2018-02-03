@@ -1360,6 +1360,15 @@ a.btn-back .arrow:after {
 
 /*Vertical view*/
 @media screen and (min-width: 1200px) {
+  .artista-box-vertical ~ .artista-box-vertical {
+    margin-right: 5%;
+  }
+  .artista-box-vertical:nth-child(odd) {
+    margin-right: 0px;
+  }
+  .artista-box-vertical:first-child {
+    margin-right: 5%;
+  }
   .artista-box-vertical {
     width: 30%;
     height: auto;

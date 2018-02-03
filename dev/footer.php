@@ -129,6 +129,7 @@
 <script src="scripts/vendors/jquery.js"></script>
 <script src="scripts/vendors/slick.js"></script>
 <script src="scripts/vendors/fancybox.js"></script>
+<script src="scripts/vendors/nicescroll.js"></script>  
 <script src="scripts/main.js" async></script>
 <script src="scripts/open_nav_menu.js" async></script>
 <script src="scripts/filter_artists.js" async></script>

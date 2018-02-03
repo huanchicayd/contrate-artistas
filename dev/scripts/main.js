@@ -28,6 +28,21 @@
         }
     };
 
+    //Add custom scroll
+    /*
+        Se der algum problema pode remover
+    */
+
+    $('html').niceScroll({
+        cursorwidth: 7,
+        cursorcolor: '#ffcc00',
+        cursorborder: 'none',
+        cursoropacitymin: 0.2,
+        horizrailenabled: false,
+        zindex: 9999,
+        background: '#ddd'
+    });
+
     //Export functions to global scope
     window.checkWindowInnerWidth = checkWindowInnerWidth;
     window.mobileScreenChanges = mobileScreenChanges;
